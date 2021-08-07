@@ -1,7 +1,7 @@
-Get the Zoef Hardware
-#####################
+Get the Mirte Hardware
+######################
 
-Currently it is only possible to order all the parts yourself. In the futuer we will make it easier to buy a full Zoef Basic Box with all the listed components. 
+Currently it is only possible to order all the parts yourself. In the futuer we will make it easier to buy a full Mirte Basic Box with all the listed components. 
 
 Since we really want the robot to be upgradable, we will also support at least the mentioned alternatives/upgrades. At the moment the *italic* items are not yet supported though.
 
@@ -10,7 +10,7 @@ Since we really want the robot to be upgradable, we will also support at least t
     <input checked=""  type="checkbox">
 
 +---------------------------+--------------------------------------------------+-------------------------------------------+
-|                           | Zoef Basic                                       | Alternatives/Upgrades                     |
+|                           | Mirte Basic                                       | Alternatives/Upgrades                    |
 +===========================+==================================================+======================+====================+
 | Computer                  | Orange Pi Zero (set 2 [1]_)                      | *Raspberry Pi 2/3/4* | *Jetson Nano 2GB*  |
 +---------------------------+--------------------------------------------------+----------------------+--------------------+
@@ -18,7 +18,7 @@ Since we really want the robot to be upgradable, we will also support at least t
 +---------------------------+--------------------------------------------------+-----------------+-------------------------+
 | Microcontroller           | STM32                                            | Arduino Nano    | *ESP8266*               |
 +---------------------------+--------------------------------------------------+-----------------+-------------------------+
-| Electrical circuit        | Zoef PCB                                         | Breadboard [3]_ | Powered breadboard [4]_ |
+| Electrical circuit        | Mirte PCB                                         | Breadboard [3]_ | Powered breadboard [4]_|
 +---------------------------+--------------------------------------------------+-----------------+-------------------------+
 | 3 pin cable               | 4x JST                                           | 4 x female-female dupont                  |
 +---------------------------+--------------------------------------------------+-------------------------------------------+
@@ -30,7 +30,7 @@ Since we really want the robot to be upgradable, we will also support at least t
 +---------------------------+--------------------------------------------------+-------------------------------------------+
 | Battery                   | 5000mAh power bank [2]_                          | *12V battery pack with step down*         | 
 +---------------------------+--------------------------------------------------+-------------------------------------------+
-| Chassis                   | Zoef diff drive wood                             | *Zoef diff drive 3D print*                |
+| Chassis                   | Mirte diff drive wood                            | *Mirte diff drive 3D print*               |
 +---------------------------+--------------------------------------------------+-------------------------------------------+
 | Nuts and bolts            | 15x M3                                           | *M3 with standoffs*                       |
 +---------------------------+--------------------------------------------------+-------------------------------------------+

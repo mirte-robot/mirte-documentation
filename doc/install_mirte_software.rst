@@ -1,7 +1,7 @@
-Install Zoef Software
-#####################
+Install Mirte Software
+######################
 
-For Zoef to work we need to install software on both the SD card as on the microcontroller. This part only covers the installation of the SD software.
+For Mirte to work we need to install software on both the SD card as on the microcontroller. This part only covers the installation of the SD software.
 
 Download prebuilt SD card image
 ===============================
@@ -20,6 +20,6 @@ Install from source (Not supported Yet)
 
 .. prompt:: bash $
 
-    wget https://github.com/zoef_robot/zoef_install_scripts/raw/install_zoef.sh | sh
+    wget https://github.com/mirte_robot/mirte_install_scripts/raw/install_mirte.sh | sh
 
 Please get yourself a cup of coffee, this might take some time........

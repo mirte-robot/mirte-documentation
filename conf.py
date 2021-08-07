@@ -19,9 +19,9 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = u'Zoef Documentation'
-copyright = u'2020, Zoef Team'
-author = u'Zoef Team'
+project = u'Mirte Documentation'
+copyright = u'2020, Mirte Team'
+author = u'Mirte Team'
 
 # The short X.Y version
 version = u''
@@ -101,7 +101,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'ZoefDocumentationdoc'
+htmlhelp_basename = 'MirteDocumentationdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -128,8 +128,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'ZoefDocumentation.tex', u'Zoef Documentation Documentation',
-     u'Zoef Team', 'manual'),
+    (master_doc, 'MirteDocumentation.tex', u'Mirte Documentation Documentation',
+     u'Mirte Team', 'manual'),
 ]
 
 
@@ -138,7 +138,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'zoefdocumentation', u'Zoef Documentation Documentation',
+    (master_doc, 'mirtedocumentation', u'Mirte Documentation Documentation',
      [author], 1)
 ]
 
@@ -149,8 +149,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'ZoefDocumentation', u'Zoef Documentation Documentation',
-     author, 'ZoefDocumentation', 'One line description of project.',
+    (master_doc, 'MirteDocumentation', u'Mirte Documentation Documentation',
+     author, 'MirteDocumentation', 'One line description of project.',
      'Miscellaneous'),
 ]
 
