@@ -13,6 +13,7 @@ Mirte Documentation
    doc/prepare_microcontroller
    doc/configuration
    doc/programming
+   doc/mirte_development
    doc/faq
    
 
