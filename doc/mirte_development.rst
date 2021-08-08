@@ -27,7 +27,12 @@ Repository overview
 The source (code, hardware design, electronics design, tutorials, etc) are all hosted on github. The 
 
 
+Building a custom SD image
+==========================
 
+
+Development for Web Interface
+=============================
 
 
 Adding another language

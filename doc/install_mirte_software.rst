@@ -13,7 +13,7 @@ Download prebuilt SD card image
 3. Put the SD card in the Orange Pi Zero.
 
 
-Install from source (Not supported Yet)
+Install from source (Experimental)
 =======================================
 .. warning::
   Installing from source might fail on the Orange Pi Zero due to low specs. Installing from source is only recommended when using a more powerful computer.

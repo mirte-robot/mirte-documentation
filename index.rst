@@ -10,9 +10,12 @@ Mirte Documentation
    doc/connecting_cables
    doc/install_mirte_software
    doc/connect_to_mirte
-   doc/prepare_microcontroller
-   doc/configuration
+   doc/access_interface
+   doc/configure_mirte
+   doc/supported_hardware
+   doc/driving_around
    doc/programming
+   doc/programming_mcu
    doc/mirte_development
    doc/faq
    
