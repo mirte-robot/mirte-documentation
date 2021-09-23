@@ -18,6 +18,15 @@ Web Interface
    **not** changed when you reset your ssh pasword (see known issues).
 
 
+Web Terminal
+============
+
+If you do not want or have the option to install an SSH client (see below) you
+can also access a terminal using wetty. In the browser you can go to: 
+http://mirte.local:3333/wetty and login (user: mirte, password: mirte_mirte).
+
+
+
 Terminal
 ========
 
