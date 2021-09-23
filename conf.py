@@ -20,13 +20,13 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = u'Mirte Documentation'
-copyright = u'2020, Mirte Team'
-author = u'Mirte Team'
+copyright = u'2021, Martin Klomp, TU Delft Robotics Institute'
+author = u'Martin Klomp'
 
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'v0.3'
+release = u'v0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -38,8 +38,7 @@ release = u'v0.3'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx_rtd_theme', 'sphinx-prompt'
-]
+extensions = ['sphinx_rtd_theme', 'sphinx-prompt', 'sphinx_tabs.tabs', 'sphinx.ext.autosectionlabel']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

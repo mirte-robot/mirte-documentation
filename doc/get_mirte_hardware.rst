@@ -1,5 +1,5 @@
-Get the Mirte Hardware
-######################
+Get Mirte Hardware
+##################
 
 Currently it is only possible to order all the parts yourself. In the futuer we will make it easier to buy a full Mirte Basic Box with all the listed components. 
 
@@ -12,13 +12,13 @@ Since we really want the robot to be upgradable, we will also support at least t
 +---------------------------+--------------------------------------------------+-------------------------------------------+
 |                           | Mirte Basic                                      | Alternatives/Upgrades                     |
 +===========================+==================================================+===========================================+
-| Computer                  | Orange Pi Zero (set 2 [1]_)                      | Raspberry Pi 2/3/4                        |
+| Computer                  | Orange Pi Zero (set 2 [#f1]_)                    | Raspberry Pi 2/3/4                        |
 +---------------------------+--------------------------------------------------+-------------------------------------------+
 | SD card                   | Intenso 8Gb                                      | Any 8Gb+ SD card                          |
 +---------------------------+--------------------------------------------------+-----------------+-------------------------+
 | Microcontroller           | Robotdyn STM32                                   | Arduino Nano    | Arduino Uno             |
 +---------------------------+--------------------------------------------------+-----------------+-------------------------+
-| Electrical circuit        | Mirte PCB                                        | Breadboard [3]_                           |
+| Electrical circuit        | Mirte PCB                                        | Breadboard [#f3]_                         |
 +---------------------------+--------------------------------------------------+-----------------+-------------------------+
 | 3 pin cable               | 4x JST                                           | 4 x female-female dupont                  |
 +---------------------------+--------------------------------------------------+-------------------------------------------+
@@ -28,7 +28,7 @@ Since we really want the robot to be upgradable, we will also support at least t
 +---------------------------+--------------------------------------------------+ dupont cable                              |
 | Micro USB cable short     |                                                  |                                           |
 +---------------------------+--------------------------------------------------+-------------------------------------------+
-| Battery                   | Intenso XS 10000                                 | Any stable powerbank [2]_                 |
+| Battery                   | Intenso XS 10000                                 | Any stable powerbank [#f2]_               |
 +---------------------------+--------------------------------------------------+-------------------------------------------+
 | Chassis                   | Mirte diff drive wood                            | Mirte diff drive 3D print                 |
 +---------------------------+--------------------------------------------------+-------------------------------------------+
@@ -57,9 +57,10 @@ Since we really want the robot to be upgradable, we will also support at least t
 | Servo                     | SG90                                             | Any servo supported by Arduino            |
 +---------------------------+--------------------------------------------------+-------------------------------------------+
 
+.. rubric:: Footnotes
 
-.. [1] The extension board is optional, but needed when using the USB camera.
-.. [2] This power bank will fit the wooden frame. Any powerbank with a stable 5V will work.
-.. [3] With a breadboard, the JST and USB cables need to be replacd by dupont cables.
-.. [4] Due to teh voltage drop this will not work well with a 5V powerbank.
+.. [#f1] The extension board is optional, but needed when using the USB camera.
+.. [#f2] This power bank will fit the wooden frame. Any powerbank with a stable 5V will work.
+.. [#f3] With a breadboard, the JST and USB cables need to be replacd by dupont cables.
+.. [#f4] Due to teh voltage drop this will not work well with a 5V powerbank.
 

@@ -1,36 +1,149 @@
 Connect to Mirte
 ################
 
-Currently there are four ways to connect to your Mirte robot. The availability depends on the SBC you use. 
+Currently there are four ways to connect to your Mirte robot. The availability depends on the SBC 
+(OrangePi Zero LTS or Raspberry Pi 2/3/4) you use. This section describes all four options. 
+
+.. note::
+   
+   When connecting though wireless, or USB (so the first two opstions), you will be connected to
+   the robot though ethernet. You will therefore not have access to internet on your machine. 
 
 
 
-Wireless
-========
+Wireless (Wifi)
+===============
 
-After booting up Mirte for the first time the robot is in acces point (AP) mode and a wifi network will be available with ssid Mirte_XXXXXX. You can connect to this network with the password mirte_mirte. While in AP mode, the ip address of Mirte is 192.168.42.1, but you could also access it with mirte.local or mirte_XXXXXX.local. In this tutorial we will always use mirte.local. 
+After booting up Mirte for the first time the robot is in acces point (AP) mode and a wifi network 
+will be available with ssid Mirte-XXXXXX. You can connect to this network with the password 
+'mirte_mirte'. While in AP mode, the ip address of Mirte is 192.168.42.1, but you could also access 
+it with mirte.local or mirte-XXXXXX.local:
 
-Ethernet Wired
-==============
+.. code-block:: bash
+   
+   $ ping mirte.local
 
+.. code-block:: bash
+   
+   $ ping mirte-XXXXXX.local
+
+.. code-block:: bash
+   
+   $ ping 192.168.42.1
+
+In a classroom setting there might me multiple Mirte APs available. It is advised to prepare the
+robots in advance and write down the ssid per robot. If this is not possible one could also
+get the unique XXXXXX value by analyzing the red and green LED on the Orange Pi Zero (this is not 
+yet supported for the Raspberry Pi). 
+
+Count the number of blinks of the red LED until the green one blinks. This is one of the X's in
+the ssid. Please note that this is hexadecimal, so 10 will be A, 11 will be B etc). Do this until 
+you have all 6 X's. PLease note that teh start of the sequence (and thus the start of the first X) 
+is shown by blinking both red and green. The full XXXXXX will be communicated in this way for 5 
+times.
 
 
 
 USB connection (Windows only)
 =============================
 
+When connecting to Wifi is not possible you can also connect through USB. In this case you need
+to connect the power of the Orange Pi Zero via USB with your computer. After booting up a wired
+network will be available with which you can connect. While in USB mode, the ip address of Mirte
+is 192.168.43.1, but you could also access it with mirte.local or mirte-XXXXXX.local:
 
+.. code-block:: bash
+   
+   $ ping mirte.local
+
+.. code-block:: bash
+   
+   $ ping mirte-XXXXXX.local
+
+.. code-block:: bash
+   
+   $ ping 192.168.43.1
+
+
+Ethernet Wired
+==============
+
+You can also connect a wired ethernet cable using Mirte. Make sure you connect a ethernet cable
+to a router with DCHP enabled so your robot will get an ip address from the router:
+
+.. code-block:: bash
+   
+   $ ping <ip-address from router>
+
+There are multiple ways to get the ip adress from the router. On Linux and MacOS the easiest
+way is to ping for mirte.local:
+
+.. code-block:: bash
+   
+   $ ping mirte.local
+
+.. note::
+
+   mDNS is not supported by Windows and therfore you can not use mirte.local in this setup.
+
+When possible you could also log into your router and see what ip address the router assigned.
+If this also is not an option you could also decode the ip address from the blinking scheme 
+(as descibed above in the Wireless section). This currently is only supported for the Orange Pi
+Zero.
+
+.. note::
+  
+   You can also connect the wired cable when already connected to Wireless. This will enable
+   internet (through your router) to the robot, but not to your own computer.
 
 
 
 Connecting Mirte to your own Wifi
 =================================
 
-You can connect Mirte to your local wifi network from the web interface.
-.. note::
-Even after you connected to your own network, Mirte will start an Acces Point in case it is not able to conect to it (e.g. when somewhere else).
+You can connect Mirte to your local wifi network from either of the two interfaces (web or
+terminal). Make sure to connect to either of them following the instructions from the
+:ref:`next section<Accessing the interface>`.
+
+
+From terminal
+-------------
+
+When connecting though the terminal execute the following command. This will sleep for 10
+seconds and then try to connect to your wifi. the 10 seconds sleep is done to make sure 
+the AP connection will be disconnected properly.
+
+.. code-block:: bash
+   
+   mirte$ nohup `$(sleep 10; nmcli d wifi connect <wifi_SSID> password <wifi_password>)` & nmcli d disconnect wlan0
 
 .. warning::
-   For Windows users only: Windows 10 does not fully support mDSN. Therefore, when connecting to your own Wifi the mirte.local will not be resolved. O
+   Make sure that you type the SSID and password correctly. When this fails the wifi AP
+   will not show up automatically and you have to reboot Mirte.
+
+.. note::
+   This will freeze your teminal since the ssh connection was disconnected since the
+   wifi changed. You can get your terminal back typing '~.' (tilde point).
+
+
+From web interface
+------------------
+
+In the web interface there is also 
+
+.. image:: Mirte_Wireless.png
+  :width: 600
+  :alt: Alternative text
+
+.. warning::
+   
+   This is still experimental. Connecting on teh Orange Pi Zero might fail and will bring up
+   the AP again. This might take some tries to get the connection saved.
+
+.. note::
+
+   Even after you connected to your own network, Mirte will start an Acces Point in case she 
+   is not able to conect to it (e.g. when out of range).
+
 
 
