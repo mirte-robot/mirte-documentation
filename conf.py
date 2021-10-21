@@ -39,6 +39,7 @@ release = u'v0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx_rtd_theme', 'sphinx-prompt', 'sphinx_tabs.tabs', 'sphinx.ext.autosectionlabel']
+sphinx_tabs_disable_tab_closing = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
