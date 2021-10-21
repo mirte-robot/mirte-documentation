@@ -1,11 +1,6 @@
 Mirte Documentation
 ###################
 
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   doc/introduction
 
 .. toctree::
    :caption: Getting started
