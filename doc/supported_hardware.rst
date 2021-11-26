@@ -1,6 +1,10 @@
 Supported Hardware
 ##################
 
+
+Microcontroller Peripherals
+***************************
+
 Raw pins
 ========
 
@@ -10,8 +14,8 @@ Raw pins
 
       .. code-block:: bash
 
-         $ rosservice /mirte/get_pin_value "{}"
-         $ rosservice /mirte/set_pin_value "{}"
+         $ rosservice /mirte/get_pin_value "{pin: '', type: ''}"
+         $ rosservice /mirte/set_pin_value "{pin: '', type: '', value: }"
 
       Setting a pin can be either 'analog' (PWM) or 'digital'. The pin itself can be defined
       as the print on the MCU (e.g. 'A2'). you can have a look in the web interface to
@@ -24,30 +28,29 @@ Raw pins
          from mirte_robot import robot
          mirte = robot.createRobot()
 
-         mirte.getPinValue()
-         mirte.setPinValue()
-        
-      Setting a pin can be either 'analog' (PWM) or 'digital'. The pin itself can be defined
-      as the print on the MCU (e.g. 'A2'). you can have a look in the web interface to
-      see all options.
+         mirte.getAnalogPinValue()
+
+      .. autoclass:: robot::Robot
+         :members: setAnalogPinValue, getAnalogPinValue, setDigitalPinValue, getDigitalPinValue
+         :undoc-members:
+         :noindex:
 
    .. group-tab:: Blockly
 
-      Blocky code 
+      TODO
 
 
 
 .. warning::
     Currently there is no check on whether a pin is already in use by some hardware defined
-    in the yaml configuration discussed earlier. Therefore there is no expected behaviour 
+    in the yaml configuration discussed earlier. Therefore there is no expected behavior 
     when using getting or setting raw pins.
 
 
 DC Motor
 ========
 
-Depending on the type of 
-
+Depending on the type of motor controller used, you can control a motor. 
 
 L9110S
 ------
@@ -84,7 +87,7 @@ L298N
 
       .. code-block:: bash
 
-         $ rosservice call /mirte/set_left_speed "speed: 50"
+         $ rosservice call /mirte/set_left_speed "speed: "
 
    .. group-tab:: Python
 
@@ -95,14 +98,17 @@ L298N
 
          mirte.setMotorSpeed('left', 50)
         
+      .. autoclass:: robot::Robot
+         :members: setMotorSpeed
+         :undoc-members:
+         :noindex:
+
    .. group-tab:: Blockly
 
-      Blocky code 
-
-Speed can be an value between -100 and 100.
+      TODO
 
 
-The motors will be defined seperately. In this case there are two motors called 'left_motor' and 'right_motor', both controlled on the 'mirte' device defined above. The pins are set corrsponding to the L9110s motor driver. Other motor drivers will also work but the 1a/b refernce does not make sense.
+The motors will be defined separately. In this case there are two motors called 'left_motor' and 'right_motor', both controlled on the 'mirte' device defined above. The pins are set corresponding to the L9110s motor driver. Other motor drivers will also work but the 1a/b reference does not make sense.
 
 
 Wheel encoder
@@ -142,9 +148,14 @@ Wheel encoder
 
          mirte.getEncoder('left')
         
+      .. autoclass:: robot::Robot
+         :members: getEncoder
+         :undoc-members:
+         :noindex:
+
    .. group-tab:: Blockly
 
-      Blocky code 
+      TODO
 
 .. note::
 
@@ -178,24 +189,15 @@ Servo
 
          mirte.setServoAngle('left', 90)
         
+      .. autoclass:: robot::Robot
+         :members: setServoAngle
+         :undoc-members:
+         :noindex:
+
    .. group-tab:: Blockly
 
       Blocky code 
 
-
-Angle can be a value bewteen 0 and 180.
-
-.. note::
-
-   A maximum of 12 servos is supported.
-
-.. warning::
-
-   The servo uses the Servo library from Arduino (through Telemetrix). This also means that, when 
-   a servo is used and the library is enabled, the last timer on teh MCU will be used for timing
-   of the servos. This timer therefore can not be used for PWM anymore. For Arduino Nano/Uno this
-   means pins 9 and 10 will not have PWM anymore. For the SMT32 this means pins X/Y will not have
-   PWM anymore.
 
 
 Keypad
@@ -234,6 +236,12 @@ Keypad
 
          mirte.getKeypad('left')
         
+      .. autoclass:: robot::Robot
+         :members: getKeypad
+         :undoc-members:
+         :noindex:
+
+
    .. group-tab:: Blockly
 
       Blocky code 
@@ -272,9 +280,14 @@ OLED
          mirte.setOLEDImage('left', 'mirte_logo')
          mirte.setOLEDAnimation('left', 'eye')
         
+      .. autoclass:: robot::Robot
+         :members: setOLEDText, setOLEDImage, setOLEDAnimation
+         :undoc-members:
+         :noindex:
+
    .. group-tab:: Blockly
 
-      Blocky code 
+      TODO
 
 Distance sensor
 ===============
@@ -313,13 +326,14 @@ Distance sensor
 
          mirte.getDistance('left')
 
+      .. autoclass:: robot::Robot
+         :members: getDistance
+         :undoc-members:
+         :noindex:
+
    .. group-tab:: Blockly
 
-      Blocky code
-
-.. note::
-
-   A maximum of 6 distance sensors is supported.
+      TODO
 
 IR sensor
 =========
@@ -360,15 +374,70 @@ IR sensor
 
          mirte.getIntensity('left')
 
-      .. warning::
-        
-         Currently only the analog value is returned.
+      .. autoclass:: robot::Robot
+         :members: getIntensity
+         :undoc-members:
+         :noindex:
 
    .. group-tab:: Blockly
 
-      Blocky code
+      TODO
 
 
+USB Camera
+**********
+
+By default the robot assumes you have connected the supported USB cam (see :ref:`basic hardware <Get Mirte Hardware>`).
+Currently only a ROS interface is defined.
+
+.. tabs::
+
+   .. group-tab:: ROS
+
+      The camera image is published in three ways (using `ROS image transport <http://wiki.ros.org/image_transport>`_).
+
+      .. code-block:: bash
+
+         $ rostopic echo /webcam/image_raw
+         $ rostopic echo /webcam/image_raw/compressed
+         $ rostopic echo /webcam/image_raw/theora
 
 
+Other USB Cameras
+=================
 
+In case you have another USB webcam, you might need to change the parameters of the `USB cam <https://wiki.ros.org/usb_cam>`_ to
+reflect your webcam. This then needs to be changed in the `launchfile <https://github.com/mirte-robot/mirte-ros-packages/blob/3cbfac4a66425defc56f39b94bafca7794dd227e/mirte_bringup/launch/minimal.launch#L44>`_:
+
+.. code-block:: bash      
+
+   $ v4l2-ctl --list-formats-ext
+   $ nano /home/mirte/mirte_ws/src/mirte_bringup/launch/minimal.launch
+
+
+PS3/4 Controller
+****************
+
+To control the robot with a PS3/4 controller you first need to connect the controller with
+a bluetooth dongle. So first insert a bluetooth dongle (flaky Chinese dongles will also work
+for the OrangePi, not (yet) for RaspberryPi). You first need to pair the dongle with the
+PS controller:
+
+.. code-block:: bash
+
+    mirte$ sudo bluetoothctl
+    [bluetooth]# agent on
+    [bluetooth]# default-agent
+    [bluetooth]# scan on
+
+
+Connect the PS3 via a USB cable to the SBC (on the Orange Pi Zero one might need the expansion board in order
+to have more USB ports). A PS$ controller does not need to be connected to the USB. Press the connect button 
+(PS logo) on the controller. In the terminal one will see the device being found. Type "yes" to confirm and 
+exit the bluetoothctl.
+
+To test the controller one can:
+
+.. code-block:: bash
+
+    mirte$ sudo jstest /dev/input/js0

@@ -1,9 +1,17 @@
 Get Mirte Hardware
 ##################
 
-Currently it is only possible to order all the parts yourself. In the future we will make it easier to buy a full Mirte Basic Box with all the listed components. 
+One of the goals of Mirte is to be modular and extendable. Therefore Mirte has a minimal amount
+of custom designed components, and mostly uses frequently used hardware. Two exceptions are
+the base (which can be lasercut, 3D printed, or any existing base you already have) and the PCB
+(which is optional and can be replaced by a breadboard as well). 
 
-Since we really want the robot to be upgradable, we will also support at least the mentioned alternatives/upgrades.
+Below you will find the components that are used in the Mirte Basic kit, which gives you a basic
+mobile platform, which can be extended with optional sensors and actuators. Or you could use
+alternatives/upgrades for certain parts.
+
+Currently it is only possible to order all the parts yourself. In the future we will make it easier
+to buy a full Mirte Basic Box with all the listed components.
 
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                           | Mirte Basic                                                                                                             | Alternatives/Upgrades                                                                                                                                         |
@@ -14,7 +22,7 @@ Since we really want the robot to be upgradable, we will also support at least t
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------+
 | Microcontroller           | `Robotdyn STM32 <https://robotdyn.com/stm32-arm-arduino-mini-system-dev-board-blue-pill-with-arduino-bootloader.html>`_ | Arduino Nano    | Arduino Uno                                                                                                                                 |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------+
-| Electrical circuit        | Mirte PCB                                                                                                               | Breadboard [#f3]_ + `MB102 <https://www.aliexpress.com/item/1005001863057390.html>`_ + `splitter <https://www.aliexpress.com/item/4001025724405.html>`_       |
+| Electrical circuit        | Mirte PCB                                                                                                               | Breadboard [#f1]_ + `MB102 <https://www.aliexpress.com/item/1005001863057390.html>`_ + `splitter <https://www.aliexpress.com/item/4001025724405.html>`_       |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 3 pin cable               | 4x JST XH                                                                                                               | 4 x female-female dupont                                                                                                                                      |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -36,9 +44,9 @@ Since we really want the robot to be upgradable, we will also support at least t
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Wheels                    | `2x Yellow TT motor wheel <https://www.aliexpress.com/item/4000122298687.html>`_                                        |                                                                                                                                                               |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Motors                    | `2x TT motor male dupont <aliexpress.com/item/32918824820.html>`_                                                       |                                                                                                                                                               |
+| Motors                    | `2x TT motor male dupont <https://www.aliexpress.com/item/32918824820.html>`_                                           |                                                                                                                                                               |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------------+
-| Motor driver              | `L9110s <https://www.aliexpress.com/item/32679413836.html>`_                                                            | `L298N <https://www.aliexpress.com/item/1005001621936295.html>`_ [#f4]_    | `MX1919 <https://www.aliexpress.com/item/32959609441.html>`_                     |
+| Motor driver              | `L9110s <https://www.aliexpress.com/item/32679413836.html>`_                                                            | `L298N <https://www.aliexpress.com/item/1005001621936295.html>`_ [#f3]_    | `MX1919 <https://www.aliexpress.com/item/32959609441.html>`_                     |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------------+
 | **Optional**                                                                                                                                                                                                                                                                                                        |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -58,10 +66,9 @@ Since we really want the robot to be upgradable, we will also support at least t
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-
 .. rubric:: Footnotes
 
+.. [#f1] With a breadboard, the JST and USB cables need to be replaced by dupont cables.
 .. [#f2] This power bank will fit the wooden frame. Any powerbank with a stable 5V will work.
-.. [#f3] With a breadboard, the JST and USB cables need to be replaced by dupont cables.
-.. [#f4] Due to the voltage drop of the L298N this will not work nicely with a 5V powerbank.
+.. [#f3] Due to the voltage drop of the L298N this will not work nicely with a 5V powerbank.
 

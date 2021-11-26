@@ -13,12 +13,12 @@ SBC is just a wifi spot to your MCU.
    When reprogramming the MCU (and thus removing telemetrix from the MCU) all other
    features of Mirte will not work anymore. You will only be able to control the
    robot through the MCU code. You can of course always get back to the original 
-   situation by :ref:`perparing the microcontroller<Prepare microcontroller>` again.
+   situation by :ref:`preparing the microcontroller<Prepare microcontroller>` again.
 
 .. note::
 
    Uploading to the MCU might fail. Especially the STM32 is quite picky on the code
-   that wil be uploaded to the MCU (for example 'PC_13' instead of 'PC13'). This means
+   that will be uploaded to the MCU (for example 'PC_13' instead of 'PC13'). This means
    that the DFU upload over USB might not work. When this fails, you cal also try to 
    press the physical reset button on the MCU at the moment the upload should start.
 
@@ -91,7 +91,7 @@ Platform IO for your `IDE <https://docs.platformio.org/en/latest/integration/ide
 The next steps assume you have installed `VS Code <https://code.visualstudio.com/download>`_ 
 with `Platform IO <https://platformio.org/install/ide?install=vscode>`_.
 
-1. Create a new project by follwing the first two steps as described `here <https://docs.platformio.org/en/latest/integration/ide/vscode.html#setting-up-the-project>`_.
+1. Create a new project by following the first two steps as described `here <https://docs.platformio.org/en/latest/integration/ide/vscode.html#setting-up-the-project>`_.
    You can still use the Arduino Uno in the example, you will override this later.
 2. Replace the existing platformio.ini file of your project with the one below (replace
    <mirte_ip_address> with the IP address of your robot.
@@ -160,7 +160,7 @@ with `Platform IO <https://platformio.org/install/ide?install=vscode>`_.
 
 .. note::
 
-   PlatformIO will ssh/scp intr Mirte two times asking for your password. It might be usefull
+   PlatformIO will ssh/scp into Mirte two times asking for your password. It might be useful
    to create a setup where you login :ref:`using SSH keys <Keybased SSH login>`.
 
 
@@ -171,7 +171,7 @@ Using the Arduino IDE
 
    Uploading over the air with Arduino IDE is not perfect. For one it uses mDNS which is not
    supported by Windows 10. It also requires root login on the SBC which is far from optimal.
-   We therefore might decide on removing this feature, so be carefull when using this in
+   We therefore might decide on removing this feature, so be careful when using this in
    any educational material.
 
 The Arduino IDE should be configured in the same way as if the MCU was connected to the PC through USB. For the STM this means:
@@ -182,7 +182,7 @@ The Arduino IDE should be configured in the same way as if the MCU was connected
 4. Compile and run will compile locally and upload the hex to Mirte (passwd: mirte_mirte)
 
 
-.. image:: Mirte_Arduino_IDE.png
+.. image:: images/Mirte_Arduino_IDE.png
   :width: 600
   :alt: Mirte Arduino IDE
 

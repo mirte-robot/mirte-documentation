@@ -18,7 +18,14 @@ Mirte Documentation
    doc/driving_around
    doc/programming
    doc/programming_mcu
-   doc/faq
+
+.. toctree::
+   :caption: APIs
+   :maxdepth: 1
+   :hidden:
+
+   doc/mirte_python_api
+   doc/mirte_ros_api
 
 .. toctree::
    :caption: Mirte Development
@@ -28,15 +35,19 @@ Mirte Documentation
    doc/mirte_development
    
 
-Mirte is yet another robot developed for education. Since the multidisiplinary aspect of robotics makes it such a good way to teach about STEM eduction, a lot of robotics kids have been developed already. So why yet another? We believe that robotic kits for education should be cheap, open source, not only focus on the software, have as few custom parts as possible, and should be useful from primary/elementary school all the way to university.
+Mirte (Mirte, an Inspring Robot for Technology Education) is yet another robot developed for 
+education. Robotics, due to the its multidisciplinary nature, is a good way to teach about STEM 
+eduction. This is why a lot of robotics kits have been developed already. So why yet another? 
+We believe that robotic kits for education should be cheap, open source, not only focus on the 
+software, have as few custom parts as possible, and should be useful from primary/elementary school 
+all the way to university. Getting you to the next level in each discipline step by step.
 
-
-+-------------+----------------------------------------------------------------------+
-| Software    | from Blockly to Python to ROS                                        |
-+-------------+----------------------------------------------------------------------+
-| Electrical  | from custom PCB with STM32, to breadboard with STM32/Arduino/ESP8266 |
-+-------------+----------------------------------------------------------------------+
-| Mechanical  | from wooden frame to own made (3D printed) frames                    |
-+-------------+----------------------------------------------------------------------+
-| Interaction | from cute to purely functional                                       |
-+-------------+----------------------------------------------------------------------+
++-------------+--------------------------------------------------------------------------------------------------------------------------------+
+| Software    | from `Blockly <https://developers.google.com/blockly>`_ to `Python <https://www.python.org/>`_ to `ROS <https://www.ros.org>`_ |
++-------------+--------------------------------------------------------------------------------------------------------------------------------+
+| Electrical  | from custom PCB with STM32, to breadboard with STM32/Arduino                                                                   |
++-------------+--------------------------------------------------------------------------------------------------------------------------------+
+| Mechanical  | from wooden frame to own made (3D printed) frames                                                                              |
++-------------+--------------------------------------------------------------------------------------------------------------------------------+
+| Interaction | from cute to purely functional                                                                                                 |
++-------------+--------------------------------------------------------------------------------------------------------------------------------+

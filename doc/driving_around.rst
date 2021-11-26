@@ -5,46 +5,33 @@ Driving around
 
    Currently the robot is controllable via multiple interfaces. At the moment
    this does assume you have two motors called 'left' and 'right'. Please
-   make sure that your :ref:`settings are correct <Configure Software to match Hardware>`.
-
-
+   make sure that your :ref:`settings are correct <Configure Settings to match Hardware>`.
 
 
 
 From web interface
 ==================
 
+The robot can be controller from the web interface by goin to the 'control' tab:
 
+      .. image:: images/driving_around.png
+        :width: 600
+        :alt: Driving around from the web interface
 
 Teleop Key
 ==========
+
+In ROS you can also drive around with your keyboard:
 
 .. code-block:: bash
 
     mirte$ roslaunch mirte_teleop teleop_key.launch
 
 
-PS3/4 Controller
-================
+With a PS3/4 Controller
+=======================
 
-
-.. code-block:: bash
-
-    mirte$ sudo bluetoothctl
-    [bluetooth]# agent on
-    [bluetooth]# default-agent 
-    [bluetooth]# scan on
-
-
-Connect the PS3 via a USB cable to the SBC (on the Orange Pi Zero one might need the expansion board in order
-to have more USB ports). Press the connect button (PS logo) on the controller. In the terminal one will see
-the device being found. Type "yes" to confirm and exit the bluetoothctl.
-
-To test the controller one can:
-
-.. code-block:: bash
-
-    mirte$ sudo jstest /dev/input/js0
+Make sure you have paired to PS controller to a USB Bluetooth dongle (see :ref:`Supported Hardware <PS3/4 Controller>`).
 
 If all works fine, one can start the ROS launchfile:
 
@@ -56,10 +43,20 @@ If all works fine, one can start the ROS launchfile:
 Android
 =======
 
-There is also an Android app which allows you to control Mirte (or any ROS-based robot).
+There is also an Android app which allows you to control Mirte (or any ROS-based robot). You can
+download `ROS-mobile here <https://play.google.com/store/apps/details?id=com.schneewittchen.rosandroid>`_. 
+In order to drive around you need to connect to the robot:
 
+- Master URL: <your robot ip>
+- Master port: 11311
+- Wi-Fi: <connect to the same network as the robot>
 
+In the details tab you still need to add the Joystick widget and set the topic name:
 
+- Topic Name: /mobile_base_controller/cmd_vel
 
-https://play.google.com/store/apps/details?id=com.schneewittchen.rosandroid
+You can now drive around in the 'viz' tab. When a USB camera is attached you can also
+view the image stream. You nees to add a Camera widget in teh details tab and set the
+topic name:
 
+- Topic Name: /webcam/image_raw/compressed

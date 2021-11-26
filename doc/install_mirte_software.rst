@@ -1,25 +1,31 @@
 Install Mirte Software
 ######################
 
-For Mirte to work we need to install software on both the SD card as on the microcontroller. This part only covers the installation of the SD software.
+For Mirte to work we need to install software on both the SD 
+card and the microcontroller. This part only covers the 
+installation of the SD card software.
+
+.. note::
+
+   The current link to the downloads contains a folder with 
+   multiple versions of the Mirte software. At a later stage this
+   will be replaced by versions created by github. For now: please
+   use the latest version, unless stated otherwise).
+
 
 Download prebuilt SD card image
 ===============================
-.. warning::
-   The prebuilt SD card will currentl only work on the Orange Pi Zero. All other plaforms will have to install from source (which will be supported later).
 
-1. Download the SD card image from here.
-2. Burn the image onto the SD card with for example Balena Etcher.
-3. Put the SD card in the Orange Pi Zero.
+.. tabs::
 
+  .. tab:: Orange Pi Zero
 
-Install from source (Experimental)
-=======================================
-.. warning::
-  Installing from source might fail on the Orange Pi Zero due to low specs. Installing from source is only recommended when using a more powerful computer.
+    1. Download the latest SD card image `here <http://dl.mirte.org/>`_.
+    2. Burn the image onto the SD card with for example `Balena Etcher <https://www.balena.io/etcher/>`_.
+    3. Put the SD card in the Orange Pi Zero.
 
-.. prompt:: bash $
+  .. tab:: Raspberry Pi 2/3/4
 
-    wget https://github.com/mirte_robot/mirte_install_scripts/raw/install_mirte.sh | sh
-
-Please get yourself a cup of coffee, this might take some time........
+    1. Download the latest SD card image `here <http://dl.mirte.org/>`_.
+    2. Burn the image onto the SD card with for example `Balena Etcher <https://www.balena.io/etcher/>`_.
+    3. Put the SD card in the Raspberry Pi.
