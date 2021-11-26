@@ -113,7 +113,7 @@ html_context = {
   'display_github': True,
   'github_user': 'mirte-robot',
   'github_repo': 'mirte-documentation',
-  'github_version': 'main/docs/',
+  'github_version': 'main/',
 }
 
 
