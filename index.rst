@@ -51,3 +51,12 @@ all the way to university. Getting you to the next level in each discipline step
 +-------------+--------------------------------------------------------------------------------------------------------------------------------+
 | Interaction | from cute to purely functional                                                                                                 |
 +-------------+--------------------------------------------------------------------------------------------------------------------------------+
+
+
+|pic1| |pic2|
+
+.. |pic1| image:: doc/images/mirte_basic.jpg
+   :width: 30%
+
+.. |pic2| image:: doc/images/mirte_web_interface.png
+   :width: 60%
