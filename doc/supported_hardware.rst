@@ -14,8 +14,8 @@ Raw pins
 
       .. code-block:: bash
 
-         $ rosservice /mirte/get_pin_value "{pin: '', type: ''}"
-         $ rosservice /mirte/set_pin_value "{pin: '', type: '', value: }"
+         $ rosservice call /mirte/get_pin_value "{pin: '', type: ''}"
+         $ rosservice call /mirte/set_pin_value "{pin: '', type: '', value: }"
 
       Setting a pin can be either 'analog' (PWM) or 'digital'. The pin itself can be defined
       as the print on the MCU (e.g. 'A2'). you can have a look in the web interface to
