@@ -32,6 +32,7 @@ Mirte Documentation
    :maxdepth: 1
    :hidden:
 
+   doc/mirte_architecture
    doc/mirte_development
    
 

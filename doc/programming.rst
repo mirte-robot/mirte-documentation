@@ -56,7 +56,8 @@ Jupyter is disabled by default (due to high RAM usage on the Orange Pi Zero). Yo
 
    mirte$ sudo service mirte-jupyter start
 
-Jupyter will run on http://mirte.local:8888 showing some examples from Jupyter-ROS (which are located at /home/mirte/jupyter-ros). If you want Jupyter to start on boot you can run:
+Jupyter will run on http://mirte.local:8888 (note: it might take some time for Jupyter to start) showing some 
+examples from Jupyter-ROS (which are located at /home/mirte/jupyter-ros). If you want Jupyter to start on boot you can run:
 
 .. code-block:: bash
 

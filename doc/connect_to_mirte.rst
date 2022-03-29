@@ -41,6 +41,11 @@ you have all 6 X's. Please note that the start of the sequence (and thus the sta
 is shown by blinking both red and green. The full XXXXXX will be communicated in this way for 5 
 times.
 
+.. note::
+
+   The OrangePi has a known issue with the WiFi driver, makeing it instable from time to time. This
+   also affects the speed of your WiFi connection in acces point (AP) mode. Your connection will be about
+   10x faster when :ref:`connected to your own router<Connecting Mirte to your own Wifi>`.
 
 
 USB connection (Windows only)
