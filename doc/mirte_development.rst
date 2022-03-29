@@ -289,7 +289,7 @@ also build the frontend locally and upload it to the robot:
 
 .. code-block:: bash
 
-   $ npm run build && ssh mirte@mirte.local "rm -rf /usr/local/src/mirte/mirte_web_interface/vue-frontend/dist" && scp -r dist/ mirte@mirte.local:/usr/local/src/mirte/mirte_web_interface/vue-frontend
+   $ npm run build && ssh mirte@mirte.local "rm -rf /usr/local/src/mirte/mirte-web-interface/vue-frontend/dist" && scp -r dist/ mirte@mirte.local:/usr/local/src/mirte/mirte-web-interface/vue-frontend
 
 
 

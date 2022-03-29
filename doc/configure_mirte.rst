@@ -26,7 +26,7 @@ On the terminal this can also be done by running a script:
 
 .. code-block:: bash
 
-    mirte$ cd /usr/local/src/mirte/mirte_install_scripts
+    mirte$ cd /usr/local/src/mirte/mirte-install-scripts
     mirte$ ./run_arduino.sh upload_stm32 Telemetrix4Arduino
 
 You can also upload to Arduino Nano (both new and old bootloader) and Arduino Uno. In that 
@@ -56,7 +56,7 @@ to match your robot hardware:
 From the Terminal
 -----------------
 
-The configuration to map the pins to sensortypes is done in `/usr/local/src/mirte/mirte-ros-packages/mirte_control/config/mirte_user_config.yaml <https://github.com/mirte-robot/mirte-ros-packages/blob/main/mirte_telemetrix/config/mirte_user_config.yaml>`_. 
+The configuration to map the pins to sensortypes is done in `/usr/local/src/mirte/mirte-ros-packages/mirte_telemetrix/config/mirte_user_config.yaml <https://github.com/mirte-robot/mirte-ros-packages/blob/main/mirte_telemetrix/config/mirte_user_config.yaml>`_. 
 This file consists of multiple sections needed for Mirte to know which pins to control. 
 For convenience there are already three examples given for the STM32 on a breadboard, 
 the Mirte PCB and an Arduino nano on a breadboard. The default settings are the Mirte PCB. 

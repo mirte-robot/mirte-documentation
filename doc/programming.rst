@@ -54,13 +54,13 @@ Jupyter is disabled by default (due to high RAM usage on the Orange Pi Zero). Yo
 
 .. code-block:: bash
 
-   mirte$ sudo service mirte_jupyter start
+   mirte$ sudo service mirte-jupyter start
 
 Jupyter will run on http://mirte.local:8888 showing some examples from Jupyter-ROS (which are located at /home/mirte/jupyter-ros). If you want Jupyter to start on boot you can run:
 
 .. code-block:: bash
 
-   mirte$ sudo systemctrl enable mirte_jupyter
+   mirte$ sudo systemctl enable mirte-jupyter
 
 You can now enter Jupyter by brwosing to http://mirte.local:8888 and start a new notebook:
 
@@ -93,13 +93,13 @@ Jupyter is disabled by default (due to high RAM usage on the Orange Pi Zero). Yo
 
 .. code-block:: bash
 
-   mirte$ sudo service mirte_jupyter start
+   mirte$ sudo service mirte-jupyter start
 
 Jupyter will run on http://mirte.local:8888 showing some examples from Jupyter-ROS (which are located at /home/mirte/jupyter-ros). If you want Jupyter to start on boot you can run:
 
 .. code-block:: bash
 
-   mirte$ sudo systemctrl enable mirte_jupyter
+   mirte$ sudo systemctrl enable mirte-jupyter
 
 
 
