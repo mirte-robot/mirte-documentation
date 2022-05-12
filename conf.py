@@ -14,20 +14,21 @@
 #
 import os
 import sys
+from datetime import date
 sys.path.insert(0, os.path.abspath('./_modules/mirte-python/mirte_robot/'))
 import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
 project = u'Mirte Documentation'
-copyright = u'2021, Martin Klomp, TU Delft Robotics Institute'
+copyright = str(date.today().year) + ', Martin Klomp, TU Delft Robotics Institute'
 author = u'Martin Klomp'
 
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
 release = u'v0.1'
-
+smv_latest_version = 'main'
 
 # -- General configuration ---------------------------------------------------
 
@@ -38,7 +39,7 @@ release = u'v0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx_rtd_theme', 'sphinx-prompt', 'sphinx_tabs.tabs', 'sphinx.ext.autosectionlabel', 'sphinxcontrib.spelling', 'sphinx.ext.autodoc', 'sphinxcontrib.napoleon']
+extensions = ['sphinx_rtd_theme', 'sphinx-prompt', 'sphinx_tabs.tabs', 'sphinx.ext.autosectionlabel', 'sphinxcontrib.spelling', 'sphinx.ext.autodoc', 'sphinxcontrib.napoleon', 'sphinx_multiversion']
 sphinx_tabs_disable_tab_closing = True
 spelling_word_list_filename='spelling_wordlist.txt'
 napoleon_google_docstring = True

@@ -1,0 +1,18 @@
+{% extends "!page.html" %}
+{% block body %}
+{% if current_version and latest_version and current_version != latest_version %}
+<div class="admonition warning">
+<p class="admonition-title">Version Warning</p>
+<p>
+    {% if current_version.name != "main" %}
+    You're reading an old version of this documentation. Make sure you are using a Mirte {{current_version.name}}.
+    If you want up-to-date information, please have a look at <a href="{{ vpathto(latest_version.name) }}">{{latest_version.name}}</a>.
+    {% else %}
+    You're reading the documentation for a development version. Make sure you are using a Mirte custom build from the main branch. 
+    For the latest released version, please have a look at <a href="{{ vpathto(latest_version.name) }}">{{latest_version.name}}</a>.
+    {% endif %}
+</p>
+</div>
+{% endif %}
+{{ super() }}
+{% endblock %}%
