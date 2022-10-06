@@ -25,7 +25,7 @@ In ROS you can also drive around with your keyboard:
 
 .. code-block:: bash
 
-    mirte$ roslaunch mirte_teleop teleop_key.launch
+    mirte$ roslaunch mirte_teleop teleopkey.launch
 
 
 With a PS3/4 Controller
@@ -37,7 +37,7 @@ If all works fine, one can start the ROS launchfile:
 
 .. code-block:: bash
 
-    mirte$ roslaunch mirte_teleop teleopjoy.launch
+    mirte$ roslaunch mirte_teleop teleop_joy.launch
 
 
 Android
