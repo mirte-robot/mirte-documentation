@@ -112,8 +112,8 @@ When Mirte boots a systemd service will launch the Mirte bringup. This service c
 
 .. code-block:: bash
 
-   mirte$ sudo service mirte_ros stop
-   mirte$ sudo service mirte_ros start
+   mirte$ sudo service mirte-ros stop
+   mirte$ sudo service mirte-ros start
 
 You can also run the launchfile yourself (only when you stopped the systemd service):
 
