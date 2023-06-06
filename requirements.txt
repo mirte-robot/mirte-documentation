@@ -1,0 +1,11 @@
+
+docutils==0.16.0 
+sphinx-tabs==3.2.0  #TODO: use files to freeze versions
+
+wheel 
+sphinx 
+sphinx-prompt 
+sphinx-rtd-theme 
+sphinxcontrib-spelling 
+sphinxcontrib-napoleon
+sphinx_multiversion

@@ -86,7 +86,7 @@ Using Platform IO
 
 If you like a faster compilation time and/or like to develop from an IDE,
 you can also develop your code using Platform IO. Make sure you have installed
-Platform IO for your `IDE <https://docs.platformio.org/en/latest/integration/ide/index.html#desktop-ide>`_.
+Platform IO for your `IDE <https://docs.platformio.org/en/latest/integration/ide/index.html#desktop-ides>`_.
 
 The next steps assume you have installed `VS Code <https://code.visualstudio.com/download>`_ 
 with `Platform IO <https://platformio.org/install/ide?install=vscode>`_.

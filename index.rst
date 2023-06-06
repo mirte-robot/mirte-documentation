@@ -36,7 +36,7 @@ Mirte Documentation
    doc/mirte_development
    
 
-Mirte (Mirte, an Inspring Robot for Technology Education) is yet another robot developed for 
+Mirte (Mirte, an Inspiring Robot for Technology Education) is yet another robot developed for 
 education. Robotics, due to the its multidisciplinary nature, is a good way to teach about STEM 
 eduction. This is why a lot of robotics kits have been developed already. So why yet another? 
 We believe that robotic kits for education should be cheap, open source, not only focus on the 

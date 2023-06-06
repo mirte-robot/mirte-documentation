@@ -44,9 +44,9 @@ themselves.
         the sensors and actuators.
       - `mirte-ros-packages <https://github.com/mirte-robot/mirte-ros-packages>`_: Contains the ROS packages
         to communicate with the hardware (MCU, PS controller, camera, etc) and the differential drive controller.
-      - `mirte-telemetrix-aio <https://github.com/mirte-robot/mirte-telemetrix-aio>`_: Is a fork of
+      - `mirte-telemetrix-aio <https://github.com/mirte-robot/telemetrix-aio>`_: Is a fork of
         telemetrix-aio to also support our own wheel encoder library (needed to get the interrupts of the encoder).
-      - `mirte-telemetrix4Arduino <https://github.com/mirte-robot/mirte-telemetrix4Arduino>`_: Is a fork 
+      - `mirte-telemetrix4Arduino <https://github.com/mirte-robot/Telemetrix4Arduino>`_: Is a fork 
         of telemetrix4Arduino to also add support for the wheel encoder.
       - `mirte-arduino-libraries <https://github.com/mirte-robot/mirte-arduino-libraries>`_: Contains the
         implementation of our own wheel encoder.

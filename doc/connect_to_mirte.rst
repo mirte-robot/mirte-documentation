@@ -43,7 +43,7 @@ times.
 
 .. note::
 
-   The OrangePi has a known issue with the WiFi driver, makeing it instable from time to time. This
+   The OrangePi has a known issue with the WiFi driver, makeing it unstable from time to time. This
    also affects the speed of your WiFi connection in acces point (AP) mode. Your connection will be about
    10x faster when :ref:`connected to your own router<Connecting Mirte to your own Wifi>`.
 

@@ -82,7 +82,7 @@ and develop there:
    (node_env)$ npm install .
    (node_env)$ npm serve
 
-You can now access the web interface on http::/localhost:4000. Since this is running locally
+You can now access the web interface on http://localhost:4000. Since this is running locally
 on your machine. Not everything might be working (eg. the connection to ROS). You can therefore
 also build the frontend locally and upload it to the robot:
 
@@ -101,5 +101,5 @@ learn technology in their own language instead of having to learn a foreign lang
 At some point we do think students should be able to use English as a language to learn more about
 technology. 
 
-The main language is English and can be found the `frontend <https://github.com/mirte-robot/mirte-web-interface/vue-frontend/locales/en.json>`_ 
+The main language is English and can be found the `frontend <https://github.com/mirte-robot/mirte-web-interface/blob/main/vue-frontend/locales/en.json>`_ 
 code. Adding a language can be as simple as a pull request with another json file.

@@ -25,3 +25,10 @@ cpp
 scp
 Jupyter
 ROS
+microcontroller
+IP
+hostname
+Teleop
+cmd
+vel
+PWM
