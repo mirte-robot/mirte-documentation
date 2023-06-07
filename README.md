@@ -2,7 +2,7 @@
 
 To build the documentation:
 
-```
+```sh
 git clone --recurse-submodules https://github.com/mirte-robot/mirte-documentation
 cd mirte-documentation
 python3 -m venv docs-env
@@ -13,7 +13,7 @@ pip install .
 cd ../catkin_ws/src/mirte-ros-packages
 rm -rfv !("mirte_msgs")
 cd ../../
-catkin_make
+catkin_make # or catkin build
 source devel/setup.bash
 cd ../../
 
@@ -31,3 +31,16 @@ sphinx-multiversion . _build/html
 python3 -m http.server
 firefox _build/html/index.html
 ```
+## Test
+
+The documentation must pass the following two checks. Warnings are allowed, errors not.
+```sh
+make html && make linkcheck
+```
+
+## Spelling
+Check for spelling with the following command
+```sh
+make spelling
+```
+Add correct words to the ```spelling_wordlist.txt``` file.
