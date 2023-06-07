@@ -1,5 +1,3 @@
 _build/
-_modules/catkin_ws/build
-_modules/catkin_ws/devel
-_modules/catkin_ws/.catkin_workspace
+_modules/catkin_ws/
 docs-env/
