@@ -53,10 +53,18 @@ jobs:
           name: act_dist
           path: |
             site.zip
+      - name: Upload as a github-pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with: 
+          path: _build/html
+
   deploy:
     # Add a dependency to the build job
     needs: build
-
+    # on:
+    #   push:
+    #     branches:
+    #       - main
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
       pages: write      # to deploy to Pages
@@ -73,5 +81,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: dist
+        # with:
+        #   artifact_name: dist
