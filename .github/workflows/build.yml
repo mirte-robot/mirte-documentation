@@ -34,7 +34,9 @@ jobs:
           . devel/setup.sh
           cd ../../
           make html
-          zip -r _build/html.zip _build/html
+          cd _build/html
+          zip -r ../../site.zip .
+          cd ../../
       - name: install nodejs for archive script
         run: |
           curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
@@ -44,4 +46,4 @@ jobs:
         with:
           name: dist
           path: |
-            _build/html.zip
+            _build/html
