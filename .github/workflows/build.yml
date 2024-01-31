@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: althack/ros:noetic-dev
-      options: --user 1001
     steps:
       - uses: actions/checkout@v3
       - name: Install dependencies
         run: |
+          git config --global --add safe.directory /__w/mirte-documentation/mirte-documentation
           git submodule update --init --recursive
           sudo apt update
           sudo apt install libenchant-2-dev -y python3-empy zip
