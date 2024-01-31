@@ -7,10 +7,8 @@ jobs:
 
     runs-on: ubuntu-latest
     container:
-      image: althack/ros:noetic-dev 
-      volumes:
-        - my_docker_volume:/volume_mount
-      options: --cpus 1
+      image: althack/ros:noetic-dev
+      options: --user 1001
     steps:
       - uses: actions/checkout@v3
       - name: Install dependencies
