@@ -42,13 +42,6 @@ We believe that robotic kits for education should be cheap, open source, not onl
 software, have as few custom parts as possible, and should be useful from primary/elementary school 
 all the way to university. Getting you to the next level in each discipline step by step.
 
-.. ros:package:: foo_bar_package
-
-.. ros:message:: foo
-
-  :msg_param bar: The bar included in foo.
-  :msg_paramtype bar: :ros:msg:`int16`
-
 +-------------+--------------------------------------------------------------------------------------------------------------------------------+
 | Software    | from `Blockly <https://developers.google.com/blockly>`_ to `Python <https://www.python.org/>`_ to `ROS <https://www.ros.org>`_ |
 +-------------+--------------------------------------------------------------------------------------------------------------------------------+
