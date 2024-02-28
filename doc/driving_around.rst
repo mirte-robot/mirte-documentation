@@ -28,18 +28,6 @@ In ROS you can also drive around with your keyboard:
     mirte$ roslaunch mirte_teleop teleopkey.launch
 
 
-With a PS3/4 Controller
-=======================
-
-Make sure you have paired to PS controller to a USB Bluetooth dongle (see :ref:`Supported Hardware <PS3/4 Controller>`).
-
-If all works fine, one can start the ROS launchfile:
-
-.. code-block:: bash
-
-    mirte$ roslaunch mirte_teleop teleop_joy.launch
-
-
 Android
 =======
 

@@ -50,7 +50,7 @@ modify the Python-code and run it with the same control bar as Blockly.
 In Jupyter Notebook
 -------------------
 
-Jupyter is disabled by default (due to high RAM usage on the Orange Pi Zero). You can start it as a service:
+Jupyter is disabled by default (due to high RAM usage on the Orange Pi Zero 2). You can start it as a service:
 
 .. code-block:: bash
 
@@ -90,7 +90,7 @@ ROS
 In Jupyter Notebook
 -------------------
 
-Jupyter is disabled by default (due to high RAM usage on the Orange Pi Zero). You can start it as a service:
+Jupyter is disabled by default (due to high RAM usage on the Orange Pi Zero 2). You can start it as a service:
 
 .. code-block:: bash
 
@@ -156,6 +156,39 @@ message published on cmd_vel and then use the Python API to drive around.
 
    # No need for rospy.init_node() or rospy.spin() since they
    # are already called in robot.createRobot().
+
+Creating your own ROS packages/nodes
+------------------------------------
+
+Mirte already uses a ROS workspace located at ~/mirte_ws. The easiest way to get started
+is to use this workspace an create your own packages and nodes in this workspace. You can 
+achieve this by executing the following commands:
+
+.. code-block:: bash
+
+   mirte$ cd ~/mirte_ws/src
+   mirte$ catkin_create_pkg my_own_package stdmsgs rospy
+   mirte$ cd my_own_package
+   mirte$ mkdir scripts && cd scripts
+   mirte$ touch my_node.py
+   mirte$ cd ../../
+   mirte$ catkin build
+
+And of course one had to fill ~/mirte_ws/src/my_own_package/scripts/my_node.py with the
+logic you want to be executed.
+
+If you would also like to have this node to be started at boot you can add this to the 
+launchfile in ~/mirte_ws/scr/mirte_packages/mirte_bringup/minimal.launch. That is the 
+file that will be executed as you can see in /usr/local/src/mirte/mirte-install-scripts/services/mirte-ros.service.
+
+
+
+
+
+
+
+
+
 
 
 

@@ -17,7 +17,7 @@ Mirte Documentation
    doc/supported_hardware
    doc/driving_around
    doc/programming
-   doc/programming_mcu
+   doc/using_another_mcu
 
 .. toctree::
    :caption: APIs
@@ -25,7 +25,6 @@ Mirte Documentation
    :hidden:
 
    doc/mirte_python_api
-   doc/mirte_ros_api
 
 .. toctree::
    :caption: Mirte Development
@@ -43,10 +42,17 @@ We believe that robotic kits for education should be cheap, open source, not onl
 software, have as few custom parts as possible, and should be useful from primary/elementary school 
 all the way to university. Getting you to the next level in each discipline step by step.
 
+.. ros:package:: foo_bar_package
+
+.. ros:message:: foo
+
+  :msg_param bar: The bar included in foo.
+  :msg_paramtype bar: :ros:msg:`int16`
+
 +-------------+--------------------------------------------------------------------------------------------------------------------------------+
 | Software    | from `Blockly <https://developers.google.com/blockly>`_ to `Python <https://www.python.org/>`_ to `ROS <https://www.ros.org>`_ |
 +-------------+--------------------------------------------------------------------------------------------------------------------------------+
-| Electrical  | from custom PCB with STM32, to breadboard with STM32/Arduino                                                                   |
+| Electrical  | from custom PCB with Raspberry Pi Pico (RP2040), to breadboard with STM32/Arduino                                              |
 +-------------+--------------------------------------------------------------------------------------------------------------------------------+
 | Mechanical  | from wooden frame to own made (3D printed) frames                                                                              |
 +-------------+--------------------------------------------------------------------------------------------------------------------------------+
