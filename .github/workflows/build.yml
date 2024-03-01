@@ -1,0 +1,81 @@
+name: Build site
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    container:
+      image: althack/ros:noetic-dev
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          git config --global --add safe.directory /__w/mirte-documentation/mirte-documentation
+          git submodule update --init --recursive
+          sudo apt update
+          sudo apt install libenchant-2-dev -y python3-empy zip
+          python3 -m pip install --upgrade pip
+          apt install python3.8-venv -y
+          python3 -m venv docs-env
+          ls
+          ls docs-env
+          ls docs-env/bin
+          . docs-env/bin/activate
+          pip install -r requirements.txt
+          cd _modules/mirte-python
+          pip install .
+          pip install empy==3.3.4
+          cd ../catkin_ws/src/mirte-ros-packages
+          ls | grep -xv "mirte_msgs" | xargs rm -rf
+          cd ../../
+          catkin_make # or catkin build
+          . devel/setup.sh
+          cd ../../
+          make html
+          cd _build/html
+          zip -r ../../site.zip .
+          cd ../../
+      - name: install nodejs for archive script
+        run: |
+          curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+          sudo apt-get install -y nodejs        
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: |
+            _build/html
+      - name: Archive production artifacts for act
+        uses: actions/upload-artifact@v4
+        with:
+          name: act_dist
+          path: |
+            site.zip
+      - name: Upload as a github-pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with: 
+          path: _build/html
+
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        # with:
+        #   artifact_name: dist
