@@ -146,7 +146,8 @@ Assembly instructions:
 [Instructions](../_static/Assembly_electro.pdf)
 
 ### Mirte compute
-(mirte-pcb:mirte-master/mirte-master)[https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-master]
+[mirte-pcb:mirte-master/mirte-master](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-master)
+
 Errata (v0.2):
 - 5v and GND labels for the 12v->5v screw terminal are inverted
 ![main pcb](images/master/pcb_main.png)
