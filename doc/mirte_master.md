@@ -71,7 +71,7 @@ Changes from default:
     - docs: http://mirte.local/docs/
     - visual studio code (browser): http://mirte.local/code/
   - Login:
-    - When accessing any of the sites from any IP other 192.168.40.1-47.255 (Wi-Fi hotspot) or 192.168.137.1-255 (Windows hotspot), you'll need to log in. This is the same user and password as when logging in with SSH (mirte:<your pw>)
+    - When accessing any of the sites from any IP other 192.168.40.1-47.255 (Wi-Fi hotspot) or 192.168.137.1-255 (Windows hotspot), youlll need to log in. This is the same user and password as when logging in with SSH
     - To allow more IP ranges, edit ```/etc/nginx/nginx_login.conf``` 
 - extra ROS packages:
   - https://github.com/Slamtec/rplidar_ros.git: lidar node
