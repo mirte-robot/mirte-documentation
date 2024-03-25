@@ -67,10 +67,10 @@ Changes from default:
     - after the next boot: the Wi-Fi password is changed
 - Website:
   - different urls:
-    - video server: http://IP/ros-video/
-    - jupyter (if enabled?): http://IP/jupyter/
-    - docs: http://IP/docs/
-    - visual studio code (browser): http://IP/code/
+    - video server: http://mirte.local/ros-video/
+    - jupyter (if enabled?): http://mirte.local/jupyter/
+    - docs: http://mirte.local/docs/
+    - visual studio code (browser): http://mirte.local/code/
   - Login:
     - When accessing any of the sites from any IP other 192.168.40.1-47.255 (Wi-Fi hotspot) or 192.168.137.1-255 (Windows hotspot), you'll need to log in. This is the same user and password as when logging in with SSH (mirte:<your pw>)
     - To allow more IP ranges, edit ```/etc/nginx/nginx_login.conf``` 
