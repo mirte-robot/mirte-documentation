@@ -17,7 +17,7 @@ import sys
 from datetime import date
 sys.path.insert(0, os.path.abspath('./_modules/mirte-python/mirte_robot/'))
 import sphinx_rtd_theme
-
+import subprocess
 # -- Project information -----------------------------------------------------
 
 project = u'Mirte Documentation'
@@ -116,7 +116,15 @@ html_context = {
   'github_repo': 'mirte-documentation',
   'github_version': 'main/',
 }
-
+# Try to update from git
+try:
+    output = subprocess.check_output(["git ls-remote --get-url origin"], shell=True).decode(sys.stdout.encoding)
+    parts = str(output).split(".com/")[1].split("/")
+    html_context["github_repo"] = parts[1].split(".git")[0]
+    html_context["github_user"] = parts[0]
+    html_context['github_version'] = str(subprocess.check_output(["git rev-parse --abbrev-ref HEAD"], shell=True).decode(sys.stdout.encoding)).strip() + "/"
+except Exception as e:
+    print("Could not get git information: " + str(e))
 
 # -- Options for LaTeX output ------------------------------------------------
 
