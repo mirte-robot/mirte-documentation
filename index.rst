@@ -18,6 +18,7 @@ Mirte Documentation
    doc/driving_around
    doc/programming
    doc/programming_mcu
+   doc/mirte_master
 
 .. toctree::
    :caption: APIs
