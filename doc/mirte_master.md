@@ -48,13 +48,9 @@ The arm has 4 servos for movement and one for the gripper.
 
 ### Computer
 
-The computer is a Orange Pi 3B with 4gb RAM and 16/32 eMMC. It is running a Armbian 23.11 Focal image with ROS Noetic. You can download a fresh image from `here <https://github.com/ArendJan/mirte-sd-image-tools/actions/workflows/buildFork.yaml>`_. Click on the latest action and then download the ```mirte_master_mirte_orangepi3b``` or ```mirte_master_installer_orangepi3b``` artifact.
+The computer is a Orange Pi 3B with 4gb RAM and 16/32 eMMC. It is running a Armbian 23.11 Focal image with ROS Noetic. You can download a fresh image from `here <https://github.com/ArendJan/mirte-sd-image-tools/actions/workflows/buildFork.yaml>`_. Click on the latest action and then download the ```mirte_master_mirte_orangepi3b``` or ```mirte_master_installer_orangepi3b``` artifact. The ```..._installer_...``` can be used to flash the eMMC. At boot it will copy the image (same as the normal one) to the eMMC, setup bootloader to be sure and shut down. This can take around 20 minutes. 
 
-
-# SW
-
-
-## Mirte-sw
+It works the same as the normal Mirte robot. Move the base with publishing to ```/mobile_base_controller/cmd_vel``` with a geometry_msgs/Twist message. 
 
 ### Master Mirte-install-scripts
 [Repo](https://github.com/ArendJan/mirte-install-scripts/tree/mirte-master2)
@@ -116,7 +112,7 @@ Changes:
       Also detects the power switch to safely shut down the robot.
 
 
-### Telemetrix4rpipico:
+### Telemetrix4RpiPico:
 [Repo](https://github.com/ArendJan/Telemetrix4RpiPico/tree/modules2)
 - Added support for multiple devices:
   - Hiwonder servos
@@ -130,3 +126,8 @@ Changes:
   - VEML6040 color sensor
   - MPU9250 IMU (TODO!!)
 
+### Flashing the Pico
+go to ```/usr/local/src/mirte/mirte-install-scripts/``` and run ```./upload_arduino.sh upload_pico Telemetrix4rpipico```. This will stop ROS, flash the Pico and restart ROS again. If flashing failed or something else, it will tell you how to restart ROS again.
+
+## Electronics
+The Mirte-master is built to be as easy to work with as possible, there should be no need to change anything in the electronics.
