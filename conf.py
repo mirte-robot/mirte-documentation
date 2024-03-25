@@ -39,7 +39,7 @@ smv_latest_version = 'main'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx_rtd_theme', 'sphinx-prompt', 'sphinx_tabs.tabs', 'sphinx.ext.autosectionlabel', 'sphinxcontrib.spelling', 'sphinx.ext.autodoc', 'sphinxcontrib.napoleon', 'sphinx_multiversion']
+extensions = ['sphinx_rtd_theme', 'sphinx-prompt', 'sphinx_tabs.tabs', 'sphinx.ext.autosectionlabel', 'sphinxcontrib.spelling', 'sphinx.ext.autodoc', 'sphinxcontrib.napoleon', 'sphinx_multiversion', 'sphinx_mdinclude']
 sphinx_tabs_disable_tab_closing = True
 spelling_word_list_filename='spelling_wordlist.txt'
 napoleon_google_docstring = True

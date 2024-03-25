@@ -1,51 +1,6 @@
-Mirte Master
-#################
 
 
-The Mirte Master is one of the possible upgrades of the Mirte robot.
-
-.. plaatje
-
-Frame
-=====
-
-The frame is built using 1mm aluminium and 3D printed parts. 
-.. TODO: add partslist and 3D print files
-
-++++
-Base
-++++
-
-The base:
-
-.. plaatje
-
-+++
-Arm
-+++
-The arm has 4 servos for movement and one for the gripper.
-
-+----------+----+-----------+------+
-| Servo    | ID | Range     | Home |
-+==========+====+===========+======+
-| Rotation | 2  | 1000-2000 | 1500 |
-+----------+----+-----------+------+
-| Shoulder | 3  |           |      |
-+----------+----+-----------+------+
-| Elbow    | 4  |           |      |
-+----------+----+-----------+------+
-| Wrist    | 5  |           |      |
-+----------+----+-----------+------+
-| Gripper  | 6  |           |      |
-+----------+----+-----------+------+
-
-------
-Moveit
-------
-
-.. TODO: @mklomp
-
-
+.. mdinclude:: mirte_master2.md
 
 
 
