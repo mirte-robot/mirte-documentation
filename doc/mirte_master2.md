@@ -116,3 +116,17 @@ Changes:
       Also detects the power switch to safely shut down the robot.
 
 
+### Telemetrix4rpipico:
+[Repo](https://github.com/ArendJan/Telemetrix4RpiPico/tree/modules2)
+- Added support for multiple devices:
+  - Hiwonder servos
+  - PCA9685
+  - INA226
+  
+  Not yet added to ROS:
+  - HX711 load cell
+  - VL93L0 distance sensor
+  - ADXL345 accelerometer
+  - VEML6040 color sensor
+  - MPU9250 IMU (TODO!!)
+
