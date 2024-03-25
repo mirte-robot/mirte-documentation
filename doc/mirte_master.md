@@ -9,7 +9,9 @@ The Mirte Master is one of the possible upgrades of the Mirte robot.
 
 
 The frame is built using 1mm aluminium and 3D printed parts. 
-<!-- .. TODO: add partslist and 3D print files -->
+Building instructions:
+- [Base](../_static/Assembly_BASE.pdf)
+- [Top and arm](../_static/Assembly_TOP_ARM.pdf)
 
 
 ### Base
@@ -21,30 +23,31 @@ The base:
 
 ### Arm
 
-The arm has 4 servos for movement and one for the gripper.
+The arm has 4 servos for movement and one for the gripper. The ranges are stored in the servo together with a deviation to keep the config the same, while the servos can be mounted differently. The user should never have to deal with the centidegrees ranges, only the range and angles in radians. 
 
-+----------+----+-----------+------+
-| Servo    | ID | Range     | Home |
-+==========+====+===========+======+
-| Rotation | 2  | 1000-2000 | 1500 |
-+----------+----+-----------+------+
-| Shoulder | 3  |           |      |
-+----------+----+-----------+------+
-| Elbow    | 4  |           |      |
-+----------+----+-----------+------+
-| Wrist    | 5  |           |      |
-+----------+----+-----------+------+
-| Gripper  | 6  |           |      |
-+----------+----+-----------+------+
+
+| Servo    | ID  | Range(centidegrees) | Range (rad) | Home  |
+| -------- | --- | ------------ | ----------- | ----- |
+| Rotation | 2   | 3400-21000*  | [-1.6, 1.5] | 12000 |
+| Shoulder | 3   | 11450-20000* | [-1.5, 0]   | 11450 |
+| Elbow    | 4   | 3000-21000   | [-1.6, 1.5] | 11750 |
+| Wrist    | 5   | 3000-21000*  | [1.5, 1.6]  | 12200 |
+| Gripper  | 6   | ???          | ?           | ?     |
+*: inverted rotation, range has taken care of this
+
+The services for the servos use the radians.
+
+The home position of the arm is forward pointing up.
 
 #### Moveit
 
+TODO!
 
 <!-- .. TODO: @mklomp -->
 
 
 ## Software
-
+The Mirte-master is using the same base software as any other Mirte robot, with some extras.
 
 ### Computer
 
@@ -53,7 +56,7 @@ The computer is a Orange Pi 3B with 4gb RAM and 16/32 eMMC. It is running a Armb
 It works the same as the normal Mirte robot. Move the base with publishing to ```/mobile_base_controller/cmd_vel``` with a geometry_msgs/Twist message. 
 
 ### Master Mirte-install-scripts
-[Repo](https://github.com/ArendJan/mirte-install-scripts/tree/mirte-master2)
+[mirte-install-scripts:mirte-master2](https://github.com/ArendJan/mirte-install-scripts/tree/mirte-master2)
 
 Changes from default:
 - Password system:
@@ -81,7 +84,7 @@ Changes from default:
   - after boot, this module will turn on a GPIO pin (GPIO4_C3) to turn on the USB switch IC on the small board on top of the Orange Pi. This is to fix a power bug of the Orbbec Astra camera (pulling 1A+ when plugged in at boot)
 
 ### Mirte-ros-packages
-[Repo](https://github.com/ArendJan/mirte-ros-packages/tree/mirte-master)
+[mirte-ros-packages:mirte-master](https://github.com/ArendJan/mirte-ros-packages/tree/mirte-master)
 
 Changes:
 - Added extra launch files (mirte_bringup)
@@ -131,3 +134,48 @@ go to ```/usr/local/src/mirte/mirte-install-scripts/``` and run ```./upload_ardu
 
 ## Electronics
 The Mirte-master is built to be as easy to work with as possible, there should be no need to change anything in the electronics.
+
+The Mirte-master has 4 PCBs:
+- Mirte compute (main pcb), with a Pico
+- Mirte Sense and Control, connecting the motor drivers, encoders, main PCB and the sonars together
+- BMS board, converting the JST-XH connector of the LiPo battery to the JST-PH connector of the 3s BMS
+- USB switch board, switching the power of the Orbbec Astra depth camera
+
+Assembly instructions:
+
+[Instructions](../_static/Assembly_electro.pdf)
+
+### Mirte compute
+(mirte-pcb:mirte-master/mirte-master)[https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-master]
+Errata (v0.2):
+- 5v and GND labels for the 12v->5v screw terminal are inverted
+![main pcb](images/master/pcb_main.png)
+
+### Mirte sense&Control
+[mirte-pcb:mirte-master/mirte-master-bottom](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-master-bottom)
+
+![bottom pcb](images/master/pcb_bottom.png)
+### Usb switcher
+[mirte-pcb:mirte-master/mirte-usb-switcher](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-usb-switcher)
+
+Leds:
+- D2: GPIO4_B4, used for blinking SOC
+- D1: GPIO4_B5, unused
+- D4: GPIO0_D1, unused
+- D3: GPIO4_C3, used for USB power switch
+
+J4, unsoldered header for any use:
+- 3v3
+- D2: GPIO4_B4
+- D1: GPIO4_B5
+- D3: GPIO0_D1
+- D4: GPIO4_C3
+- GND
+![usb switch pcb](images/master/pcb_usb_switch.png)
+Errata:
+- GPIO4_D4 label should be GPIO4_C3 due to faulty Orange Pi pinout diagrams. 
+
+### BMS board
+[mirte-pcb:mirte-master/mirte-bms-breakout](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-bms-breakout)
+
+![bms board](images/master/pcb_bms.png)
