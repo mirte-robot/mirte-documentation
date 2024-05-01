@@ -27,6 +27,7 @@ The arm has 4 servos for movement and one for the gripper. The ranges are stored
 
 
 **Warning: these values are not correct yet**
+
 | Servo    | ID  | Range(centidegrees) | Range (rad) | Home  |
 | -------- | --- | ------------ | ----------- | ----- |
 | Rotation | 2   | 3400-21000*  | [-1.6, 1.5] | 12000 |
