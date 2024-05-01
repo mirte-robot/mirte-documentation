@@ -26,6 +26,7 @@ The base:
 The arm has 4 servos for movement and one for the gripper. The ranges are stored in the servo together with a deviation to keep the config the same, while the servos can be mounted differently. The user should never have to deal with the centidegrees ranges, only the range and angles in radians. 
 
 
+**Warning: these values are not correct yet**
 | Servo    | ID  | Range(centidegrees) | Range (rad) | Home  |
 | -------- | --- | ------------ | ----------- | ----- |
 | Rotation | 2   | 3400-21000*  | [-1.6, 1.5] | 12000 |
@@ -89,10 +90,12 @@ Changes from default:
 Changes:
 - Added extra launch files (mirte_bringup)
 - added omniwheels (ridgeback) support (mirte_control)
-  - TODO: encoder
+  - TODO: encoder and odometry
+  - TODO: speeds don't match
 - Telemetrix:
   - Extra config for mirte-master
     - TODO: check arm and gripper angles, GPIO SOC led
+    - TODO: IMU
   - Oled: shows SOC, IP, hostname and Wi-Fi host
   - Hiwonder UART servos:
     - Added servo support, services/topics:
@@ -112,7 +115,7 @@ Changes:
       - Range is [-100, 100]
   - INA226 (power watcher)
     - used to measure current and voltage. Can trigger a shutdown if the LiPo voltage is too low. The current state of charge(SOC) can be shown with a LED and the OLED screen.
-      Also detects the power switch to safely shut down the robot.
+      <!-- Also detects the power switch to safely shut down the robot. Not working bc hardware issues with relay -->
 
 
 ### Telemetrix4RpiPico:
@@ -121,13 +124,13 @@ Changes:
   - Hiwonder servos
   - PCA9685
   - INA226
+  - MPU9250 IMU, however, it might crash i2c comms.
   
   Not yet added to ROS:
   - HX711 load cell
   - VL93L0 distance sensor
   - ADXL345 accelerometer
   - VEML6040 color sensor
-  - MPU9250 IMU (TODO!!)
 
 ### Flashing the Pico
 go to ```/usr/local/src/mirte/mirte-install-scripts/``` and run ```./upload_arduino.sh upload_pico Telemetrix4rpipico```. This will stop ROS, flash the Pico and restart ROS again. If flashing failed or something else, it will tell you how to restart ROS again.
@@ -151,6 +154,7 @@ Assembly instructions:
 Errata (v0.2):
 - 5v and GND labels for the 12v->5v screw terminal are inverted
 ![main pcb](images/master/pcb_main.png)
+- power switch cable to pcb must be removed to disable the light in the switch.
 
 ### Mirte sense&Control
 [mirte-pcb:mirte-master/mirte-master-bottom](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-master-bottom)
@@ -180,3 +184,9 @@ Errata:
 [mirte-pcb:mirte-master/mirte-bms-breakout](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-bms-breakout)
 
 ![bms board](images/master/pcb_bms.png)
+
+
+# WIP:
+- calibrate arm and fix forgetting ID
+- IMU
+- odometry
