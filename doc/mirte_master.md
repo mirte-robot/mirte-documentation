@@ -23,24 +23,29 @@ The base:
 
 ### Arm
 
-The arm has 4 servos for movement and one for the gripper. The ranges are stored in the servo together with a deviation to keep the config the same, while the servos can be mounted differently. The user should never have to deal with the centidegrees ranges, only the range and angles in radians. 
+The arm has 4 servos for movement and one for the gripper. The ranges are stored in the servo together with a deviation to keep the config the same, while the servos can be mounted differently. The user should never have to deal with the centidegrees ranges, only the range and angles in radians.
 
+| Servo    | ID  | Range(centidegrees) | Range (Bus servo terminal) | Range (rad) | Home  |
+| -------- | --- | ------------ | ----------- | ----- | --- |
+| Rotation | 2   | 3400-21000*  | 141-875 | [-1.6, 1.5] | 12000 |
+| Shoulder | 3   | 2832-20000* | 118-833 |  [-1.5, 1.5]   | 11450 |
+| Elbow    | 4   | 120-21000   | 5-875 |  [-2,	1.6] | 11750 |
+| Wrist    | 5   | 1128-21672*  | 47-903 |  [-1.7,	1.9]  | 12200 |
+| Gripper  | 6   | 6168-11224 **         | 257-468  | [-0.7,	0.2]          | 9984     |
+-------
+`*`: inverted rotation, range has taken care of this
 
-**Warning: these values are not correct yet**
+`**`: Longer range than the gripper can reach
 
-| Servo    | ID  | Range(centidegrees) | Range (rad) | Home  |
-| -------- | --- | ------------ | ----------- | ----- |
-| Rotation | 2   | 3400-21000*  | [-1.6, 1.5] | 12000 |
-| Shoulder | 3   | 11450-20000* | [-1.5, 0]   | 11450 |
-| Elbow    | 4   | 3000-21000   | [-1.6, 1.5] | 11750 |
-| Wrist    | 5   | 3000-21000*  | [1.5, 1.6]  | 12200 |
-| Gripper  | 6   | ???          | ?           | ?     |
-*: inverted rotation, range has taken care of this
+The services for the servos use the radian ranges. Getting the ranges is possible by calling the `/mirte/get_<name>_servo_range`.
 
-The services for the servos use the radians.
-
-The home position of the arm is forward pointing up.
-
+The home position of the arm is forward pointing up:
+- Arm is rotated forward:
+- ![Rotation forward](images/master/mirte_master_arm_home_rot.jpg) 
+- Arm is pointing up:
+- ![Arm up](images/master/mirte_master_arm_home_side.jpg) 
+- The Gripper has the servo-driven beams horizontal:
+- ![Gripper horizontal beams](images/master/mirte_master_arm_home_grip.jpg) 
 #### Moveit
 
 TODO!
