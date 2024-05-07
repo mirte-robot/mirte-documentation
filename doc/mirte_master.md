@@ -46,6 +46,8 @@ The home position of the arm is forward pointing up:
 - ![Arm up](images/master/mirte_master_arm_home_side.jpg) 
 - The Gripper has the servo-driven beams horizontal:
 - ![Gripper horizontal beams](images/master/mirte_master_arm_home_grip.jpg) 
+
+
 #### Moveit
 
 TODO!
@@ -58,8 +60,8 @@ The Mirte-master is using the same base software as any other Mirte robot, with 
 
 ### Computer
 
-The computer is a Orange Pi 3B with 4gb RAM and 16/32 eMMC. It is running a Armbian 23.11 Focal image with ROS Noetic. You can download a fresh image from `here <https://github.com/ArendJan/mirte-sd-image-tools/actions/workflows/buildFork.yaml>`_. Click on the latest action and then download the ```mirte_master_mirte_orangepi3b``` or ```mirte_master_installer_orangepi3b``` artifact. The ```..._installer_...``` can be used to flash the eMMC. At boot it will copy the image (same as the normal one) to the eMMC, setup bootloader to be sure and shut down. This can take around 20 minutes. 
-
+The computer is a Orange Pi 3B with 4gb RAM and 16/32 eMMC. It is running a Armbian 23.11 Focal image with ROS Noetic. You can download a fresh image from `here <https://github.com/ArendJan/mirte-sd-image-tools/actions/workflows/buildFork.yaml>`_. Click on the latest action and then download the ```mirte_master_mirte_orangepi3b``` or ```mirte_master_installer_orangepi3b``` artifact. The ```..._installer_...``` can be used to flash the eMMC. At boot it will copy the image (same as the normal one) to the eMMC, setup bootloader to be sure and shut down. This can take around 20 minutes. All the download are on 
+[mirte.arend-jan.com](https://mirte.arend-jan.com/files/mirte-master/) as well.
 It works the same as the normal Mirte robot. Move the base with publishing to ```/mobile_base_controller/cmd_vel``` with a geometry_msgs/Twist message. 
 
 ### Master Mirte-install-scripts
@@ -70,7 +72,7 @@ Changes from default:
   - After changing the pw (first login):
     - the user password changes
     - the website login changes
-    - after the next boot: the Wi-Fi password is changed
+    - after the next boot: the Wi-Fi password is changed, only if the password is long enough ( 8 characters )
 - Website:
   - different urls:
     - video server: http://mirte.local/ros-video/
@@ -78,7 +80,7 @@ Changes from default:
     - docs: http://mirte.local/docs/
     - visual studio code (browser): http://mirte.local/code/
   - Login:
-    - When accessing any of the sites from any IP other 192.168.40.1-47.255 (Wi-Fi hotspot) or 192.168.137.1-255 (Windows hotspot), youlll need to log in. This is the same user and password as when logging in with SSH
+    - When accessing any of the sites from any IP other 192.168.40.1-47.255 (Wi-Fi hotspot) or 192.168.137.1-255 (Windows hotspot), you'll need to log in. This is the same user and password as when logging in with SSH
     - To allow more IP ranges, edit ```/etc/nginx/nginx_login.conf``` 
 - extra ROS packages:
   - https://github.com/Slamtec/rplidar_ros.git: lidar node
@@ -96,11 +98,9 @@ Changes from default:
 Changes:
 - Added extra launch files (mirte_bringup)
 - added omniwheels (ridgeback) support (mirte_control)
-  - TODO: encoder and odometry
-  - TODO: speeds don't match
+  - TODO: feedback motor <-> encoders
 - Telemetrix:
   - Extra config for mirte-master
-    - TODO: check arm and gripper angles, GPIO SOC led
     - TODO: IMU
   - Oled: shows SOC, IP, hostname and Wi-Fi host
   - Hiwonder UART servos:
@@ -130,7 +130,7 @@ Changes:
   - Hiwonder servos
   - PCA9685
   - INA226
-  - MPU9250 IMU, however, it might crash i2c comms.
+  - MPU9250 IMU, however, it might crash i2c.
   
   Not yet added to ROS:
   - HX711 load cell
@@ -139,7 +139,9 @@ Changes:
   - VEML6040 color sensor
 
 ### Flashing the Pico
-go to ```/usr/local/src/mirte/mirte-install-scripts/``` and run ```./upload_arduino.sh upload_pico Telemetrix4rpipico```. This will stop ROS, flash the Pico and restart ROS again. If flashing failed or something else, it will tell you how to restart ROS again.
+<s> Go to /usr/local/src/mirte/mirte-install-scripts/ and run ./upload_arduino.sh upload_pico Telemetrix4rpipico. This will stop ROS, flash the Pico and restart ROS again. If flashing failed or something else, it will tell you how to restart ROS again. </s>
+
+Download the latest uf2 from [here](https://mirte.arend-jan.com/files/telemetrix/release/Telemetrix4RpiPico.uf2) and upload it with picotool ( `wget https://mirte.arend-jan.com/files/telemetrix/release/Telemetrix4RpiPico.uf2 ; sudo picotool load -f Telemetrix4RpiPico.uf2` ).
 
 ## Electronics
 The Mirte-master is built to be as easy to work with as possible, there should be no need to change anything in the electronics.
@@ -193,6 +195,5 @@ Errata:
 
 
 # WIP:
-- calibrate arm and fix forgetting ID
-- IMU
-- odometry
+- servos fix forgetting ID
+- IMU 
