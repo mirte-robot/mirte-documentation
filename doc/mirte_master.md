@@ -27,11 +27,11 @@ The arm has 4 servos for movement and one for the gripper. The ranges are stored
 
 | Servo    | ID  | Range(centidegrees) | Range (Bus servo terminal) | Range (rad) | Home  |
 | -------- | --- | ------------ | ----------- | ----- | --- |
-| Rotation | 2   | 3400-21000*  | 141-875 | [-1.6, 1.5] | 12000 |
-| Shoulder | 3   | 2832-20000* | 118-833 |  [-1.5, 1.5]   | 11450 |
-| Elbow    | 4   | 120-21000   | 5-875 |  [-2,	1.6] | 11750 |
-| Wrist    | 5   | 1128-21672*  | 47-903 |  [-1.7,	1.9]  | 12200 |
-| Gripper  | 6   | 6168-11224 **         | 257-468  | [-0.7,	0.2]          | 9984     |
+| Rotation (black, HX-12H) | 2   | 3400-21000*  | 141-875 | [-1.6, 1.5] | 12000 |
+| Shoulder (orange, HTD-45H) | 3   | 2832-20000* | 118-833 |  [-1.5, 1.5]   | 11450 |
+| Elbow (green, HTD-35H)   | 4   | 120-21000   | 5-875 |  [-2,	1.6] | 11750 |
+| Wrist (black, HX-12H)  | 5   | 1128-21672*  | 47-903 |  [-1.7,	1.9]  | 12200 |
+| Gripper (black, HX-12H) | 6   | 6168-11224 **         | 257-468  | [-0.7,	0.2]          | 9984     |
 -------
 `*`: inverted rotation, range has taken care of this
 
@@ -197,3 +197,5 @@ Errata:
 # WIP:
 - servos fix forgetting ID
 - IMU 
+
+.. mdinclude:: mirte_master_servos.md
