@@ -16,9 +16,10 @@ Building instructions:
 
 ### Base
 
-The base:
+Change PID parameters of the base controller with:
+```rosrun dynamic_reconfigure dynparam set /mobile_base_controller p 1```
 
-<!-- .. plaatje -->
+
 
 
 ### Arm
