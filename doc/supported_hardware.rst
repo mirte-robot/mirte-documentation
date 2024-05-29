@@ -18,7 +18,7 @@ Raw pins
          $ rosservice call /mirte/set_pin_value "{pin: '', type: '', value: }"
 
       Setting a pin can be either 'analog' (PWM) or 'digital'. The pin itself can be defined
-      as the print on the MCU (e.g. 'A2'). you can have a look in the web interface to
+      as the print on the MCU (e.g. 'GP3'). You can have a look in the web interface to
       see all options. 
 
    .. group-tab:: Python
@@ -37,7 +37,8 @@ Raw pins
 
    .. group-tab:: Blockly
 
-      TODO
+      .. image:: images/blockly_raw.png
+
 
 
 
@@ -50,23 +51,37 @@ Raw pins
 DC Motor
 ========
 
-Depending on the type of motor controller used, you can control a motor. 
+Depending on the interface of your motor controller, the DC motor can be controlled though three
+different interfaces:
 
-L9110S
-------
+   - **ddp** (digital, digital, pwm): This interface uses two digital pins to set the direction of
+     the motor, and uses a PWM dignal to set the speed. The L298 can use this interface.
+   - **dp** (digital, pwm): This interface uses one digital pin for teh direction, and pwm for the speed.
+     The downside is that the motor will slightly 'kick' when switching between forward and backward.
+     This can be done on both L298 and L9110.
+   - **pp** (pwm, pwm): This interface uses two PWM signals to control the motor. The downside is that
+     this will take up 2 PWM pins. Can be used on both L298 and L9110.
+
+As you can see the choice for interface depends on the actual interface provided by the motor
+controller, and the number of (PWM) pins you have available on the MCU.
+
+
+ddp (e.g. L298)
+---------------
 .. code-block:: yaml
 
    motor:
      left:
        name: left
        device: mirte
-       type: l9110s
+       type: ddp
        pins:
-         1a: B1
-         1b: A10     # PWM
+         d1: GP19
+         d2: GP18
+         p1: GP17     # pwm
 
-L298N
------
+dp (e.g. L298 or L9110)
+-----------------------
 
 .. code-block:: yaml
 
@@ -74,11 +89,24 @@ L298N
      left:
        name: left
        device: mirte
-       type: l298n
+       type: dp
        pins:
-         1a: B3
-         1b: B1
-         en: A10    # PWM
+         d1: GP19
+         p1: GP18      # pwm
+
+pp (e.g. L298 or L9110)
+-----------------------
+
+.. code-block:: yaml
+
+   motor:
+     left:
+       name: left
+       device: mirte
+       type: pp
+       pins:
+         p1: GP19       # pwm
+         p2: GP18       # pwm
 
 
 .. tabs::
@@ -105,61 +133,19 @@ L298N
 
    .. group-tab:: Blockly
 
-      TODO
+      .. image:: images/blockly_motor.png
 
 
-The motors will be defined separately. In this case there are two motors called 'left_motor' and 'right_motor', both controlled on the 'mirte' device defined above. The pins are set corresponding to the L9110s motor driver. Other motor drivers will also work but the 1a/b reference does not make sense.
 
+The motors will be defined separately. In this case there are two motors called 'left_motor' and 
+'right_motor', both controlled on the 'mirte' device defined above. The pins are set corresponding 
+to the L9110s motor driver.
 
-Wheel encoder
-=============
-.. code-block:: yaml
-
-   encoder:
-     left:
-       name: left
-       device: mirte
-       pins:
-         pin: B14    # interrupt
-
-
-.. tabs::
-
-   .. group-tab:: ROS
-
-      As a topic (non-blocking):
-
-      .. code-block:: bash
-
-         $ rostopic echo /mirte/encoder/left
-
-      As a service (blocking):
-
-      .. code-block:: bash
-
-         $ rosservice call /mirte/get_encoder_left "{}"
-
-   .. group-tab:: Python
-
-      .. code-block:: python
-      
-         from mirte_robot import robot
-         mirte = robot.createRobot()
-
-         mirte.getEncoder('left')
-        
-      .. autoclass:: robot::Robot
-         :members: getEncoder
-         :undoc-members:
-         :noindex:
-
-   .. group-tab:: Blockly
-
-      TODO
-
-.. note::
-
-   A maximum of 4 wheel encoders is supported.
+.. warning::
+   
+   Please not that it is adviced to call the motors 'left' and 'right'. You can chose your own names
+   when you are only using these interfaces. In order to also get the ROS twist message (and steering
+   in the web interface to work) you **need** to have the motors called 'left' and 'right'.
 
 Servo
 =====
@@ -170,7 +156,7 @@ Servo
        name: left
        device: mirte
        pins:
-         pin: B5
+         pin: GP3
 
 .. tabs::
 
@@ -196,7 +182,7 @@ Servo
 
    .. group-tab:: Blockly
 
-      Blocky code 
+      .. image:: images/blockly_servo.png
 
 
 
@@ -209,7 +195,7 @@ Keypad
        name: left
        device: mirte
        pins:
-         pin: A4     # analog input
+         pin: GP28     # analog input
 
 .. tabs::
 
@@ -244,7 +230,8 @@ Keypad
 
    .. group-tab:: Blockly
 
-      Blocky code 
+      .. image:: images/blockly_keypad.png
+
 
 
 OLED
@@ -256,8 +243,8 @@ OLED
        name: left
        device: mirte
        pins:
-         scl: B6
-         sda: B7
+         scl: GP5
+         sda: GP4
 
 .. tabs::
    
@@ -287,7 +274,7 @@ OLED
 
    .. group-tab:: Blockly
 
-      TODO
+      .. image:: images/blockly_oled.png
 
 Distance sensor
 ===============
@@ -298,8 +285,8 @@ Distance sensor
        name: left
        device: mirte
        pins:
-         trigger: A5
-         echo: A6
+         trigger: GP7
+         echo: GP6
 
 .. tabs::
    
@@ -333,7 +320,7 @@ Distance sensor
 
    .. group-tab:: Blockly
 
-      TODO
+      .. image:: images/blockly_distance.png
 
 IR sensor
 =========
@@ -344,8 +331,8 @@ IR sensor
        name: left
        device: mirte
        pins:
-         digital: B0
-         analog: A1     # analog input
+         digital: GP16
+         analog: GP26     # analog input
 
 .. tabs::
    
@@ -381,7 +368,7 @@ IR sensor
 
    .. group-tab:: Blockly
 
-      TODO
+      .. image:: images/blockly_ir.png
 
 
 USB Camera
@@ -414,30 +401,3 @@ reflect your webcam. This then needs to be changed in the `launchfile <https://g
    $ v4l2-ctl --list-formats-ext
    $ nano /home/mirte/mirte_ws/src/mirte_bringup/launch/minimal.launch
 
-
-PS3/4 Controller
-****************
-
-To control the robot with a PS3/4 controller you first need to connect the controller with
-a bluetooth dongle. So first insert a bluetooth dongle (flaky Chinese dongles will also work
-for the OrangePi, not (yet) for RaspberryPi). You first need to pair the dongle with the
-PS controller:
-
-.. code-block:: bash
-
-    mirte$ sudo bluetoothctl
-    [bluetooth]# agent on
-    [bluetooth]# default-agent
-    [bluetooth]# scan on
-
-
-Connect the PS3 via a USB cable to the SBC (on the Orange Pi Zero one might need the expansion board in order
-to have more USB ports). A PS$ controller does not need to be connected to the USB. Press the connect button 
-(PS logo) on the controller. In the terminal one will see the device being found. Type "yes" to confirm and 
-exit the bluetoothctl.
-
-To test the controller one can:
-
-.. code-block:: bash
-
-    mirte$ sudo jstest /dev/input/js0
