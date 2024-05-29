@@ -30,7 +30,7 @@ Raspberry Pi Pico on a breadboard).
    device:
      mirte:
        type: breadboard
-       board: stm32                     # [pico, blackpill_f103c8, nanoatmega328]
+       board: pico                     # [pico, blackpill_f103c8, nanoatmega328]
        max_frequency: 50
 
 Each config needs to state which type of device is is controlling. In this case we have 

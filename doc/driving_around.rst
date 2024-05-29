@@ -5,7 +5,7 @@ Driving around
 
    Currently the robot is controllable via multiple interfaces. At the moment
    this does assume you have two motors called 'left' and 'right'. Please
-   make sure that your :ref:`settings are correct <Configure Settings to match Hardware>`.
+   make sure that your :ref:`settings are correct <DC Motor>`.
 
 
 

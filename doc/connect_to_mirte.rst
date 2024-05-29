@@ -18,7 +18,7 @@ Wireless Acces Point
 ====================
 
 After booting up Mirte for the first time the robot is in access point (AP) mode and a wifi network 
-will be available with ssid Mirte-XXXXXX (where each X is hex 0-F). You can connect to this network 
+will be available with ssid Mirte-XXXXXX (where each X is hex 1-F). You can connect to this network 
 with the password 'mirte_mirte'. While in AP mode, the ip address of Mirte is 192.168.42.1, but you 
 could also access it with mirte.local or mirte-XXXXXX.local:
 
@@ -113,8 +113,8 @@ Other (wired) options
 =====================
 
 
-USB connection (Windows only)
------------------------------
+USB connection
+--------------
 
 When connecting to Wifi is not possible you can also connect through USB. In this case you need
 to connect the power of the Orange Pi Zero 2 via USB with your computer. After booting up a wired
@@ -170,7 +170,7 @@ TTL debug
 
 If all of this fails, you can still debug your Mirte robot through the TTL interface. The easiest
 way to do this is by using a TTL-USB device and connect to the Mirte. If you have no clue what
-this means, you will probably not use this. If you do unserstand, you can search the internet
+this means, you will probably not use this. If you do understand, you can search the internet
 to see how to connect to your SBC.
 
 
