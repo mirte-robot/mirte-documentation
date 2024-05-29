@@ -24,8 +24,8 @@ Install MCU software
 ====================
 
 Currently this step is only needed for the Raspberry Pi Pico, which is
-the default MCU for Mirte. Instruxtions on installing this for
-other MCUs can be found here.
+the default MCU for Mirte. Instructions on installing this for
+other MCUs can be found :ref:`here <Using another MCU>`.
 
 1. Download the latest uf2 with the Mirte version of Telemetrix `here <https://github.com/mirte-robot/mirte-sd-image-tools/releases/latest>`_ (Telemetrix4RpiPico.uf2).
 2. Connect the Pico to you computer using a USB cable (with data) while pressing the BOOTSEL button.

@@ -47,7 +47,7 @@ to buy a full Mirte Pioneer Box with all the listed components.
      - `Intenso XS10000 <https://www.intenso.de/en/products/powerbanks/xs5000-xs10000-xs20000>`_
      - Any stable powerbank [#f2]_
    * - Chassis
-     - `Mirte diff drive wood <https://github.com/mirte-robot/mirte-base>`_
+     - `Mirte diff drive wood <https://github.com/mirte-robot/mirte-frame>`_
      - Mirte diff drive 3D print
    * - Nuts and bolts
      - 15x M3
