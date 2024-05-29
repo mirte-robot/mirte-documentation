@@ -3,7 +3,7 @@ Get Mirte Hardware
 
 One of the goals of Mirte is to be modular and extendable. Therefore Mirte has a minimal amount
 of custom designed components, and mostly uses frequently used hardware. Two exceptions are
-the `base <https://github.com/mirte-robot/mirte-base>`_ (which can be lasercut, 3D printed, or 
+the `base <https://github.com/mirte-robot/mirte-frame>`_ (which can be lasercut, 3D printed, or 
 any existing base you already have) and the `PCB <https://github.com/mirte-robot/mirte-pcb>`_ 
 (which is optional and can be replaced by a breadboard as well). 
 
@@ -83,7 +83,7 @@ to buy a full Mirte Pioneer Box with all the listed components.
      - `SG90 <https://www.aliexpress.com/item/1005001621918352.html>`_
      - Any servo supported by Arduino
    * - USB Camera
-     - `OV9726 <https://www..aliexpress.com/item/1005005093538299.html>`_
+     - `OV9726 <https://www.aliexpress.com/item/1005005093538299.html>`_
      - Any USB camera
 
 .. rubric:: Footnotes
