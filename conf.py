@@ -20,9 +20,10 @@ import sphinx_rtd_theme
 import subprocess
 # -- Project information -----------------------------------------------------
 
-project = u'MIRTE Documentation'
-copyright = str(date.today().year) + ', Martin Klomp, TU Delft Robotics Institute'
+project = u'Mirte Documentation'
+copyright = '&#169; Copyright ' + str(date.today().year) + ' Delft University of Technology, CC BY 4.0.'
 author = u'Martin Klomp'
+html_show_sphinx = False
 
 # The short X.Y version
 version = u''
