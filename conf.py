@@ -21,8 +21,9 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = u'Mirte Documentation'
-copyright = str(date.today().year) + ', Martin Klomp, TU Delft Robotics Institute'
+copyright = '&#169; Copyright ' + str(date.today().year) + ' Delft University of Technology, CC BY 4.0.'
 author = u'Martin Klomp'
+html_show_sphinx = False
 
 # The short X.Y version
 version = u''
