@@ -13,19 +13,12 @@ Web Interface
 The web interface can be accessed by opening your favorite browser and going
 to http://mirte.local. This will bring you to the web interface.
 
-.. note::
-
-   When your Mirte robot is connected to a network (so not via AP or USB) the
-   web interface will ask for a password. Please select your own Mirte robot
-   and fill in password 'mirte_mirte'. Note that this password is currently
-   **not** changed when you reset your ssh password (see known issues).
-
 
 Terminal
 ========
 
 On Linux and MacOS you can SSH by opening a terminal. On Windows you could 
-the optional built-in SSH client (Windows 10), use Putty, or MobaXTerm. You can 
+the optional built-in SSH client (Windows 10/11), use Putty, or MobaXTerm. You can 
 connect to Mirte via SSH (first time login password is 'mirte_mirte'):
 
 .. code-block:: bash
@@ -42,13 +35,13 @@ connect to Mirte via SSH (first time login password is 'mirte_mirte'):
 
 The first time you login you will be prompted to change your password. After
 changing this your connection will be lost and you have to reconnect using
-the same command. Please have a look at the known issues regarding current
-password management.
+the same command. Please note that this will not change the Wifi password
+of the robot.
 
 Keybased SSH login
 ------------------
 
-When connecting to the terminal frequently it might be useful to connect
+When frequently connecting to the terminal it might be useful to connect
 to Mirte without passwords using shared keys. This can be done easily if you
 connect from another terminal (so only on MaxOS and Linux) on your local 
 machine. You can set this up in the following way.
