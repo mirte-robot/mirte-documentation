@@ -57,7 +57,7 @@ themselves.
         but also creates a user and enables the Wifi AP and systemd services.
       - `mirte-sd-image-tools <https://github.com/mirte-robot/mirte-sd-image-tools>`_: Contains all things 
         needed to build an ARM sd card image with everything installed from the mirte-install-scripts repo 
-        for both the Orange Pi Zero (Armbian Ubuntu) and Raspberry Pi (Ubuntu). 
+        for both the Orange Pi Zero 2 (Armbian Ubuntu) and Raspberry Pi (Ubuntu). 
 
 
    .. tab:: ROS nodes
