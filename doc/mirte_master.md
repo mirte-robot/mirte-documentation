@@ -200,3 +200,52 @@ Errata:
 - IMU 
 
 .. mdinclude:: mirte_master_servos.md
+
+
+
+
+# Parts
+This is the list of parts we used for the MIRTE-master. Links show the parts we used, but often it can be a similar one.
+
+| Amount | Name | Type | Note |
+| --- | --- | --- | --- |
+| 1 | Depth camera | RGB-D	orbbec astra pro plus | |
+| 1 | Lidar | lamtech rplidar c1 | |
+| 1 | Computer | Orange Pi 3B (4GB + 32GB)	| 4GB ram, 32GB emmc |
+| 1 | Microcontroller | Raspberry Pi Pico | |
+| 1 | Main control PCB (top) | |
+| | JST cables	4 pins | |
+| 1 | Pico data cable | micro USB cable | |
+| 1 | Orange Pi power cable | USB-C cable	| |
+|1 | 12-5V step down		||
+|1|16 PWM servo module		| PCA9685 servo module |
+|1|Power sensor | INA226		||
+|1|OLED	|||
+|1|Switch|||
+|4|DC Motors |	12V 200 RPM	|
+|1|Battery | 5000 mAh, 3S, min 5C ||
+|1|USB-C lipo charger ||
+|2|H-Bridge |	L298N	|
+|1|Mecanum wheels (set of 4)	| 100mm, set of 2 left, 2 right |
+|1|Sonar | HC-SR04||
+|1|IMU | (current version ) MPU9250, future ? ||
+| optional |LED strip | ws2812, other versions WIP ||
+| ??? | square nuts | M3||
+| 1 | Frame | TODO ||
+|1|Ball bearing| 6812 2RS||
+|3| Small servo |	HX-12H (12KG.CM)| For rotation, wrist and gripper |
+|1| Big servo |	HTD-45H (45 KG.CM) | For shoulder |
+|1| Medium servo | Elbow	HTD-35H ||
+
+TODO:
+- other electro
+- cabling + xh connector
+- standoffs
+- kleine pcb
+- switch pcb
+- links
+- plastic parts
+- screws
+- nuts
+- fuse
+- diode naar hbruggen

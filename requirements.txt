@@ -8,5 +8,5 @@ sphinxcontrib-jquery==4.1
 sphinx-multiversion==0.2.4
 Sphinx==6.2.1
 sphinx_mdinclude==0.5.3
-
+sphinx-reload==0.2.0
 wheel

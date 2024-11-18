@@ -28,8 +28,7 @@ sphinx-multiversion . _build/html
 
 ## Host locally
 ```
-python3 -m http.server
-firefox _build/html/index.html
+sphinx-reload . --watch doc/ _static/ _modules/  // browser will open automatically, don't forget the dot.
 ```
 ## Test
 
