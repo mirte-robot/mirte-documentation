@@ -61,8 +61,8 @@ The Mirte-master is using the same base software as any other Mirte robot, with 
 
 ### Computer
 
-The computer is a Orange Pi 3B with 4gb RAM and 16/32 eMMC. It is running a Armbian 23.11 Focal image with ROS Noetic. You can download a fresh image from `here <https://github.com/ArendJan/mirte-sd-image-tools/actions/workflows/buildFork.yaml>`_. Click on the latest action and then download the ```mirte_master_mirte_orangepi3b``` or ```mirte_master_installer_orangepi3b``` artifact. The ```..._installer_...``` can be used to flash the eMMC. At boot it will copy the image (same as the normal one) to the eMMC, setup bootloader to be sure and shut down. This can take around 20 minutes. All the download are on 
-[mirte.arend-jan.com](https://mirte.arend-jan.com/files/mirte-master/) as well.
+The computer is a Orange Pi 3B with 4gb RAM and 16/32 eMMC. It is running a Armbian 23.11 Focal image with ROS Noetic. You can download a fresh image from `here <https://github.com/ArendJan/mirte-sd-image-tools/actions/workflows/buildFork.yaml>`_. Click on the latest action and then download the ```mirte_master_mirte_orangepi3b``` or ```mirte_master_installer_orangepi3b``` artifact. The ```..._installer_...``` can be used to flash the eMMC. At boot it will copy the image (same as the normal one) to the eMMC, setup bootloader to be sure and shut down. This can take around 20 minutes. 
+<!-- All the download are on [mirte.arend-jan.com](https://mirte.arend-jan.com/files/mirte-master/) as well. -->
 It works the same as the normal Mirte robot. Move the base with publishing to ```/mobile_base_controller/cmd_vel``` with a geometry_msgs/Twist message. 
 
 ### Master Mirte-install-scripts
