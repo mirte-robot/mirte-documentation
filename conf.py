@@ -202,3 +202,4 @@ linkcheck_anchors_ignore_for_url = [ # does not work for the current version of 
    r'https://github.com.*',
    
 ]
+linkcheck_retries=3
