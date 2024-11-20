@@ -195,7 +195,7 @@ Errata:
 ![bms board](images/master/pcb_bms.png)
 
 
-# WIP:
+## WIP:
 - servos fix forgetting ID
 - IMU 
 
@@ -204,7 +204,7 @@ Errata:
 
 
 
-# Parts
+## Parts
 This is the list of parts we used for the MIRTE-master. Links show the parts we used, but often it can be a similar one.
 
 | Amount | Name | Type | Note |

@@ -1,8 +1,8 @@
-# Setting servo IDs
+## Setting servo IDs
 
 Sometimes the servos forget their ID. Why this happens isn't yet known. We are in contact with HiWonder to figure it out.
 
-## Moving cable to front of shoulder servo
+### Moving cable to front of shoulder servo
 In the original design, the cable going from the rotation servo to the shoulder servo is connected to the bottom of the shoulder servo. This makes it impossible to set the IDs for the shoulder and rotation servo. 
 - Unscrew the 3&4 screws on the side of the shoulder servo.
 - Disconnect the cable from the bottom of the shoulder servo.
@@ -12,7 +12,7 @@ In the original design, the cable going from the rotation servo to the shoulder 
 Connector on underside of shoulder, must go to the front one:
 ![shoulder connector](./images/master/arm_servos/shoulder_wrong.jpg)
 
-## Setup:
+### Setup:
 - Download and install the Bus Servo Terminal application: [Bus Servo Terminal](https://drive.google.com/drive/folders/1wIIIccKKmrLX4EyswIkunIs-A_SKX1Nq)
 - Grab the BusLinker and the powerbank from the toolbox: 
 ![buslinker](./images/master/arm_servos/buslinker.jpg)
@@ -20,7 +20,7 @@ Connector on underside of shoulder, must go to the front one:
 - open Bus Servo Terminal, set the COM port(left side, should be only one) and press open port:
   ![bus terminal](./images/master/arm_servos/terminal_com.png)
 
-## Setting the servos:
+### Setting the servos:
 - Unplug some cables to isolate each servo. You can only connect one servo at a time, otherwise it will write the same ID to multiple servos.
     - Unplug the cable from the gripper
     - Unplug the cable going to the wrist from the elbow(green servo)
