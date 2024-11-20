@@ -211,11 +211,18 @@ This is the list of parts we used for the MIRTE-master. Links show the parts we 
 | --- | --- | --- | --- |
 | 1 | Depth camera | RGB-D	orbbec astra pro plus | |
 | 1 | Lidar | lamtech rplidar c1 | |
-| 1 | Computer | Orange Pi 3B (4GB + 32GB)	| 4GB ram, 32GB emmc |
+| 1 | Computer | Orange Pi 3B (4GB + 32GB)	| 4GB ram, 32GB emmc, only version 1.1 tested |
 | 1 | Microcontroller | Raspberry Pi Pico | |
 | 1 | Main control PCB (top) | |
-| | JST cables	4 pins | |
-| 1 | Pico data cable | micro USB cable | |
+| 1 | Small control PCB (bottom) | |
+| 1 | Tiny PCB for switching power to depth camera | |
+| ? | JST XH cables 4 pins ~10cm | for INA226 & OLED |
+| 6 | JST XH cables 4 pins >20cm | for sonars to bottom PCB. 20cm fits tightly <br/> PCA9685 to H-bridges |
+| ? | JST XH cable 3 pins 20cm | power to bottom PCB |
+| ? | JST XH cable 8 pins 20cm? | sonar and encoder cables to bottom PCB |
+| ? | JST XH cable 6 pins 20cm? | PCA9685 cable |
+| 4 | JST **PH** cable 6 pins 20cm | bottom PCB to motors |
+| 2 | micro USB cable 15 cm | Pico data cable and depth camera (Orange Pi to switch PCB) |
 | 1 | Orange Pi power cable | USB-C cable	| |
 |1 | 12-5V step down		||
 |1|16 PWM servo module		| PCA9685 servo module |
@@ -226,7 +233,7 @@ This is the list of parts we used for the MIRTE-master. Links show the parts we 
 |1|Battery | 5000 mAh, 3S, min 5C ||
 |1|USB-C lipo charger ||
 |2|H-Bridge |	L298N	|
-|1|Mecanum wheels (set of 4)	| 100mm, set of 2 left, 2 right |
+|1|Mecanum wheels (set of 4)	| 100mm, set of 2 left, 2 right | Need to drill the adapter hole to 6mm for the motor shafts | 
 |1|Sonar | HC-SR04||
 |1|IMU | (current version ) MPU9250, future ? ||
 | optional |LED strip | ws2812, other versions WIP ||
@@ -236,16 +243,21 @@ This is the list of parts we used for the MIRTE-master. Links show the parts we 
 |3| Small servo |	HX-12H (12KG.CM)| For rotation, wrist and gripper |
 |1| Big servo |	HTD-45H (45 KG.CM) | For shoulder |
 |1| Medium servo | Elbow	HTD-35H ||
+| 3| standoff 40mm M3 | support for arm |
+| 3| standoff 20mm M3 | support for top plate, space used for lidar |
+| 2| standoff 25mm M2.5 | Orange Pi Support|
+| 4| standoff 10mm M3 | top PCB support |
+| ? | M3 screws | LENGTH??|
+| 2| M2.5 screws | For mounting the Orange Pi| 
+| 2 | M2.5 nuts | For the Orange Pi standoffs |
+| ? | M3 nuts | Use lock bond to keep them from loosening |
+| 4 | faston connectors | 2 used for the fuse, 2 for the switch |
+| 1 | XT90 connector | Male, for battery |
+| 1 | USB C charge board | For 3S battery, use 2A type, 4A is not supported by most chargers. Requires a dumb charger, like Ikea charger |
+| 1 | Fuse and fuse holder | We chose 7.5A, never broke. |
+| 2 | diodes | TODO: type | block reverse current from H-bridge |
+| 36 | wire ferrules | red type ||
+
 
 TODO:
-- other electro
-- cabling + xh connector
-- standoffs
-- kleine pcb
-- switch pcb
-- links
-- plastic parts
-- screws
-- nuts
-- fuse
-- diode naar hbruggen
+- jst kabels
