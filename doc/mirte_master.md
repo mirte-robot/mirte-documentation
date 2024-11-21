@@ -131,7 +131,7 @@ Changes:
   - Hiwonder servos
   - PCA9685
   - INA226
-  - MPU9250 IMU, however, it might crash i2c.
+  - MPU9250 IMU
   
   Not yet added to ROS:
   - HX711 load cell
@@ -142,7 +142,7 @@ Changes:
 ### Flashing the Pico
 <s> Go to /usr/local/src/mirte/mirte-install-scripts/ and run ./upload_arduino.sh upload_pico Telemetrix4rpipico. This will stop ROS, flash the Pico and restart ROS again. If flashing failed or something else, it will tell you how to restart ROS again. </s>
 
-Download the latest uf2 from [here](https://mirte.arend-jan.com/files/telemetrix/release/Telemetrix4RpiPico.uf2) and upload it with picotool ( `wget https://mirte.arend-jan.com/files/telemetrix/release/Telemetrix4RpiPico.uf2 ; sudo picotool load -f Telemetrix4RpiPico.uf2` ).
+Download the latest uf2 from [here](https://github.com/mirte-robot/Telemetrix4RpiPico/pull/14) (build and deploy -> summary -> artifacts) and upload it with picotool ( `sudo picotool load -f Telemetrix4RpiPico.uf2` ).
 
 ## Electronics
 The Mirte-master is built to be as easy to work with as possible, there should be no need to change anything in the electronics.
@@ -161,9 +161,10 @@ Assembly instructions:
 [mirte-pcb:mirte-master/mirte-master](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-master)
 
 Errata (v0.2):
-- 5v and GND labels for the 12v->5v screw terminal are inverted
-![main pcb](images/master/pcb_main.png)
+- 5v and GND labels(bottom) for the 12v->5v screw terminal are inverted
 - power switch cable to pcb must be removed to disable the light in the switch.
+- relay system doesn't work.
+![main pcb](images/master/pcb_main.png)
 
 ### Mirte sense&Control
 [mirte-pcb:mirte-master/mirte-master-bottom](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-master-bottom)
@@ -186,8 +187,10 @@ J4, unsoldered header for any use:
 - D4: GPIO4_C3
 - GND
 ![usb switch pcb](images/master/pcb_usb_switch.png)
+Image shows 2x4 header on top, must be soldered on the bottom.
+
 Errata:
-- GPIO4_D4 label should be GPIO4_C3 due to faulty Orange Pi pinout diagrams. 
+- GPIO4_D4 label(bottom side) should be GPIO4_C3 due to faulty Orange Pi pinout diagrams. 
 
 ### BMS board
 [mirte-pcb:mirte-master/mirte-bms-breakout](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-bms-breakout)
@@ -201,16 +204,14 @@ Errata:
 
 .. mdinclude:: mirte_master_servos.md
 
-
-
-
-## Parts
+## Building your own!
+### Parts
 This is the list of parts we used for the MIRTE-master. Links show the parts we used, but often it can be a similar one.
 
 | Amount | Name | Type | Note |
 | --- | --- | --- | --- |
 | 1 | Depth camera | [RGB-D	orbbec astra pro plus](https://store.orbbec.com/products/astra-pro-plus) | Remove the base |
-| 1 | Lidar | [Slamtech rplidar c1](https://www.slamtec.com/en/C1) | |
+| 1 | Lidar | [Slamtech rplidar c1](https://www.slamtec.com/en/C1) [Seedstudio buy](https://www.seeedstudio.com/RPLiDAR-C1M1-R2-Portable-ToF-Laser-Scanner-Kit-12M-Range-p-5840.html) | |
 | 1 | Computer | Orange Pi 3B (4GB + 32GB)	| [4GB ram, 32GB emmc](https://nl.aliexpress.com/item/1005005948880241.html) (option 2 & 4GB), only version 1.1 tested |
 | 1 | Microcontroller | [Raspberry Pi Pico H](https://www.raspberrypi.com/products/raspberry-pi-pico/) |  |
 | 1 | Main control PCB (top) | [kicad project](https://github.com/ArendJan/mirte-pcb/tree/main/mirte-master) |
@@ -224,38 +225,51 @@ This is the list of parts we used for the MIRTE-master. Links show the parts we 
 | 4 | JST **PH** cable 6 pins 20cm | bottom PCB to motors [link](https://nl.aliexpress.com/item/1005006188790994.html) |
 | 2 | micro USB cable 15 cm | Pico data cable and depth camera (Orange Pi to switch PCB) |
 | 1 | Orange Pi power cable | USB-C cable	| |
-|1 | 12-5V step down		|[link](https://nl.aliexpress.com/item/1005006721587257.html) |
-|1|16 PWM servo module		| PCA9685 servo module [link](https://nl.aliexpress.com/item/1005007039294615.html) |
-|1|Power sensor | INA226, software is hardcoded for the 20A version with a R010 shunt resistor		| [link](https://nl.aliexpress.com/item/1005007162223972.html)|
-|1|OLED	|SSD1306 128x64 0.96 inch|[link](https://nl.aliexpress.com/item/1005007755490093.html) |
-|1|Switch|SPDT rocker switch|[link](https://nl.aliexpress.com/item/1005004694368770.html) |
-|4|DC Motors |	12V 200 RPM default. 107 for lower speed, but better stall-speed and precision.	| [link](https://nl.aliexpress.com/item/1005005021902364.html) |
-|1|Battery | 5000 mAh, 3S, min 5C ||
-|1|USB-C lipo charger |[link](https://nl.aliexpress.com/item/1005005356623076.html) |
-|2|H-Bridge |	L298N	| [link](https://nl.aliexpress.com/item/1005006794464360.html) |
-|1|Mecanum wheels (set of 4)	| 100mm, set of 2 left, 2 right [link](https://nl.aliexpress.com/item/1005007533099560.html) | Need to drill the adapter hole to 6mm for the motor shafts | 
-|1|Sonar | HC-SR04|[link](https://nl.aliexpress.com/item/32283526790.html) |
-|1|IMU | (current version ) MPU9250, future ? | [link](https://nl.aliexpress.com/item/1005007196461566.html) |
+| 1 | 12-5V step down		|[link](https://nl.aliexpress.com/item/1005006721587257.html) |
+| 1 |16 PWM servo module		| PCA9685 servo module [link](https://nl.aliexpress.com/item/1005007039294615.html) |
+| 1 |Power sensor | INA226, software is hardcoded for the 20A version with a R010 shunt resistor		| [link](https://nl.aliexpress.com/item/1005007162223972.html)|
+| 1 |OLED	|SSD1306 128x64 0.96 inch|[link](https://nl.aliexpress.com/item/1005007755490093.html) |
+| 1 |Switch|SPDT rocker switch|[link](https://nl.aliexpress.com/item/1005004694368770.html) |
+| 4 |DC Motors |	12V 200 RPM default. 107 for lower speed, but better stall-speed and precision.	| [link](https://nl.aliexpress.com/item/1005005021902364.html) |
+| 1 |Battery | 5000 mAh, 3S, min 5C ||
+| 1 |USB-C lipo charger |[link](https://nl.aliexpress.com/item/1005005356623076.html) |
+| 2 |H-Bridge |	L298N	| [link](https://nl.aliexpress.com/item/1005006794464360.html) |
+| 1 |Mecanum wheels (set of 4)	| 100mm, set of 2 left, 2 right [link](https://nl.aliexpress.com/item/1005007533099560.html) | Need to drill the adapter hole to 6mm for the motor shafts | 
+| 1 |Sonar | HC-SR04|[link](https://nl.aliexpress.com/item/32283526790.html) |
+| 1 |IMU | (current version ) MPU9250, future ? | [link](https://nl.aliexpress.com/item/1005007196461566.html) |
 | optional |LED strip | ws2812, other versions WIP ||
-| ??? | square nuts | M3||
+| ??? | square nuts | M3 | |
 | 1 | Frame | TODO ||
-|1|Ball bearing| 6812 2RS|[link](https://nl.aliexpress.com/item/1005007420073930.html) |
-|3| Small servo |	HX-12H (12KG.CM) [link](https://www.hiwonder.com/products/hx-12h) | For rotation, wrist and gripper |
-|1| Big servo |	HTD-45H (45 KG.CM) [link](https://www.hiwonder.com/products/htd-45h) | For shoulder (orange) |
-|1| Medium servo | HTD-35H [link](https://www.hiwonder.com/products/htd-35h) |For elbow (green)|
-| 3| standoff 40mm M3 | support for arm [link](https://nl.rs-online.com/web/p/standoffs/1768193) |
-| 3| standoff 20mm M3 | support for top plate, space used for lidar [link](https://nl.rs-online.com/web/p/standoffs/1768417) |
-| 2| standoff 25mm M2.5 | Orange Pi Support [link](https://nl.rs-online.com/web/p/standoffs/2052959) |
-| 4| standoff 10mm M3 | top PCB support [link](https://nl.rs-online.com/web/p/standoffs/1768379) |
-| ? | M3 screws | LENGTH??|
-| 2| M2.5 screws | For mounting the Orange Pi| 
-| 2 | M2.5 nuts | For the Orange Pi standoffs |
-| ? | M3 nuts | Use lock bond to keep them from loosening |
+| 1 |Ball bearing| 6812 2RS|[link](https://nl.aliexpress.com/item/1005007420073930.html) |
+| 3 | Small servo |	HX-12H (12KG.CM) [link](https://www.hiwonder.com/products/hx-12h) | For rotation, wrist and gripper |
+| 1 | Big servo |	HTD-45H (45 KG.CM) [link](https://www.hiwonder.com/products/htd-45h) | For shoulder (orange) |
+| 1 | Medium servo | HTD-35H [link](https://www.hiwonder.com/products/htd-35h) |For elbow (green)|
+| 3 | standoff 40mm M3 | support for arm [link](https://nl.rs-online.com/web/p/standoffs/1768193) |
+| 3 | standoff 20mm M3 | support for top plate, space used for lidar [link](https://nl.rs-online.com/web/p/standoffs/1768417) |
+| 2 | standoff 25mm M2.5 | Orange Pi Support [link](https://nl.rs-online.com/web/p/standoffs/2052959) |
+| 4 | standoff 10mm M3 | top PCB support [link](https://nl.rs-online.com/web/p/standoffs/1768379) |
+| 82? | M3 x 6 screws | TODO: check count |
+| 3 | M3 x 20 screws | TODO: check count |
+| 3 | M3 x 16 screws | TODO: check count |
+| 16? | M2.5 screws | For mounting the Orange Pi| 
+| 11? | M2.5 nuts | For the Orange Pi standoffs |
+| 14? | M3 nuts | Use lock bond to keep them from loosening |
 | 4 | faston connectors | 2 used for the fuse, 2 for the switch [link](https://www.conrad.nl/nl/p/vogt-verbindungstechnik-3970-platte-stekker-male-insteekbreedte-6-3-mm-insteekdikte-0-8-mm-180-volledig-geisoleer-736986.html) |
 | 1 | XT90 connector | Male, for battery |
-| 1 | USB C charge board | For 3S battery, use 2A type, 4A is not supported by most chargers. Requires a dumb charger, like Ikea charger |
+| 1 | USB C charge board | For 3S battery, use 2A type, 4A is not supported by most chargers. <br/> Requires a dumb charger, like [Ikea charger](https://www.ikea.com/nl/nl/p/smahagel-usb-lader-met-3-poorten-wit-60539177/) |
 | 1 | Fuse and fuse holder | We chose 7.5A, never broke. [fuse holder](https://www.conrad.nl/nl/p/tru-components-tc-9070404-zekeringhouder-geschikt-voor-platte-zekering-standaard-30-a-32-v-dc-1-stuk-s-2267601.html) [fuse](https://www.conrad.nl/nl/p/mta-automotive-mta-340026-standaard-platte-zekering-7-5-a-bruin-1-stuk-s-839701.html) |
-| 2 | diodes | DO201 | block reverse current from H-bridge. Can be any with high enough voltage and current rating [link](https://www.reichelt.com/nl/nl/shop/product/schottkydiode_5_a_40_v_do-201-216766) |
+| 2 | diodes | DO201 | block reverse current from H-bridge. <br/> Can be any with high enough voltage and current rating [link](https://www.reichelt.com/nl/nl/shop/product/schottkydiode_5_a_40_v_do-201-216766) |
 | 36 | wire ferrules | red type (1mm2) |[link](https://www.reichelt.com/nl/nl/shop/product/adereindhulzen_-_strips_1_mm_rood-164822) |
 
-We removed the BMS from our robots as they spontanuously started to smoke. We need to 
+We removed the BMS from our robots as they spontanuously started to smoke. We need to find a better replacement.
+
+### Build instructions
+WIP: need to add more instructions, also for the cabling.
+
+Frame build instructions: [Instructions](../_static/Assembly_BASE.pdf)
+
+Frame top and arm instructions: [Instructions](../_static/Assembly_TOP_ARM.pdf)
+
+Electronics instructions: [Instructions](../_static/Assembly_electro.pdf)
+
+Electronics and frame assembly needs to be done in sync, otherwise it's too difficult to attach the cables once everything is mounted.
