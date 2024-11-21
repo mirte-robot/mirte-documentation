@@ -234,7 +234,7 @@ This is the list of parts we used for the MIRTE-master. Links show the parts we 
 | 1 |Switch|SPDT rocker switch|[link](https://nl.aliexpress.com/item/1005004694368770.html) |
 | 4 |DC Motors |	12V 200 RPM default. 107 for lower speed, but better stall-speed and precision.	| [link](https://nl.aliexpress.com/item/1005005021902364.html) |
 | 1 |Battery | 5000 mAh, 3S, min 5C ||
-| 1 |USB-C lipo charger |[link](https://nl.aliexpress.com/item/1005005356623076.html) |
+| 1 |USB-C lipo charger |[link](https://nl.aliexpress.com/item/1005005356623076.html) <br/> For 3S battery, use 2A type, 4A is not supported by most chargers. |
 | 2 |H-Bridge |	L298N	| [link](https://nl.aliexpress.com/item/1005006794464360.html) |
 | 1 |Mecanum wheels (set of 4)	| 100mm, set of 2 left, 2 right [link](https://nl.aliexpress.com/item/1005007533099560.html) | Need to drill the adapter hole to 6mm for the motor shafts | 
 | 1 |Sonar | HC-SR04|[link](https://nl.aliexpress.com/item/32283526790.html) |
@@ -258,7 +258,7 @@ This is the list of parts we used for the MIRTE-master. Links show the parts we 
 | 14? | M3 nuts | Use lock bond to keep them from loosening |
 | 4 | faston connectors | 2 used for the fuse, 2 for the switch [link](https://www.conrad.nl/nl/p/vogt-verbindungstechnik-3970-platte-stekker-male-insteekbreedte-6-3-mm-insteekdikte-0-8-mm-180-volledig-geisoleer-736986.html) |
 | 1 | XT90 connector | Male, for battery |
-| 1 | USB C charge board | For 3S battery, use 2A type, 4A is not supported by most chargers. <br/> Requires a dumb charger, like [Ikea charger](https://www.ikea.com/nl/nl/p/smahagel-usb-lader-met-3-poorten-wit-60539177/) |
+| 1 | USB C charger | Charge board requires a dumb charger, like [Ikea charger](https://www.ikea.com/nl/nl/p/smahagel-usb-lader-met-3-poorten-wit-60539177/) and a USB-A to USB-C cable |
 | 1 | Fuse and fuse holder | We chose 7.5A, never broke. [fuse holder](https://www.conrad.nl/nl/p/tru-components-tc-9070404-zekeringhouder-geschikt-voor-platte-zekering-standaard-30-a-32-v-dc-1-stuk-s-2267601.html) [fuse](https://www.conrad.nl/nl/p/mta-automotive-mta-340026-standaard-platte-zekering-7-5-a-bruin-1-stuk-s-839701.html) |
 | 2 | diodes | DO201 | block reverse current from H-bridge. <br/> Can be any with high enough voltage and current rating [link](https://www.reichelt.com/nl/nl/shop/product/schottkydiode_5_a_40_v_do-201-216766) |
 | 36 | wire ferrules | red type (1mm2) |[link](https://www.reichelt.com/nl/nl/shop/product/adereindhulzen_-_strips_1_mm_rood-164822) |
