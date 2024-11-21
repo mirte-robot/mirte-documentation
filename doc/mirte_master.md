@@ -233,7 +233,7 @@ This is the list of parts we used for the MIRTE-master. Links show the parts we 
 | 1 |OLED	|SSD1306 128x64 0.96 inch|[link](https://nl.aliexpress.com/item/1005007755490093.html) |
 | 1 |Switch|SPDT rocker switch|[link](https://nl.aliexpress.com/item/1005004694368770.html) |
 | 4 |DC Motors |	12V 200 RPM default. 107 for lower speed, but better stall-speed and precision.	| [link](https://nl.aliexpress.com/item/1005005021902364.html) |
-| 1 |Battery | 5000 mAh, 3S, min 5C ||
+| 1 |Battery | 5000 mAh, 3S, min 5C | [link](https://hobbyking.com/en_us/turnigy-5000mah-3s-20c-lipo-pack-xt-90.html) |
 | 1 |USB-C lipo charger |[link](https://nl.aliexpress.com/item/1005005356623076.html) <br/> For 3S battery, use 2A type, 4A is not supported by most chargers. |
 | 2 |H-Bridge |	L298N	| [link](https://nl.aliexpress.com/item/1005006794464360.html) |
 | 1 |Mecanum wheels (set of 4)	| 100mm, set of 2 left, 2 right [link](https://nl.aliexpress.com/item/1005007533099560.html) | Need to drill the adapter hole to 6mm for the motor shafts | 
