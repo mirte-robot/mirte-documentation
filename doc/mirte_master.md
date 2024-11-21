@@ -221,9 +221,9 @@ This is the list of parts we used for the MIRTE-master. Links show the parts we 
 | 1 | Tiny PCB for switching power to depth camera | [kicad project](https://github.com/ArendJan/mirte-pcb/tree/main/mirte-usb-switcher) |
 | 2 | JST XH cables 4 pins 10cm | for INA226 & OLED, [link](https://nl.aliexpress.com/item/1005002179605258.html) |
 | 6 | JST XH cables 4 pins 30cm | for sonars to bottom PCB. 20cm fits tightly <br/> PCA9685 to H-bridges [link](https://nl.aliexpress.com/item/1005002179605258.html) |
-| ? | JST XH cable 3 pins 30cm | power to bottom PCB [link](https://nl.aliexpress.com/item/1005002179605258.html) |
-| ? | JST XH cable 8 pins 30cm | sonar and encoder cables to bottom PCB [link](https://nl.aliexpress.com/item/1005002179605258.html) |
-| ? | JST XH cable 6 pins 30cm | PCA9685 cable [link](https://nl.aliexpress.com/item/1005002179605258.html) |
+| 1 | JST XH cable 3 pins 30cm | power to bottom PCB [link](https://nl.aliexpress.com/item/1005002179605258.html) |
+| 2 | JST XH cable 8 pins 30cm | sonar and encoder cables to bottom PCB [link](https://nl.aliexpress.com/item/1005002179605258.html) |
+| 1 | JST XH cable 6 pins 30cm | PCA9685 cable [link](https://nl.aliexpress.com/item/1005002179605258.html) |
 | 4 | JST **PH** cable 6 pins 20cm | bottom PCB to motors [link](https://nl.aliexpress.com/item/1005006188790994.html) |
 | 2 | micro USB cable 15 cm | Pico data cable and depth camera (Orange Pi to switch PCB) |
 | 1 | Orange Pi power cable | USB-C cable	| |
@@ -237,7 +237,7 @@ This is the list of parts we used for the MIRTE-master. Links show the parts we 
 | 1 |USB-C lipo charger |[link](https://nl.aliexpress.com/item/1005005356623076.html) <br/> For 3S battery, use 2A type, 4A is not supported by most chargers. |
 | 2 |H-Bridge |	L298N	| [link](https://nl.aliexpress.com/item/1005006794464360.html) |
 | 1 |Mecanum wheels (set of 4)	| 100mm, set of 2 left, 2 right [link](https://nl.aliexpress.com/item/1005007533099560.html) | Need to drill the adapter hole to 6mm for the motor shafts | 
-| 1 |Sonar | HC-SR04|[link](https://nl.aliexpress.com/item/32283526790.html) |
+| 4 |Sonar | HC-SR04|[link](https://nl.aliexpress.com/item/32283526790.html) |
 | 1 |IMU | (current version ) MPU9250, future ? | [link](https://nl.aliexpress.com/item/1005007196461566.html) |
 | optional |LED strip | ws2812, other versions WIP ||
 | ??? | square nuts | M3 | |
