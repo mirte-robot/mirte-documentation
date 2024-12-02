@@ -240,7 +240,7 @@ This is the list of parts we used for the MIRTE-master. Links show the parts we 
 | 4 |Sonar | HC-SR04|[link](https://nl.aliexpress.com/item/32283526790.html) |
 | 1 |IMU | (current version ) MPU9250, future ? | [link](https://nl.aliexpress.com/item/1005007196461566.html) |
 | optional |LED strip | ws2812, other versions WIP ||
-| ??? | square nuts | M3 | |
+| 40 | square nuts | M3 | |
 | 1 | Frame | TODO ||
 | 1 |Ball bearing| 6812 2RS|[link](https://nl.aliexpress.com/item/1005007420073930.html) |
 | 3 | Small servo |	HX-12H (12KG.CM) [link](https://www.hiwonder.com/products/hx-12h) | For rotation, wrist and gripper |
@@ -250,12 +250,12 @@ This is the list of parts we used for the MIRTE-master. Links show the parts we 
 | 3 | standoff 20mm M3 | support for top plate, space used for lidar [link](https://nl.rs-online.com/web/p/standoffs/1768417) |
 | 2 | standoff 25mm M2.5 | Orange Pi Support [link](https://nl.rs-online.com/web/p/standoffs/2052959) |
 | 4 | standoff 10mm M3 | top PCB support [link](https://nl.rs-online.com/web/p/standoffs/1768379) |
-| 82? | M3 x 6 screws | TODO: check count |
+| 82 | M3 x 6 screws | TODO: check count |
 | 3 | M3 x 20 screws | TODO: check count |
-| 3 | M3 x 16 screws | TODO: check count |
-| 16? | M2.5 screws | For mounting the Orange Pi| 
-| 11? | M2.5 nuts | For the Orange Pi standoffs |
-| 14? | M3 nuts | Use lock bond to keep them from loosening |
+| 8 | M3 x 16 screws | TODO: check count |
+| 19 | M2.5 screws | For mounting the Orange Pi| 
+| 12 | M2.5 nuts | For the Orange Pi standoffs |
+| 23 | M3 nuts | Use lock bond to keep them from loosening |
 | 4 | faston connectors | 2 used for the fuse, 2 for the switch [link](https://www.conrad.nl/nl/p/vogt-verbindungstechnik-3970-platte-stekker-male-insteekbreedte-6-3-mm-insteekdikte-0-8-mm-180-volledig-geisoleer-736986.html) |
 | 1 | XT90 connector | Male, for battery |
 | 1 | USB C charger | Charge board requires a dumb charger, like [Ikea charger](https://www.ikea.com/nl/nl/p/smahagel-usb-lader-met-3-poorten-wit-60539177/) and a USB-A to USB-C cable |
