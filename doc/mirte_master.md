@@ -152,12 +152,14 @@ The Mirte-master is built to be as easy to work with as possible, there should b
 The Mirte-master has 4 PCBs:
 - Mirte compute (main pcb), with a Pico
 - Mirte Sense and Control, connecting the motor drivers, encoders, main PCB and the sonars together
-- BMS board, converting the JST-XH connector of the LiPo battery to the JST-PH connector of the 3s BMS
+- ~~BMS board, converting the JST-XH connector of the LiPo battery to the JST-PH connector of the 3s BMS~~
 - USB switch board, switching the power of the Orbbec Astra depth camera
 
 Assembly instructions:
 
 [Instructions](../_static/Assembly_electro.pdf)
+
+[Rough overview schematic](../_static/mirteMasterSchema.pdf)
 
 ### Mirte compute
 [mirte-pcb:mirte-master/mirte-master](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-master)

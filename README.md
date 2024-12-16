@@ -28,7 +28,7 @@ sphinx-multiversion . _build/html
 
 ## Host locally
 ```
-sphinx-reload . --watch doc/ _static/ _modules/  // browser will open automatically, don't forget the dot.
+sphinx-reload . --watch doc/ _static/ _modules/  # browser will open automatically, don't forget the dot.
 ```
 ## Test
 
