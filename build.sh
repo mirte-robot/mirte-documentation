@@ -19,3 +19,4 @@ cd ../../
 catkin_make # or catkin build
 . devel/setup.sh
 cd ../../
+make html
