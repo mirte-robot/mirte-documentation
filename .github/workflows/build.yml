@@ -41,15 +41,7 @@ jobs:
           for release in $releases; do
             wget https://github.com/$owner/mirte-documentation/releases/download/$release/site.zip
             # get versions html from index.html
-            numLinStart=$(grep -in "<\!-- VERSIONS START -->" _build/html_multi/$release/index.html | cut -d':' -f1);
-            numLinEnd=$(grep -in "<\!-- VERSIONS END -->" _build/html_multi/$release/index.html | cut -d':' -f1);
-            versions_html=$(sed -n "$numLinStart,$numLinEnd p" _build/html_multi/$release/index.html);
-            rm -rf _build/html_multi/$release
-            
-            unzip site.zip -d _build/html_multi/$release
-            
-            find _build/html_multi/$release -type f -name "*.html" -exec sed -i "s|<\!-- VERSIONS PLACEHOLDER -->|${versions_html//[$'\t\r\n']}|g" {} \;
-            rm site.zip 
+            python3 build_scripts/fix_versions.py $release site.zip
           done
       - name: Archive site
         run: |
