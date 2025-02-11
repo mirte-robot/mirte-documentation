@@ -10,7 +10,7 @@ jobs:
     
     runs-on: ubuntu-latest
     container:
-      image: althack/ros:noetic-dev
+      image: althack/ros:humble-dev
     steps:
       - uses: actions/checkout@v4
         with:
