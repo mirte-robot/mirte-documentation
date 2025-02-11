@@ -23,7 +23,7 @@ jobs:
           git tag -n
           # remove tags that are in the releases list
           for release in $releases; do
-            git tag -d $release
+            git tag -d $release || true
             git tag $release
           done
           git tag current # create a current tag for the current commit
