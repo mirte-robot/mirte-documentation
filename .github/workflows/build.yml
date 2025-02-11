@@ -39,6 +39,7 @@ jobs:
           apt update && apt install -y wget unzip
           for release in $releases; do
             wget https://github.com/mirte-robot/mirte-documentation/releases/download/$release/site.zip
+            rm -rf _build/html_multi/$release
             unzip site.zip -d _build/html_multi/$release
             rm site.zip 
           done
