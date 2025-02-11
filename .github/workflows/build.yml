@@ -39,7 +39,7 @@ jobs:
         run: |
           apt update && apt install -y wget unzip
           for release in $releases; do
-            # wget https://github.com/$owner/mirte-documentation/releases/download/$release/site.zip
+            wget https://github.com/$owner/mirte-documentation/releases/download/$release/site.zip
             # get versions html from index.html
             numLinStart=$(grep -in "<\!-- VERSIONS START -->" _build/html_multi/$release/index.html | cut -d':' -f1);
             numLinEnd=$(grep -in "<\!-- VERSIONS END -->" _build/html_multi/$release/index.html | cut -d':' -f1);
