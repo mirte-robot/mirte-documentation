@@ -2,7 +2,8 @@ name: Build site
 
 on: [push, pull_request]
 env:
-  releases: '0.1.0' # releases to download from the github releases page as they probably don't compile anymore (ros1->ros2). comma separated list
+  owner: ArendJan #mirte-robot
+  releases: 'test_tag_aj3' # releases to download from the github releases page as they probably don't compile anymore (ros1->ros2). comma separated list
 
 jobs:
   build:
@@ -38,9 +39,15 @@ jobs:
         run: |
           apt update && apt install -y wget unzip
           for release in $releases; do
-            wget https://github.com/mirte-robot/mirte-documentation/releases/download/$release/site.zip
+            wget https://github.com/$owner/mirte-documentation/releases/download/$release/site.zip
+            # get versions html from index.html
+            versions_html=$(cat _build/html_multi/$release/index.html | grep -o -P '(?<=<!-- VERSIONS START -->).*(?=<!-- VERSIONS END -->)')
+
             rm -rf _build/html_multi/$release
+            
             unzip site.zip -d _build/html_multi/$release
+            # find all <!-- VERSIONS PLACEHOLDER --> and replace with versions_html
+            find _build/html_multi/$release -type f -name "*.html" -exec sed -i "s/<!-- VERSIONS PLACEHOLDER -->/$versions_html/g" {} \;
             rm site.zip 
           done
       - name: Archive site
