@@ -66,3 +66,6 @@ def main():
     # remove the zip file
     print("removing zip file...")
     os.system(f"rm {zip_file}")
+
+if __name__ == "__main__":
+    main()
