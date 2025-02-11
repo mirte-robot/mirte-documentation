@@ -10,6 +10,9 @@ jobs:
       image: althack/ros:noetic-dev
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+          fetch-tags: true
       - name: Install dependencies
         run: |
           git config --global --add safe.directory /__w/mirte-documentation/mirte-documentation
