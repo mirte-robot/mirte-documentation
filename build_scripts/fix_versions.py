@@ -54,6 +54,7 @@ def main():
                 print(f"Replacing in {os.path.join(root, file)}")
                 # get the depth of the file
                 depth = root.count("/") - 3
+                print(f"Depth: {depth}")
                 depth_string = "../"*depth
                 # add the correct number of ../
                 version_depth_lines = [line.replace("<a href=\"", f"<a href=\"{depth_string}") for line in version_lines]
