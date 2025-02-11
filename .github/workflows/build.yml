@@ -36,6 +36,7 @@ jobs:
           cp _static/index.html _build/html_multi/index.html # for the redirect to the latest version
       - name: Add old releases
         run: |
+          apt update && apt install -y wget unzip
           for release in $releases; do
             wget https://github.com/mirte-robot/mirte-documentation/releases/download/$release/site.zip
             unzip site.zip -d _build/html_multi/$release
