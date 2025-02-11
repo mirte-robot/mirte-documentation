@@ -72,7 +72,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with: 
           path: _build/html_multi
-
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: site.zip
   deploy:
     # Add a dependency to the build job
     needs: build
