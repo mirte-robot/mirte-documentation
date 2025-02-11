@@ -13,6 +13,12 @@ jobs:
         with:
           submodules: 'recursive'
           fetch-tags: true
+      - name: get tags
+        run: |
+          git fetch --all
+          git tag -n
+          exit 0
+          
       - name: Install dependencies
         run: |
           git config --global --add safe.directory /__w/mirte-documentation/mirte-documentation
