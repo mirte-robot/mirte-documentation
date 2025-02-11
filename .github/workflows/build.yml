@@ -16,6 +16,7 @@ jobs:
           set-safe-directory: true
       - name: get tags
         run: |
+          git config --global --add safe.directory /__w/mirte-documentation/mirte-documentation
           git fetch --all
           git tag -n
           exit 0
