@@ -19,7 +19,7 @@ jobs:
           git config --global --add safe.directory /__w/mirte-documentation/mirte-documentation
           git fetch --all
           git tag -n
-          exit 0
+          git tag current # create a current tag for the current commit
           
       - name: Install dependencies
         run: |
