@@ -53,7 +53,7 @@ def main():
             if file.endswith(".html"):
                 print(f"Replacing in {os.path.join(root, file)}")
                 # get the depth of the file
-                depth = root.count("/") - 3
+                depth = root.count("/") - 2
                 print(f"Depth: {depth}")
                 depth_string = "../"*depth
                 # add the correct number of ../
