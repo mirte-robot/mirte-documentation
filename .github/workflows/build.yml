@@ -48,7 +48,7 @@ jobs:
             
             unzip site.zip -d _build/html_multi/$release
             
-            find _build/html_multi/$release -type f -name "*.html" -exec sed -i "s/<\!-- VERSIONS PLACEHOLDER -->/$versions_html/g" {} \;
+            find _build/html_multi/$release -type f -name "*.html" -exec sed -i "s|<\!-- VERSIONS PLACEHOLDER -->|${versions_html//[$'\t\r\n']}|g" {} \;
             rm site.zip 
           done
       - name: Archive site
