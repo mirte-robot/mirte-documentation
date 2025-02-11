@@ -33,7 +33,7 @@ jobs:
           catkin_make # or catkin build
           . devel/setup.sh
           cd ../../
-          make html
+          sphinx-multiversion . _build/html
           cd _build/html
           zip -r ../../site.zip .
           cd ../../
