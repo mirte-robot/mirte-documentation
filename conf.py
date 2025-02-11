@@ -40,6 +40,7 @@ smv_latest_version = 'main'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx_rtd_theme', 'sphinx-prompt', 'sphinx_tabs.tabs', 'sphinx.ext.autosectionlabel', 'sphinxcontrib.spelling', 'sphinx.ext.autodoc', 'sphinx.ext.napoleon', 'sphinx_multiversion', 'sphinx_mdinclude', "sphinxcontrib.jquery"]
+suppress_warnings = ['autosectionlabel.*']
 sphinx_tabs_disable_tab_closing = True
 spelling_word_list_filename='spelling_wordlist.txt'
 napoleon_google_docstring = True
@@ -101,8 +102,13 @@ html_static_path = ['_static']
 # default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
 # 'searchbox.html']``.
 #
-# html_sidebars = {}
-
+html_sidebars = {
+    '**': [
+        'versioning.html',
+    ],
+}
+smv_tag_whitelist = r'^.*$'
+smv_branch_whitelist = None
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
