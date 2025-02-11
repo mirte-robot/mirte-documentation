@@ -27,6 +27,7 @@ Mirte Documentation
    :hidden:
 
    doc/mirte_python_api
+   doc/mirte_ros_api
 
 .. toctree::
    :caption: Mirte Development

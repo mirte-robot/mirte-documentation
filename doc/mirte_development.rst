@@ -5,6 +5,7 @@ As mentioned before we are currently still developing Mirte. But the ultimate go
 community contributing to the project.
 
 .. warning::
+   Currently this isn't correct.
    Currently none of the interfaces (hardware, software) are definitive. This means that we might still
    change this. Developing educational material around Mirte is possible, but you should be able to
    modify this in case we change the interfaces.
