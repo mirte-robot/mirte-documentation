@@ -13,6 +13,7 @@ jobs:
         with:
           submodules: 'recursive'
           fetch-tags: true
+          set-safe-directory: true
       - name: get tags
         run: |
           git fetch --all
