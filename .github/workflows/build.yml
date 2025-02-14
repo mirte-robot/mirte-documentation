@@ -2,7 +2,7 @@ name: Build site
 
 on: [push, pull_request]
 env:
-  owner: mirte-robot
+  owner: ArendJan
   releases: '0.1.0 mirte-master-docs-release' # releases to download from the github releases page as they probably don't compile anymore (ros1->ros2). space separated list
 
 
