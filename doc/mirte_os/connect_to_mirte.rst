@@ -1,11 +1,11 @@
-Connect to Mirte
+Connect to MIRTE
 ################
 
-When the Mirte robot boots up she will check if she can connect to a known Wifi network (i.e. a 
+When the MIRTE robot boots up she will check if she can connect to a known Wifi network (i.e. a 
 network which the robot has connected to before). If this fails, she will start her own 
 access point (AP) to which you can connect. 
 
-There are multiple ways to connect to your Mirte robot. The availability depends on the SBC 
+There are multiple ways to connect to your MIRTE robot. The availability depends on the SBC 
 (Orange Pi Zero 2 or Raspberry Pi 2/3/4) you use. This section describes these options.
 
 .. note::
@@ -17,9 +17,9 @@ There are multiple ways to connect to your Mirte robot. The availability depends
 Wireless Acces Point
 ====================
 
-After booting up Mirte for the first time the robot is in access point (AP) mode and a wifi network 
+After booting up MIRTE for the first time the robot is in access point (AP) mode and a wifi network 
 will be available with ssid Mirte-XXXXXX (where each X is hex 1-F). You can connect to this network 
-with the password 'mirte_mirte'. While in AP mode, the ip address of Mirte is 192.168.42.1, but you 
+with the password 'mirte_mirte'. While in AP mode, the ip address of MIRTE is 192.168.42.1, but you 
 could also access it with mirte.local or mirte-XXXXXX.local:
 
 .. code-block:: bash
@@ -34,7 +34,7 @@ could also access it with mirte.local or mirte-XXXXXX.local:
    
    $ ping 192.168.42.1
 
-In a classroom setting there might me multiple Mirte APs available. It is advised to prepare the
+In a classroom setting there might me multiple MIRTE APs available. It is advised to prepare the
 robots in advance and write down the ssid per robot. If this is not possible one could also
 get the unique XXXXXX value by analyzing the red and green LED on the Orange Pi Zero 2 (this is not 
 yet supported for the Raspberry Pi). 
@@ -48,31 +48,31 @@ times.
 Wireless Client Mode
 ====================
 
-The downside of having Mirte in AP mode, is that both your computer and the Mirte robot do not
-have access to the internet. By connecting the Mirte robot to another access point (e.g. router)
+The downside of having MIRTE in AP mode, is that both your computer and the MIRTE robot do not
+have access to the internet. By connecting the MIRTE robot to another access point (e.g. router)
 you can still use the internet while controlling your robot.
 
 If you are not in control of your own router, you can also create one youself by putting your mobile 
 phone in hotspot mode, or put your computer (on Windows) in mobile hotspot mode.
 
 
-You can connect Mirte to your local wifi network from either of the two interfaces (web or
-terminal). You therefore first need to connect to Mirte in AP mode and following the instructions 
+You can connect MIRTE to your local wifi network from either of the two interfaces (web or
+terminal). You therefore first need to connect to MIRTE in AP mode and following the instructions 
 from the :ref:`next section<Accessing the interface>`. 
 
 .. note::
-   Since the Mirte robot is probably still in AP mode when you try to do this, you will only see 
+   Since the MIRTE robot is probably still in AP mode when you try to do this, you will only see 
    the Wifi networks that were visible when the robot booted. It is therefore adviced to first 
-   start a hostpot/router/AP and then (re)boot the Mirte robot.
+   start a hostpot/router/AP and then (re)boot the MIRTE robot.
 
 .. warning::
-   Currently the Mirte robot is not able to connect to WPA3 networks.
+   Currently the MIRTE robot is not able to connect to WPA3 networks.
 
 
 From terminal
 -------------
 
-The most stable way to connect the Mirte robot to another network will be to login to the Mirte
+The most stable way to connect the MIRTE robot to another network will be to login to the MIRTE
 robot via ssh, manually setting the network settings. The following command will ask for the 
 SSID and password of the AP to connect to and reboot:
 
@@ -106,7 +106,7 @@ try to connect to the wifi right away and might therefore be less successfull.
 
 .. warning::
 
-   Only access points that were online when Mirte booted will be listed.
+   Only access points that were online when MIRTE booted will be listed.
 
 
 Other (wired) options
@@ -118,7 +118,7 @@ USB connection
 
 When connecting to Wifi is not possible you can also connect through USB. In this case you need
 to connect the power of the Orange Pi Zero 2 via USB with your computer. After booting up a wired
-network will be available with which you can connect. While in USB mode, the ip address of Mirte
+network will be available with which you can connect. While in USB mode, the ip address of MIRTE
 is 192.168.43.1, but you could also access it with mirte.local or mirte-XXXXXX.local:
 
 .. code-block:: bash
@@ -137,7 +137,7 @@ is 192.168.43.1, but you could also access it with mirte.local or mirte-XXXXXX.l
 Wired Ethernet
 --------------
 
-You can also connect a wired ethernet cable using Mirte. Make sure you connect an ethernet cable
+You can also connect a wired ethernet cable using MIRTE. Make sure you connect an ethernet cable
 to a router with DHCP enabled so your robot will get an ip address from the router:
 
 .. code-block:: bash
@@ -168,16 +168,16 @@ way is to ping for mirte.local:
 TTL debug
 ---------
 
-If all of this fails, you can still debug your Mirte robot through the TTL interface. The easiest
-way to do this is by using a TTL-USB device and connect to the Mirte. If you have no clue what
+If all of this fails, you can still debug your MIRTE robot through the TTL interface. The easiest
+way to do this is by using a TTL-USB device and connect to the MIRTE. If you have no clue what
 this means, you will probably not use this. If you do understand, you can search the internet
 to see how to connect to your SBC.
 
 
-Renaming Mirte
+Renaming MIRTE
 ==============
 
-In some cases it might be useful to rename the unique ID of your Mirte (the XXXXXX part). 
+In some cases it might be useful to rename the unique ID of your MIRTE (the XXXXXX part). 
 This can be done by changing the linux hostname:
 
 .. code-block:: bash

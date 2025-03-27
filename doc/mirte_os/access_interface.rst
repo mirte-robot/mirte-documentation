@@ -1,7 +1,7 @@
 Accessing the interface
 #######################
 
-Mirte has two interfaces: the web interface and the linux terminal through SSH.
+MIRTE has two interfaces: the web interface and the linux terminal through SSH.
 With the web interface one is able to program the robot in Blockly and Python, 
 while Python and ROS are your options when connected with SSH.
 
@@ -19,7 +19,7 @@ Terminal
 
 On Linux and MacOS you can SSH by opening a terminal. On Windows you could 
 the optional built-in SSH client (Windows 10/11), use Putty, or MobaXTerm. You can 
-connect to Mirte via SSH (first time login password is 'mirte_mirte'):
+connect to MIRTE via SSH (first time login password is 'mirte_mirte'):
 
 .. code-block:: bash
 
@@ -30,7 +30,7 @@ connect to Mirte via SSH (first time login password is 'mirte_mirte'):
 
    In this tutorial we will use '$' when the command needs to be executed on
    your own machine, while we use 'mirte$' when a command needs to be executed
-   on the Mirte robot.
+   on the MIRTE robot.
   
 
 The first time you login you will be prompted to change your password. After
@@ -42,11 +42,11 @@ Keybased SSH login
 ------------------
 
 When frequently connecting to the terminal it might be useful to connect
-to Mirte without passwords using shared keys. This can be done easily if you
+to MIRTE without passwords using shared keys. This can be done easily if you
 connect from another terminal (so only on MaxOS and Linux) on your local 
 machine. You can set this up in the following way.
 
-On Mirte:
+On MIRTE:
 
 .. code-block:: bash
 

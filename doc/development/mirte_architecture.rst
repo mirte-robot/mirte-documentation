@@ -3,7 +3,7 @@ Software Architecture Overview
 
 .. warning::
    Currently none of the interfaces (hardware, software) are definitive. This means that we might still
-   change this. Developing educational material around Mirte is possible, but you should be able to
+   change this. Developing educational material around MIRTE is possible, but you should be able to
    modify this in case we change the interfaces.
 
 
@@ -23,7 +23,7 @@ themselves.
         :width: 600
         :alt: Full Software Architecture
 
-      Full architecture overview of the Mirte software. Repositories are shown in red, ROS nodes in blue, and
+      Full architecture overview of the MIRTE software. Repositories are shown in red, ROS nodes in blue, and
       systemd services in green. More explanation can be found in the corresponding tabs. The dataflow is
       shown with arrows and will be explained in the next section.
 
@@ -33,8 +33,8 @@ themselves.
         :width: 600
         :alt: Overview of software repositories.
 
-      The software of Mirte is stored in multiple repositories on `github <https://github.com/mirte-robot>`_, 
-      but can also be found on the Mirte robot in /usr/local/src/mirte. 
+      The software of MIRTE is stored in multiple repositories on `github <https://github.com/mirte-robot>`_, 
+      but can also be found on the MIRTE robot in /usr/local/src/mirte. 
  
       - `mirte-web-interface <https://github.com/mirte-robot/mirte-web-interface>`_: Is the repository 
         where the Vue frontend and nodeJS backend are stored. They are in one repository since they are 
@@ -53,7 +53,7 @@ themselves.
       - `mirte-oled-images <https://github.com/mirte-robot/mirte-oled-images>`_: Contains the images and
         image sequences to show on the OLED.
       - `mirte-install-scripts <https://github.com/mirte-robot/mirte-install-scripts>`_: Contains all scripts
-        needed to install the Mirte software on the robot. This includes our own repositories and dependencies,
+        needed to install the MIRTE software on the robot. This includes our own repositories and dependencies,
         but also creates a user and enables the Wifi AP and systemd services.
       - `mirte-sd-image-tools <https://github.com/mirte-robot/mirte-sd-image-tools>`_: Contains all things 
         needed to build an ARM sd card image with everything installed from the mirte-install-scripts repo 

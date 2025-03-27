@@ -31,7 +31,7 @@ In ROS you can also drive around with your keyboard:
 Android
 =======
 
-There is also an Android app which allows you to control Mirte (or any ROS-based robot). You can
+There is also an Android app which allows you to control MIRTE (or any ROS-based robot). You can
 download `ROS-mobile here <https://play.google.com/store/apps/details?id=com.schneewittchen.rosandroid>`_. 
 In order to drive around you need to connect to the robot:
 

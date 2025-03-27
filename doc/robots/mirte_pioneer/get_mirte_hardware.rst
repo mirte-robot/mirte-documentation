@@ -1,27 +1,25 @@
-Get Mirte Hardware
+Get MIRTE Hardware
 ##################
 
-One of the goals of Mirte is to be modular and extendable. Therefore Mirte has a minimal amount
+One of the goals of MIRTE is to be modular and extendable. Therefore MIRTE has a minimal amount
 of custom designed components, and mostly uses frequently used hardware. Two exceptions are
 the `base <https://github.com/mirte-robot/mirte-frame>`_ (which can be lasercut, 3D printed, or 
 any existing base you already have) and the `PCB <https://github.com/mirte-robot/mirte-pcb>`_ 
 (which is optional and can be replaced by a breadboard as well). 
 
-Below you will find the components that are used in the Mirte Pioneer kit, which gives you a basic
+Below you will find the components that are used in the MIRTE Pioneer kit, which gives you a basic
 mobile platform, and can be extended with optional sensors and actuators. Or you could use
 alternatives/upgrades for certain parts.
 
 Currently it is only possible to order all the parts yourself. In the future we will make it easier
-to buy a full Mirte Pioneer Box with all the listed components.
-
-.. mdinclude:: mirte_hardware_table.md
+to buy a full MIRTE Pioneer Box with all the listed components.
 
 .. list-table::
    :widths: 25 25 50
    :header-rows: 1
 
    * - 
-     - Mirte Pioneer
+     - MIRTE Pioneer
      - Alternatives/Upgrades
    * - Computer
      - `Orange Pi Zero 2 <http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-Zero-2.html>`_
@@ -33,7 +31,7 @@ to buy a full Mirte Pioneer Box with all the listed components.
      - Raspberry Pi Pico H (RP2040)
      - Arduino Nano/Uno | SMT32 
    * - Electrical circuit
-     - `Mirte PCB <https://github.com/mirte-robot/mirte-pcb>`_
+     - `MIRTE PCB <https://github.com/mirte-robot/mirte-pcb>`_
      - Breadboard [#f1]_ + `MB102 <https://www.aliexpress.com/item/1005001863057390.html>`_ + `splitter <https://www.aliexpress.com/item/4001025724405.html>`_
    * - 3 pin cable
      - 4x JST XH
@@ -48,8 +46,8 @@ to buy a full Mirte Pioneer Box with all the listed components.
      - `Intenso XS10000 <https://www.intenso.de/en/products/powerbanks/xs5000-xs10000-xs20000>`_
      - Any stable powerbank [#f2]_
    * - Chassis
-     - `Mirte diff drive wood <https://github.com/mirte-robot/mirte-frame>`_
-     - Mirte diff drive 3D print
+     - `MIRTE diff drive wood <https://github.com/mirte-robot/mirte-frame>`_
+     - MIRTE diff drive 3D print
    * - Nuts and bolts
      - 15x M3 15mm
      -

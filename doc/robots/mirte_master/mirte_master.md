@@ -1,5 +1,5 @@
 
-The Mirte Master is one of the possible upgrades of the Mirte robot.
+The MIRTE Master is one of the possible upgrades of the MIRTE robot.
 
 <!-- .. plaatje -->
 
@@ -55,17 +55,17 @@ TODO!
 
 
 ## Software
-The Mirte-master is using the same base software as any other Mirte robot, with some extras.
+The MIRTE Master is using the same base software as any other MIRTE robot, with some extras.
 
 ### Computer
 
 The computer is a Orange Pi 3B with 4gb RAM and 16/32 eMMC. It is running a Armbian 23.11 Focal image with ROS Noetic. You can download a fresh image from `here <https://github.com/ArendJan/mirte-sd-image-tools/actions/workflows/buildFork.yaml>`_. Click on the latest action from the `mirte-master` branch and then download the ```mirte_master_mirte_orangepi3b``` or ```mirte_master_installer_orangepi3b``` artifact. The ```..._installer_...``` can be used to flash the eMMC. At boot it will copy the image (same as the normal one) to the eMMC, setup bootloader to be sure and shut down. This can take around 20 minutes. 
 <!-- All the download are on [mirte.arend-jan.com](https://mirte.arend-jan.com/files/mirte-master/) as well. -->
-It works the same as the normal Mirte robot. Move the base with publishing to ```/mobile_base_controller/cmd_vel``` with a geometry_msgs/Twist message. 
+It works the same as the normal MIRTE robot. Move the base with publishing to ```/mobile_base_controller/cmd_vel``` with a geometry_msgs/Twist message. 
 
 ROS2 support is WIP. 
 
-### Master Mirte-install-scripts
+### Master mirte-install-scripts
 [mirte-install-scripts:mirte-master2](https://github.com/ArendJan/mirte-install-scripts/tree/mirte-master2)
 
 Changes from default:
@@ -93,7 +93,7 @@ Changes from default:
 - USB-switch systemctl module:
   - after boot, this module will turn on a GPIO pin (GPIO4_C3) to turn on the USB switch IC on the small board on top of the Orange Pi. This is to fix a power bug of the Orbbec Astra camera (pulling 1A+ when plugged in at boot)
 
-### Mirte-ros-packages
+### mirte-ros-packages
 [mirte-ros-packages:mirte-master](https://github.com/ArendJan/mirte-ros-packages/tree/mirte-master)
 
 Changes:
@@ -145,11 +145,11 @@ Changes:
 Download the latest uf2 from [here](https://github.com/mirte-robot/Telemetrix4RpiPico/pull/14) (build and deploy -> summary -> artifacts) and upload it with picotool ( `sudo picotool load -f Telemetrix4RpiPico.uf2` ).
 
 ## Electronics
-The Mirte-master is built to be as easy to work with as possible, there should be no need to change anything in the electronics.
+The MIRTE Master is built to be as easy to work with as possible, there should be no need to change anything in the electronics.
 
-The Mirte-master has 4 PCBs:
-- Mirte compute (main pcb), with a Pico
-- Mirte Sense and Control, connecting the motor drivers, encoders, main PCB and the sonars together
+The MIRTE Master has 4 PCBs:
+- MIRTE compute (main pcb), with a Pico
+- MIRTE Sense and Control, connecting the motor drivers, encoders, main PCB and the sonars together
 - ~~BMS board, converting the JST-XH connector of the LiPo battery to the JST-PH connector of the 3s BMS~~
 - USB switch board, switching the power of the Orbbec Astra depth camera
 
@@ -159,7 +159,7 @@ Assembly instructions:
 
 [Rough overview schematic](../_static/mirteMasterSchema.pdf)
 
-### Mirte compute
+### MIRTE compute
 [mirte-pcb:mirte-master/mirte-master](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-master)
 
 Errata (v0.2):
@@ -168,7 +168,7 @@ Errata (v0.2):
 - relay system doesn't work.
 ![main pcb](_images/master/pcb_main.png)
 
-### Mirte sense&Control
+### MIRTE sense&Control
 [mirte-pcb:mirte-master/mirte-master-bottom](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-master-bottom)
 
 ![bottom pcb](_images/master/pcb_bottom.png)
@@ -208,7 +208,7 @@ Errata:
 
 ## Building your own!
 ### Parts
-This is the list of parts we used for the MIRTE-master. Links show the parts we used, but often it can be a similar one.
+This is the list of parts we used for the MIRTE Master. Links show the parts we used, but often it can be a similar one.
 
 | Amount | Name | Type | Note |
 | --- | --- | --- | --- |

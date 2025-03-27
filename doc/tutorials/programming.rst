@@ -1,13 +1,13 @@
 
-Programming Mirte
+Programming MIRTE
 #################
 
-The goal of Mirte is to get everyone to learn about robotics. This means that there are multiple layers of complexity available.
+The goal of MIRTE is to get everyone to learn about robotics. This means that there are multiple layers of complexity available.
 
 Blockly
 =======
 
-The easiest way to program your Mirte robot is to use Blockly. Depending on your settings,
+The easiest way to program your MIRTE robot is to use Blockly. Depending on your settings,
 you should be able to drag and drop different blocks onto the canvas. By doing so, you
 can create your own logic for the robot.
 
@@ -22,7 +22,7 @@ stop your program from running.
 
       .. image:: ../_images/web_control.png
         :width: 600
-        :alt: Mirte control bar
+        :alt: MIRTE control bar
 
 
 .. note::
@@ -35,7 +35,7 @@ stop your program from running.
 Python
 ======
 
-One level more advanced is programming your Mirte robot in Python. This can be done in two ways.
+One level more advanced is programming your MIRTE robot in Python. This can be done in two ways.
 
 From web interface
 ------------------
@@ -109,7 +109,7 @@ Jupyter will run on http://mirte.local:8888 showing some examples from Jupyter-R
 From terminal
 -------------
 
-When Mirte boots a systemd service will launch the Mirte bringup. This service can be stopped and started manually as well:
+When MIRTE boots a systemd service will launch the MIRTE bringup. This service can be stopped and started manually as well:
 
 .. code-block:: bash
 
@@ -161,7 +161,7 @@ message published on cmd_vel and then use the Python API to drive around.
 Creating your own ROS packages/nodes
 ------------------------------------
 
-Mirte already uses a ROS workspace located at ~/mirte_ws. The easiest way to get started
+MIRTE already uses a ROS workspace located at ~/mirte_ws. The easiest way to get started
 is to use this workspace an create your own packages and nodes in this workspace. You can 
 achieve this by executing the following commands:
 

@@ -3,8 +3,8 @@
 Programming the MCU
 ###################
 
-Instead of using the full Mirte architecture including ROS, python and blockly, you
-can also only program on the MCU. Where the standard Mirte software using telemetrix
+Instead of using the full MIRTE architecture including ROS, python and blockly, you
+can also only program on the MCU. Where the standard MIRTE software using telemetrix
 is making the MCU a dumb slave, this setup will make your SBC a dumb slave. One option
 of course is to connect your MCU to your own computer. This section covers some 
 options to program the MCU from your computer over the air (wireless) where the
@@ -13,7 +13,7 @@ SBC is just a wifi spot to your MCU.
 .. warning::
 
    When reprogramming the MCU (and thus removing telemetrix from the MCU) all other
-   features of Mirte will not work anymore. You will only be able to control the
+   features of MIRTE will not work anymore. You will only be able to control the
    robot through the MCU code. You can of course always get back to the original 
    situation by :ref:`preparing the microcontroller<Prepare microcontroller>` again.
 
@@ -162,7 +162,7 @@ with `Platform IO <https://platformio.org/install/ide?install=vscode>`_.
 
 .. note::
 
-   PlatformIO will ssh/scp into Mirte two times asking for your password. It might be useful
+   PlatformIO will ssh/scp into MIRTE two times asking for your password. It might be useful
    to create a setup where you login :ref:`using SSH keys <Keybased SSH login>`.
 
 
@@ -181,12 +181,12 @@ The Arduino IDE should be configured in the same way as if the MCU was connected
 1. Add 'https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/package_stm_index.json' to 'File' > 'Settings' > 'Additional Boards Manager URLs'
 2. Install 'STM32 Cores' from 'Tools' > 'Board: xxxx' > 'Boards Manager...'
 3. Select 'Generic STM32F1 series' as 'Board', and make sure the other settings are as in the image below.
-4. Compile and run will compile locally and upload the hex to Mirte (passwd: mirte_mirte)
+4. Compile and run will compile locally and upload the hex to MIRTE (passwd: mirte_mirte)
 
 
 .. image:: ../_images/Mirte_Arduino_IDE.png
   :width: 600
-  :alt: Mirte Arduino IDE
+  :alt: MIRTE Arduino IDE
 
 
 

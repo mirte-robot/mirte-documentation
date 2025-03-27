@@ -374,7 +374,7 @@ IR sensor
 USB Camera
 **********
 
-By default the robot assumes you have connected the supported USB cam (see :ref:`basic hardware <Get Mirte Hardware>`).
+By default the robot assumes you have connected the supported USB cam (see :ref:`basic hardware <Get MIRTE Hardware>`).
 Currently only a ROS interface is defined.
 
 .. tabs::

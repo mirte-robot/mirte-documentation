@@ -1,14 +1,14 @@
-| | Mirte Pioneer | Alternatives/Upgrades |
+| | MIRTE Pioneer | Alternatives/Upgrades |
 | --- | --- | --- |
 | Computer | [Orange Pi Zero 2](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-Zero-2.html) | | 
 | SD card | Intenso 8Gb | Any 8Gb+ SD card | 
 | Microcontroller | Raspberry Pi Pico (RP2040) | Arduino Nano/Uno or SMT32
-| Electrical | [Mirte PCB](https://github.com/mirte-robot/mirte-pcb) | Breadboard [^1] + circuit [MB102](https://www.aliexpress.com/item/1005001863057390.html) + [splitter](https://www.aliexpress.com/item/4001025724405.html) | 
+| Electrical | [MIRTE PCB](https://github.com/mirte-robot/mirte-pcb) | Breadboard [^1] + circuit [MB102](https://www.aliexpress.com/item/1005001863057390.html) + [splitter](https://www.aliexpress.com/item/4001025724405.html) | 
 | 3 pin cable | 4x JST XH | 4 x female-female dupont | 
 | 4 pin cable | 4x JST XH | 4 x female-female dupont | 
 | Micro USB cable short | 1x | Dupont Cables | 
  | Battery | [Intenso XS10000](https://www.intenso.de/en/products/powerbanks/xs5000-xs10000-xs20000/) | Any stable powerbank [^2] | 
- | Chassis | [Mirte diff drive wood](https://github.com/mirte-robot/mirte-frame) | Mirte diff drive 3D print | 
+ | Chassis | [MIRTE diff drive wood](https://github.com/mirte-robot/mirte-frame) | MIRTE diff drive 3D print | 
  | Nuts and bolts | 15x M3 | | 
  | Ball caster | [W420 (thin shape)](https://www.aliexpress.com/item/32734869856.html) | | 
  | Wheels | [2x Yellow TT motor wheel](https://www.aliexpress.com/item/4000122298687.html) | | 

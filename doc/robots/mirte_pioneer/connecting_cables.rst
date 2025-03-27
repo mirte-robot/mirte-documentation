@@ -7,7 +7,7 @@ Connecting the power
 
 .. tabs::
 
-   .. group-tab:: Mirte PCB
+   .. group-tab:: MIRTE PCB
 
       Currently the PCB is only used by ourselves. Instructions can therefore be found in the same (Dutch) `instruction manual <https://surfdrive.surf.nl/files/index.php/s/RULqnIFU7yhXLJZ/download?path=%2F&files=W2%20-%20in%20elkaar%20zetten.pdf>`_.
 
@@ -20,7 +20,7 @@ Connecting the power
 Connecting the peripherals
 ==========================
 
-The Mirte PCB is nothing more than just a bunch of cables on a board. You can of
+The MIRTE PCB is nothing more than just a bunch of cables on a board. You can of
 course also connect the same hardware to a breadboard. The fritzing image below 
 shows you how to connect all the hardware in order to get the same pin layout
 as the PCB. But you are also free to chose different pins and change the 
@@ -28,7 +28,7 @@ configuration later on.
 
 .. tabs::
 
-   .. group-tab:: Mirte PCB
+   .. group-tab:: MIRTE PCB
 
       .. tabs::
 

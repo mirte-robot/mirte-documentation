@@ -1,7 +1,7 @@
-Configure Mirte
+Configure MIRTE
 ###############
 
-This step in only needed in case you are not using the Mirte PCB (or followed the 
+This step in only needed in case you are not using the MIRTE PCB (or followed the 
 breadboard instructions). For other MCUs (or other wiring of the Raspberry Pi Pico) the software still
 needs to know which pin is connected to what kind of hardware. This can be done in two ways.
 
@@ -21,8 +21,8 @@ From the Terminal
 -----------------
 
 The configuration to map the pins to sensortypes is done in `/usr/local/src/mirte/mirte-ros-packages/mirte_telemetrix/config/mirte_user_config.yaml <https://github.com/mirte-robot/mirte-ros-packages/blob/main/mirte_telemetrix/config/mirte_user_config.yaml>`_. 
-This file consists of multiple sections needed for Mirte to know which pins to control. 
-The default settings are the Mirte PCB. Below we will got though all sections (of the 
+This file consists of multiple sections needed for MIRTE to know which pins to control. 
+The default settings are the MIRTE PCB. Below we will got though all sections (of the 
 Raspberry Pi Pico on a breadboard).
 
 .. code-block:: yaml
