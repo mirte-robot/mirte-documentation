@@ -19,7 +19,7 @@ themselves.
 
    .. tab:: Overall
 
-      .. image:: images/architecture_full.png
+      .. image:: ../_images/architecture_full.png
         :width: 600
         :alt: Full Software Architecture
 
@@ -29,7 +29,7 @@ themselves.
 
    .. tab:: Repositories
 
-      .. image:: images/architecture_repos.png
+      .. image:: ../_images/architecture_repos.png
         :width: 600
         :alt: Overview of software repositories.
 
@@ -62,7 +62,7 @@ themselves.
 
    .. tab:: ROS nodes
 
-      .. image:: images/architecture_nodes.png
+      .. image:: ../_images/architecture_nodes.png
         :width: 600
         :alt: Overview of ROS nodes.
 
@@ -83,7 +83,7 @@ themselves.
 
    .. tab:: Systemd
 
-      .. image:: images/architecture_systemd.png
+      .. image:: ../_images/architecture_systemd.png
         :width: 600
         :alt: Systemd services.
 
@@ -126,7 +126,7 @@ Software Flows
 
    .. tab:: Settings
 
-      .. image:: images/architecture_settings.png
+      .. image:: ../_images/architecture_settings.png
         :width: 600
         :alt: Settings flow.
 
@@ -166,7 +166,7 @@ Software Flows
 
    .. tab:: Sensors
 
-      .. image:: images/architecture_sensors.png
+      .. image:: ../_images/architecture_sensors.png
         :width: 600
         :alt: Sensor data flow.
 
@@ -180,7 +180,7 @@ Software Flows
 
    .. tab:: Actuators
 
-      .. image:: images/architecture_actuators.png
+      .. image:: ../_images/architecture_actuators.png
         :width: 600
         :alt: Actuator data flow.
 
@@ -193,7 +193,7 @@ Software Flows
 
    .. tab:: Python
 
-      .. image:: images/architecture_programming_python.png
+      .. image:: ../_images/architecture_programming_python.png
         :width: 600
         :alt: Python programming flow.
 
@@ -201,7 +201,7 @@ Software Flows
 
    .. tab:: Blockly
 
-      .. image:: images/architecture_programming_blockly.png
+      .. image:: ../_images/architecture_programming_blockly.png
         :width: 600
         :alt: Blockly programming flow.
 

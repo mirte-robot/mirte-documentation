@@ -37,7 +37,7 @@ Raw pins
 
    .. group-tab:: Blockly
 
-      .. image:: images/blockly_raw.png
+      .. image:: ../_images/blockly_raw.png
 
 
 
@@ -133,7 +133,7 @@ pp (e.g. L298 or L9110)
 
    .. group-tab:: Blockly
 
-      .. image:: images/blockly_motor.png
+      .. image:: ../_images/blockly_motor.png
 
 
 
@@ -182,7 +182,7 @@ Servo
 
    .. group-tab:: Blockly
 
-      .. image:: images/blockly_servo.png
+      .. image:: ../_images/blockly_servo.png
 
 
 
@@ -230,7 +230,7 @@ Keypad
 
    .. group-tab:: Blockly
 
-      .. image:: images/blockly_keypad.png
+      .. image:: ../_images/blockly_keypad.png
 
 
 
@@ -274,7 +274,7 @@ OLED
 
    .. group-tab:: Blockly
 
-      .. image:: images/blockly_oled.png
+      .. image:: ../_images/blockly_oled.png
 
 Distance sensor
 ===============
@@ -320,7 +320,7 @@ Distance sensor
 
    .. group-tab:: Blockly
 
-      .. image:: images/blockly_distance.png
+      .. image:: ../_images/blockly_distance.png
 
 IR sensor
 =========
@@ -368,7 +368,7 @@ IR sensor
 
    .. group-tab:: Blockly
 
-      .. image:: images/blockly_ir.png
+      .. image:: ../_images/blockly_ir.png
 
 
 USB Camera

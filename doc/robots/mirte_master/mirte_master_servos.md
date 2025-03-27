@@ -10,15 +10,15 @@ In the original design, the cable going from the rotation servo to the shoulder 
 - screw back in the 7 screws.
   
 Connector on underside of shoulder, must go to the front one:
-![shoulder connector](./images/master/arm_servos/shoulder_wrong.jpg)
+![shoulder connector](./_images/master/arm_servos/shoulder_wrong.jpg)
 
 ### Setup:
 - Download and install the Bus Servo Terminal application: [Bus Servo Terminal](https://drive.google.com/drive/folders/1wIIIccKKmrLX4EyswIkunIs-A_SKX1Nq)
 - Grab the BusLinker and the powerbank from the toolbox: 
-![buslinker](./images/master/arm_servos/buslinker.jpg)
+![buslinker](./_images/master/arm_servos/buslinker.jpg)
 - Connect white usb connector to the powerbank and the black one to your computer
 - open Bus Servo Terminal, set the COM port(left side, should be only one) and press open port:
-  ![bus terminal](./images/master/arm_servos/terminal_com.png)
+  ![bus terminal](./_images/master/arm_servos/terminal_com.png)
 
 ### Setting the servos:
 - Unplug some cables to isolate each servo. You can only connect one servo at a time, otherwise it will write the same ID to multiple servos.
@@ -45,4 +45,4 @@ Connector on underside of shoulder, must go to the front one:
   - ```python3 mirte_master_check_home.py```
 
 Parameters tab:
-![parameters tab](images/master/arm_servos/terminal_parameters.png)
+![parameters tab](_images/master/arm_servos/terminal_parameters.png)

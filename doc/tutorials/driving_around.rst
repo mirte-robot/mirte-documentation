@@ -14,7 +14,7 @@ From web interface
 
 The robot can be controller from the web interface by goin to the 'control' tab:
 
-      .. image:: images/driving_around.png
+      .. _image:: images/driving_around.png
         :width: 600
         :alt: Driving around from the web interface
 

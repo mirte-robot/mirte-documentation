@@ -20,7 +20,7 @@ import sphinx_rtd_theme
 import subprocess
 # -- Project information -----------------------------------------------------
 
-project = u'Mirte Documentation'
+project = u'MIRTE Documentation'
 copyright = str(date.today().year) + ', Martin Klomp, TU Delft Robotics Institute'
 author = u'Martin Klomp'
 

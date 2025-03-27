@@ -184,7 +184,7 @@ The Arduino IDE should be configured in the same way as if the MCU was connected
 4. Compile and run will compile locally and upload the hex to Mirte (passwd: mirte_mirte)
 
 
-.. image:: images/Mirte_Arduino_IDE.png
+.. image:: ../_images/Mirte_Arduino_IDE.png
   :width: 600
   :alt: Mirte Arduino IDE
 

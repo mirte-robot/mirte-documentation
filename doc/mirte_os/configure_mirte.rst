@@ -12,7 +12,7 @@ From the Web Interface
 On the webinterface this can be done by removing and adding the peripherals in order
 to match your robot hardware:
 
-      .. image:: images/save_settings.png
+      .. image:: ../_images/save_settings.png
         :width: 600
         :alt: Save settings
 

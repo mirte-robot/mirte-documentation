@@ -34,63 +34,63 @@ configuration later on.
 
          .. group-tab:: Motor
 
-            .. |motor1| image:: images/motor_pcb.png
+            .. |motor1| image:: ../../_images/motor_pcb.png
                :width: 49%
 
-            .. |motor2| image:: images/motor.png
+            .. |motor2| image:: ../../_images/motor.png
                :width: 49%
 
             |motor1| |motor2|
 
          .. group-tab:: Servo
 
-            .. |servo1| image:: images/servo_pcb.png
+            .. |servo1| image:: ../../_images/servo_pcb.png
                :width: 49%
 
-            .. |servo2| image:: images/servo.png
+            .. |servo2| image:: ../../_images/servo.png
                :width: 49%
 
             |servo1| |servo2|
 
          .. group-tab:: OLED
 
-            .. |oled1| image:: images/oled_pcb.png
+            .. |oled1| image:: ../../_images/oled_pcb.png
                :width: 49%
 
-            .. |oled2| image:: images/oled.png
+            .. |oled2| image:: ../../_images/oled.png
                :width: 49%
 
             |oled1| |oled2|
 
          .. group-tab:: Line follow
 
-            .. |line1| image:: images/line_pcb.png
+            .. |line1| image:: ../../_images/line_pcb.png
                :width: 49%
 
-            .. |line2| image:: images/line.png
+            .. |line2| image:: ../../_images/line.png
                :width: 49%
 
             |line1| |line2|
 
          .. group-tab:: Distance
 
-            .. |dist1| image:: images/distance_pcb.png
+            .. |dist1| image:: ../../_images/distance_pcb.png
                :width: 49%
 
-            .. |dist2| image:: images/distance.png
+            .. |dist2| image:: ../../_images/distance.png
                :width: 49%
 
             |dist1| |dist2|
 
    .. group-tab:: Pi Pico
 
-     .. image:: images/full_pico_bb.png
+     .. image:: ../../_images/full_pico_bb.png
         :width: 600
         :alt: Alternative text
 
    .. group-tab:: Arduino Nano
 
-     .. image:: images/full_nano_bb.png
+     .. image:: ../../_images/full_nano_bb.png
        :width: 600
        :alt: Alternative text
 
@@ -102,7 +102,7 @@ configuration later on.
 
    .. group-tab:: Arduino Uno
 
-     .. image:: images/full_uno_bb.png
+     .. image:: ../../_images/full_uno_bb.png
        :width: 600
        :alt: Alternative text
 
@@ -116,7 +116,7 @@ configuration later on.
 
    .. group-tab:: STM32
 
-      .. image:: images/full_PCB_bb.png
+      .. image:: ../../_images/full_PCB_bb.png
         :width: 600
         :alt: Alternative text
 

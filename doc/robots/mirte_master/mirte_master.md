@@ -1,5 +1,3 @@
-# Mirte Master
-
 
 The Mirte Master is one of the possible upgrades of the Mirte robot.
 
@@ -42,11 +40,11 @@ The services for the servos use the radian ranges. Getting the ranges is possibl
 
 The home position of the arm is forward pointing up:
 - Arm is rotated forward:
-- ![Rotation forward](images/master/mirte_master_arm_home_rot.jpg) 
+- ![Rotation forward](_images/master/mirte_master_arm_home_rot.jpg) 
 - Arm is pointing up:
-- ![Arm up](images/master/mirte_master_arm_home_side.jpg) 
+- ![Arm up](_images/master/mirte_master_arm_home_side.jpg) 
 - The Gripper has the servo-driven beams horizontal:
-- ![Gripper horizontal beams](images/master/mirte_master_arm_home_grip.jpg) 
+- ![Gripper horizontal beams](_images/master/mirte_master_arm_home_grip.jpg) 
 
 
 #### Moveit
@@ -168,12 +166,12 @@ Errata (v0.2):
 - 5v and GND labels(bottom) for the 12v->5v screw terminal are inverted
 - power switch cable to pcb must be removed to disable the light in the switch.
 - relay system doesn't work.
-![main pcb](images/master/pcb_main.png)
+![main pcb](_images/master/pcb_main.png)
 
 ### Mirte sense&Control
 [mirte-pcb:mirte-master/mirte-master-bottom](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-master-bottom)
 
-![bottom pcb](images/master/pcb_bottom.png)
+![bottom pcb](_images/master/pcb_bottom.png)
 ### Usb switcher
 [mirte-pcb:mirte-master/mirte-usb-switcher](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-usb-switcher)
 
@@ -190,7 +188,7 @@ J4, unsoldered header for any use:
 - D3: GPIO0_D1
 - D4: GPIO4_C3
 - GND
-![usb switch pcb](images/master/pcb_usb_switch.png)
+![usb switch pcb](_images/master/pcb_usb_switch.png)
 Image shows 2x4 header on top, must be soldered on the bottom.
 
 Errata:
@@ -199,7 +197,7 @@ Errata:
 ### BMS board
 [mirte-pcb:mirte-master/mirte-bms-breakout](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-bms-breakout)
 
-![bms board](images/master/pcb_bms.png)
+![bms board](_images/master/pcb_bms.png)
 
 
 ## WIP:

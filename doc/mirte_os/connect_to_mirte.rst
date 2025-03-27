@@ -100,7 +100,7 @@ In the web interface there is also an option to connect to your local wifi. In y
 browser visit http://mirte.local/#/Settings and select the network and password. This will also
 try to connect to the wifi right away and might therefore be less successfull.
 
-.. image:: images/Mirte_Wireless.png
+.. image:: ../_images/Mirte_Wireless.png
   :width: 600
   :alt: Alternative text
 
