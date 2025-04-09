@@ -2,8 +2,12 @@ name: Build site
 
 on: [push, pull_request]
 env:
-  owner: ArendJan #mirte-robot
-  releases: '0.1.0-rc3 test_ros2_tag4' # releases to download from the github releases page as they probably don't compile anymore (ros1->ros2). space separated list
+  owner: mirte-robot
+  releases: '0.1.0' # releases to download from the github releases page as they probably don't compile anymore (ros1->ros2). space separated list
+
+
+permissions:
+  contents: write
 
 jobs:
   build:
