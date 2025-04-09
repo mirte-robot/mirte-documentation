@@ -24,12 +24,12 @@ to buy a full Mirte Pioneer Box with all the listed components.
      - Alternatives/Upgrades
    * - Computer
      - `Orange Pi Zero 2 <http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-Zero-2.html>`_
-     - Raspberry Pi 2/3/4, Orange Pi 3B
-   * - SD card
-     - Intenso 16Gb (class 10)
-     - Any 16Gb+ SD card 
+     - Raspberry Pi 3/4, Orange Pi 3B
+   * - micro SD card
+     - Intenso 16Gb (class 10) micro SD card
+     - Any 16Gb+ micro SD card 
    * - Microcontroller
-     - Raspberry Pi Pico (RP2040)
+     - Raspberry Pi Pico H (RP2040)
      - Arduino Nano/Uno | SMT32 
    * - Electrical circuit
      - `Mirte PCB <https://github.com/mirte-robot/mirte-pcb>`_
@@ -50,7 +50,7 @@ to buy a full Mirte Pioneer Box with all the listed components.
      - `Mirte diff drive wood <https://github.com/mirte-robot/mirte-frame>`_
      - Mirte diff drive 3D print
    * - Nuts and bolts
-     - 15x M3
+     - 15x M3 15mm
      -
    * - Ball caster
      - `W420 (thin shape) <https://www.aliexpress.com/item/32734869856.html>`_

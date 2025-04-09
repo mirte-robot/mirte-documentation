@@ -1,4 +1,4 @@
-# Documentation Mirte Robot
+# Documentation MIRTE Robot
 
 To build the documentation:
 
@@ -44,3 +44,17 @@ Check for spelling with the following command
 make spelling
 ```
 Add correct words to the ```spelling_wordlist.txt``` file.
+
+
+
+## Multi version setup
+As the docs build uses other parts (ROS, Python, ...), just using sphinx-multiversion doesn't work 100%.
+New setup:
+- At release of a new version, a site.zip is created with the docs of that version without any other versions or version selector
+- At creation of a new pages:
+  - create dummy tags to generate the correct versions html
+  - sphinx-multiversions build
+  - for each release:
+    - download the site.zip from the release page
+    - take the versions html code from the 'dummy' and replace it in the downloaded version
+  - push to github pages

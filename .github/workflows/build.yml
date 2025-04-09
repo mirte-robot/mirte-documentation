@@ -1,53 +1,72 @@
 name: Build site
 
 on: [push, pull_request]
+env:
+  owner: mirte-robot
+  releases: '0.1.0' # releases to download from the github releases page as they probably don't compile anymore (ros1->ros2). space separated list
+
+
+permissions:
+  contents: write
 
 jobs:
   build:
-
+    
     runs-on: ubuntu-latest
     container:
       image: althack/ros:noetic-dev
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+          fetch-tags: true
+          set-safe-directory: true
+      - name: get tags
+        run: |
+          git config --global --add safe.directory /__w/mirte-documentation/mirte-documentation
+          git fetch --all
+          git tag -n
+          # remove tags that are in the releases list
+          for release in $releases; do
+            git tag -d $release || true
+            git tag $release
+          done
+          git tag current # create a current tag for the current commit
+          
       - name: Install dependencies
         run: |
           git config --global --add safe.directory /__w/mirte-documentation/mirte-documentation
-          git submodule update --init --recursive
-          sudo apt update
-          sudo apt install libenchant-2-dev -y python3-empy zip
-          python3 -m pip install --upgrade pip
-          apt install python3.8-venv -y
-          python3 -m venv docs-env
-          ls
-          ls docs-env
-          ls docs-env/bin
-          . docs-env/bin/activate
-          pip install -r requirements.txt
-          cd _modules/mirte-python
-          pip install .
-          pip install empy==3.3.4
-          cd ../catkin_ws/src/mirte-ros-packages
-          ls | grep -xv "mirte_msgs" | xargs rm -rf
-          cd ../../
-          catkin_make # or catkin build
-          . devel/setup.sh
-          cd ../../
-          make html
+          . ./build.sh # install dependencies and build the subsystems
+          sphinx-multiversion . _build/html_multi
+          cp _static/index.html _build/html_multi/index.html # for the redirect to the latest version
+      - name: Add old releases
+        run: |
+          apt update && apt install -y wget unzip
+          for release in $releases; do
+            wget https://github.com/$owner/mirte-documentation/releases/download/$release/site.zip
+            python3 build_scripts/fix_versions.py $release site.zip
+          done
+      - name: Archive site
+        run: |
           cd _build/html
-          zip -r ../../site.zip .
+          zip -r ../../site.zip . 
           cd ../../
       - name: install nodejs for archive script
         run: |
           curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
           sudo apt-get install -y nodejs        
+      # - name: Archive production artifacts
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: dist
+      #     path: |
+      #       _build/html
+      # - name: Archive artifacts multi-version
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     path: _build/html_multi
+      #     name: html_multiversion
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: dist
-          path: |
-            _build/html
-      - name: Archive production artifacts for act
         uses: actions/upload-artifact@v4
         with:
           name: act_dist
@@ -56,12 +75,16 @@ jobs:
       - name: Upload as a github-pages artifact
         uses: actions/upload-pages-artifact@v3
         with: 
-          path: _build/html
-
+          path: _build/html_multi
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: site.zip
   deploy:
     # Add a dependency to the build job
     needs: build
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' || github.repository_owner != 'mirte-robot'
     permissions:
       pages: write      # to deploy to Pages
       id-token: write   # to verify the deployment originates from an appropriate source
