@@ -13,9 +13,21 @@ Web Interface
 The web interface can be accessed by opening your favorite browser and going
 to http://mirte.local. This will bring you to the web interface.
 
+.. note::
+
+   When connected to another Acces Point, the web interface will prompt you
+   for your username (mirte) and password (the one you set). This will not be
+   done when connected to a Windows hotspot (IP range 192.168.137.1-255). 
+
 
 Terminal
 ========
+
+.. note::
+
+   In this tutorial we will use '$' when the command needs to be executed on
+   your own machine, while we use 'mirte$' when a command needs to be executed
+   on the MIRTE robot.
 
 On Linux and MacOS you can SSH by opening a terminal. On Windows you could 
 the optional built-in SSH client (Windows 10/11), use Putty, or MobaXTerm. You can 
@@ -25,18 +37,19 @@ connect to MIRTE via SSH (first time login password is 'mirte_mirte'):
 
     $ ssh mirte@mirte.local
 
+The first time you login you will be prompted to change your password (to at
+least 8 characters). After changing this your SSH connection will be closed and 
+you have to reconnect using the same command. This will also change the password 
+for the Wifi network on the next boot of the robot.
 
-.. note::
+.. warning::
 
-   In this tutorial we will use '$' when the command needs to be executed on
-   your own machine, while we use 'mirte$' when a command needs to be executed
-   on the MIRTE robot.
-  
+   Please note that the password of the Wifi network will be changed. Your OS
+   might have (auto)saved the old password, so you have to tell your OS
+   to 'forget' the network, so you can login using your new passeord.
 
-The first time you login you will be prompted to change your password. After
-changing this your connection will be lost and you have to reconnect using
-the same command. Please note that this will not change the Wifi password
-of the robot.
+
+
 
 Keybased SSH login
 ------------------

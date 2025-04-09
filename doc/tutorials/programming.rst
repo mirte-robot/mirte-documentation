@@ -28,7 +28,7 @@ stop your program from running.
 .. note::
    When your program is finished running the robot will automatically also stop the motors
    from running. This is to make sure that you do not forget to stop the motors. This also
-   means that only including a setSpeed will not make your robot move.
+   means that only including a setMotorSpeed will not make your robot move.
 
 
 
@@ -84,6 +84,16 @@ or your own Pytohn script.
    >>> mirte = robot.createRobot()
 
 
+Using onboard VS-code
+---------------------
+
+The MIRTE robot has VS-code installed, which can be accessed though http://mirte.local/code.
+
+
+Using VS-code
+-------------
+
+
 ROS
 ===
 
@@ -123,6 +133,15 @@ You can also run the launchfile yourself (only when you stopped the systemd serv
    mirte$ roslaunch mirte_bringup bringup.launch
 
 
+Using onboard VS-code
+---------------------
+
+The MIRTE robot has VS-code installed, which can be accessed though http://mirte.local/code.
+
+
+Using VS-code
+-------------
+
 
 
 Using ROS icw Python API
@@ -149,8 +168,8 @@ message published on cmd_vel and then use the Python API to drive around.
        if (twist_msg.linear.x > 0.0):
           speed = 80    
 
-       mirte.setSpeed('left', speed)
-       mirte.setSpeed('right', speed)
+       mirte.setMotorSpeed('left', speed)
+       mirte.setMotorSpeed('right', speed)
 
    # Initialize the subscriber on the twist message
    rospy.Subscriber("cmd_vel", Twist, callback)
