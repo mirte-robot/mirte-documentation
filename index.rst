@@ -7,7 +7,8 @@ MIRTE Documentation
    :maxdepth: 2
    :hidden:
 
-   doc/robots/index
+   doc/robots/mirte_pioneer/index
+   doc/robots/mirte_master/mirte_master
 
 .. toctree::
    :caption: MIRTE OS
