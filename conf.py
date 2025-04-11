@@ -111,8 +111,8 @@ html_sidebars = {
         'versioning.html',
     ],
 }
-smv_tag_whitelist = r'^.*$'
-#smv_branch_whitelist = None
+smv_tag_whitelist = r'^.*$' # all
+smv_branch_whitelist = r'^$' # none
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
