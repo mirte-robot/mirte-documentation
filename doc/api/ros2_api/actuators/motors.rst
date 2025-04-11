@@ -1,3 +1,4 @@
+:orphan:
 
 Motors
 ^^^^^^
@@ -46,12 +47,14 @@ Motors
 
         - Topic:
             - ``/HOSTNAME/io/motor/NAME/speed``: `std_msgs/msg/Int32 <https://docs.ros.org/en/humble/p/std_msgs/interfaces/msg/Int32.html>`_
+
             .. code-block:: bash
                 
                 ros2 topic pub /$HOSTNAME/io/motor/NAME/speed std_msgs/msg/Int32 "data: 50"
                
         - Services:
             - ``/mirte_6e3c89/io/motor/NAME/set_speed`` (mirte_msgs/srv/SetMotorSpeed)
+
             .. TODO: service html auto maken
 
             .. code-block:: bash

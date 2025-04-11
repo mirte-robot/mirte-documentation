@@ -1,3 +1,5 @@
+:orphan:
+
 | | MIRTE Pioneer | Alternatives/Upgrades |
 | --- | --- | --- |
 | Computer | [Orange Pi Zero 2](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-Zero-2.html) | | 

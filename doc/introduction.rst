@@ -16,10 +16,10 @@ all the way to university. Getting you to the next level in each discipline step
 +-------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 
-|pic1| |pic2|
+.. .. |pic1| |pic2|
 
-.. |pic1| image:: _images/mirte_basic.jpg
+.. .. |pic1| image:: ./doc/_images/mirte_basic.jpg
    :width: 30%
 
-.. |pic2| image:: _images/mirte_web_interface.png
+.. .. |pic2| image:: ./doc/_images/mirte_web_interface.png
    :width: 60%

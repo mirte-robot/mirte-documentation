@@ -48,6 +48,9 @@ napoleon_google_docstring = True
 napoleon_use_param = True
 napoleon_use_ivar = True
 
+# Ignore python warnings about missing ROS (msgs) libs
+autodoc_mock_imports = ["mirte_msgs"]
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -71,7 +74,7 @@ language = 'en'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store', '*env']
+exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store', '*env', 'README.md', '_modules']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
@@ -109,7 +112,7 @@ html_sidebars = {
     ],
 }
 smv_tag_whitelist = r'^.*$'
-smv_branch_whitelist = None
+#smv_branch_whitelist = None
 
 # -- Options for HTMLHelp output ---------------------------------------------
 

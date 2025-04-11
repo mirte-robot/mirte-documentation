@@ -52,9 +52,9 @@ SSD1306 OLED display. Only the 128x64 version is supported. Up to 2 oleds are su
                
         - Services:
             - ``/mirte_6e3c89/io/motor/NAME/set_speed`` (mirte_msgs/srv/SetMotorSpeed)
+
             .. TODO: service html auto maken
 
             .. code-block:: bash
 
                 ros2 service call /$HOSTNAME/io/motor/NAME/set_speed mirte_msgs/srv/SetMotorSpeed "speed: 50"
-    

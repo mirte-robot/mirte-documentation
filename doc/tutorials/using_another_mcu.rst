@@ -5,7 +5,7 @@ Using another MCU
 Prepare microcontroller
 =======================
 
-As mentioned during the :ref:`software installation <Install MIRTE Software>` the MIRTE robot needs
+As mentioned during the :ref:`software installation <Installation>` the MIRTE robot needs
 some software on the microcontroller to work. MIRTE uses a modified version of the Telemetrix 
 protocol for this. This step is only needed when you have another MCU then the Raspberry Pi
 Pico (i.e. STM32, Arduino Nano, or Arduino Uno).

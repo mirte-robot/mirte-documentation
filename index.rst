@@ -20,7 +20,6 @@ MIRTE Documentation
    doc/mirte_os/access_interface
    doc/mirte_os/configure_mirte
    doc/mirte_os/supported_hardware
-   doc/mirte_os/apis/index
 
 .. toctree::
    :caption: Simulation
@@ -28,6 +27,12 @@ MIRTE Documentation
    :hidden:
 
 
+.. toctree::
+   :caption: APIs
+   :maxdepth: 1
+   :hidden:
+
+   doc/api/mirte_python_api   
 
 
 .. toctree::
@@ -38,7 +43,6 @@ MIRTE Documentation
    doc/tutorials/driving_around
    doc/tutorials/programming
    doc/tutorials/programming_mcu
-   doc/tutorials/mirte_master
    doc/tutorials/using_another_mcu
 
 

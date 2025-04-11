@@ -1,3 +1,4 @@
+:orphan:
 
 ## Frame
 
@@ -105,10 +106,10 @@ Frame drawing: [solidworks zip](https://mirte.arend-jan.com/files/Solidworks%20c
 ### Build instructions
 WIP: need to add more instructions, also for the cabling.
 
-Frame build instructions: [Instructions](../_static/Assembly_BASE.pdf)
+Frame build instructions: [Base instructions](../_static/Assembly_BASE.pdf)
 
-Frame top and arm instructions: [Instructions](../_static/Assembly_TOP_ARM.pdf)
+Frame top and arm instructions: [Top instructions](../_static/Assembly_TOP_ARM.pdf)
 
-Electronics instructions: [Instructions](../_static/Assembly_electro.pdf)
+Electronics instructions: [Electronics instructions](../_static/Assembly_electro.pdf)
 
 Electronics and frame assembly needs to be done in sync, otherwise it's too difficult to attach the cables once everything is mounted.
