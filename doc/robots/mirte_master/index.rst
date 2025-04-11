@@ -5,7 +5,7 @@ MIRTE Master
    :maxdepth: 1
    :hidden:
 
-   get_mirte_hardware
+   hardware_specs
 ..   build_mirte_hardware
 ..   connecting_cables
 

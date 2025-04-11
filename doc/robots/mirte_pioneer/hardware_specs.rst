@@ -1,5 +1,5 @@
-Get MIRTE Hardware
-##################
+Hardware specs
+##############
 
 One of the goals of MIRTE is to be modular and extendable. Therefore MIRTE has a minimal amount
 of custom designed components, and mostly uses frequently used hardware. Two exceptions are

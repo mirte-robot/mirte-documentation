@@ -1,5 +1,5 @@
-Get MIRTE Hardware
-##################
+Hardware specs
+##############
 
 The MIRTE Master was designed to be the upgraded bigger brother of the MIRTE Pioneer. With
 this the students can focus more on realiastis robot applications. Like with the MIRTE

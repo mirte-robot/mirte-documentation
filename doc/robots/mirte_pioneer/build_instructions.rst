@@ -1,5 +1,5 @@
-Build MIRTE Hardware
-####################
+Build instructions
+##################
 
 The MIRTE Pioneer uses a wooden frame. You can use the build instructions
 steps below to build your robot.

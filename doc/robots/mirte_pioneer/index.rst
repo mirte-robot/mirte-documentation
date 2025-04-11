@@ -5,8 +5,8 @@ MIRTE Pioneer
    :maxdepth: 1
    :hidden:
 
-   get_mirte_hardware
-   build_mirte_hardware
+   hardware_specs
+   build_instructions
    connecting_cables
 
 Explore all robotic possibilities. By adding a computer one can use even more
