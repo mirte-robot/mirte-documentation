@@ -8,7 +8,7 @@ MIRTE Documentation
    :hidden:
 
    doc/robots/mirte_pioneer/index
-   doc/robots/mirte_master/mirte_master
+   doc/robots/mirte_master/index
 
 .. toctree::
    :caption: MIRTE OS
