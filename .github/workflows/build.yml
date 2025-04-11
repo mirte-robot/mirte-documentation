@@ -31,7 +31,7 @@ jobs:
             git tag -d $release || true
             git tag $release
           done
-          git tag current # create a current tag for the current commit
+          git tag develop # create a develop tag for the current commit
           
       - name: Install dependencies
         run: |
