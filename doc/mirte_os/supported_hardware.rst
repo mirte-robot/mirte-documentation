@@ -32,9 +32,16 @@ Raw pins
 
          mirte.getAnalogPinValue()
 
-      .. autoclass:: robot::Robot
-         :members: setAnalogPinValue, getAnalogPinValue, setDigitalPinValue, getDigitalPinValue
-         :undoc-members:
+      .. automethod:: robot.Robot.setAnalogPinValue
+         :noindex:
+
+      .. automethod:: robot.Robot.getAnalogPinValue
+         :noindex:
+
+      .. automethod:: robot.Robot.setDigitalPinValue
+         :noindex:
+
+      .. automethod:: robot.Robot.getDigitalPinValue
          :noindex:
 
    .. group-tab:: Blockly
@@ -127,10 +134,8 @@ pp (e.g. L298 or L9110)
          mirte = robot.createRobot()
 
          mirte.setMotorSpeed('left', 50)
-        
-      .. autoclass:: robot::Robot
-         :members: setMotorSpeed
-         :undoc-members:
+
+      .. automethod:: robot.Robot.setMotorSpeed        
          :noindex:
 
    .. group-tab:: Blockly
@@ -176,10 +181,8 @@ Servo
          mirte = robot.createRobot()
 
          mirte.setServoAngle('left', 90)
-        
-      .. autoclass:: robot::Robot
-         :members: setServoAngle
-         :undoc-members:
+
+      .. automethod:: robot.Robot.setServoAngle        
          :noindex:
 
    .. group-tab:: Blockly
@@ -223,10 +226,8 @@ Keypad
          mirte = robot.createRobot()
 
          mirte.getKeypad('left')
-        
-      .. autoclass:: robot::Robot
-         :members: getKeypad
-         :undoc-members:
+
+      .. automethod:: robot.Robot.getKeypad        
          :noindex:
 
 
@@ -264,10 +265,8 @@ OLED
          mirte = robot.createRobot()
 
          mirte.setOLEDText('left', 'hello mirte')
-        
-      .. autoclass:: robot::Robot
-         :members: setOLEDText, setOLEDImage, setOLEDAnimation
-         :undoc-members:
+
+      .. automethod:: robot.Robot.setOLEDText        
          :noindex:
 
    .. group-tab:: Blockly
@@ -311,9 +310,7 @@ Distance sensor
 
          mirte.getDistance('left')
 
-      .. autoclass:: robot::Robot
-         :members: getDistance
-         :undoc-members:
+      .. automethod:: robot.Robot.getDistance
          :noindex:
 
    .. group-tab:: Blockly
@@ -359,9 +356,7 @@ IR sensor
 
          mirte.getIntensity('left')
 
-      .. autoclass:: robot::Robot
-         :members: getIntensity
-         :undoc-members:
+      .. automethod:: robot.Robot.getIntensity
          :noindex:
 
    .. group-tab:: Blockly
@@ -409,9 +404,7 @@ Color sensor
 
          mirte.getColor('left')['h']
 
-      .. autoclass:: robot::Robot
-         :members: getColorHSL
-         :undoc-members:
+      .. automethod:: robot.Robot.getColor
          :noindex:
 
    .. group-tab:: Blockly

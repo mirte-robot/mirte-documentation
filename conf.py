@@ -49,7 +49,7 @@ napoleon_use_param = True
 napoleon_use_ivar = True
 
 # Ignore python warnings about missing ROS (msgs) libs
-autodoc_mock_imports = ["mirte_msgs"]
+autodoc_mock_imports = ["rclpy", "yaml", "rcl_interfaces", "mirte_msgs", "singleton"]
 
 
 # Add any paths that contain templates here, relative to this directory.
@@ -113,6 +113,19 @@ html_sidebars = {
 }
 smv_tag_whitelist = r'^.*$' # all
 smv_branch_whitelist = r'^$' # none
+
+
+# -- Skip certain autodoc functions
+def skip_member(app, what, name, obj, skip, options):
+    # Skip all functions named "internal_method"
+    if name in ["createRobot", "singleton"]:
+        return True
+    return skip
+
+def setup(app):
+    app.connect("autodoc-skip-member", skip_member)
+
+
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
