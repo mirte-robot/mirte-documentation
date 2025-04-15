@@ -14,8 +14,10 @@ Raw pins
 
       .. code-block:: bash
 
-         $ rosservice call /mirte/get_pin_value "{pin: '', type: ''}"
-         $ rosservice call /mirte/set_pin_value "{pin: '', type: '', value: }"
+         $ ros2 service call /io/get_analog_pin_value mirte_msgs/srv/GetAnalogPinValue "{pin: }"
+         $ ros2 service call /io/get_digital_pin_value mirte_msgs/srv/GetDigitalPinValue "{pin: }"
+         $ ros2 service call /io/set_digital_pin_value mirte_msgs/srv/SetDigitalPinValue "{pin: ,value: false}"
+         $ ros2 service call /io/set_pwm_pin_value mirte_msgs/srv/SetPWMPinValue "{pin: ,value: false}"
 
       Setting a pin can be either 'analog' (PWM) or 'digital'. The pin itself can be defined
       as the print on the MCU (e.g. 'GP3'). You can have a look in the web interface to
@@ -115,7 +117,7 @@ pp (e.g. L298 or L9110)
 
       .. code-block:: bash
 
-         $ rosservice call /mirte/set_left_speed "speed: "
+         $ ros2 service call /io/motor/left/set_speed mirte_msgs/srv/SetMotorSpeed "{speed: 50}"
 
    .. group-tab:: Python
 
@@ -164,7 +166,7 @@ Servo
 
       .. code-block:: bash
 
-         $ rosservice call /mirte/set_left_servo_angle "angle: 90"
+         $ ros2 service call /io/servo/right/set_angle mirte_msgs/srv/SetServoAngle "{angle: 90, degrees: true}"
 
    .. group-tab:: Python
 
@@ -205,13 +207,13 @@ Keypad
 
       .. code-block:: bash
 
-         $ rostopic echo /mirte/keypad/left
+         $ ros2 topic echo /io/keypad/left
 
       As a service (blocking):
 
       .. code-block:: bash
 
-         $ rosservice call /mirte/get_keypad_left "{}"
+         $ /io/keypad/left/get_key
 
    .. group-tab:: Python
 
@@ -252,9 +254,7 @@ OLED
 
       .. code-block:: bash
 
-         $ rosservice call /mirte/set_left_image "{type: 'text', value: 'hello mirte'}"
-         $ rosservice call /mirte/set_left_image "{type: 'image', value: 'mirte_logo'}"
-         $ rosservice call /mirte/set_left_image "{type: 'animation', value: 'eye'}"
+         $ ros2 service call /io/oled/right/set_text mirte_msgs/srv/SetOLEDText "{text: 'hello'}"
 
    .. group-tab:: Python
 
@@ -264,8 +264,6 @@ OLED
          mirte = robot.createRobot()
 
          mirte.setOLEDText('left', 'hello mirte')
-         mirte.setOLEDImage('left', 'mirte_logo')
-         mirte.setOLEDAnimation('left', 'eye')
         
       .. autoclass:: robot::Robot
          :members: setOLEDText, setOLEDImage, setOLEDAnimation
@@ -296,13 +294,13 @@ Distance sensor
 
       .. code-block:: bash
 
-         $ rostopic echo /mirte/distance/left
+         $ ros2 topic echo /io/distance/left/get_range
 
       As a service (blocking):
 
       .. code-block:: bash
 
-         $ rosservice call /mirte/get_distance_left "{}"
+         $ ros2 service call /io/distance/left/get_range mirte_msgs/srv/GetRange
 
    .. group-tab:: Python
 
@@ -342,15 +340,15 @@ IR sensor
 
       .. code-block:: bash
 
-         $ rostopic echo /mirte/intensity/left
-         $ rostopic echo /mirte/intensity/left_digital
+         $ ros2 topic echo /io/intensity/left
+         $ ros2 topic echo /io/intensity/left/digital
 
       As a service (blocking):
 
       .. code-block:: bash
 
-         $ rosservice call /mirte/get_intensity_left "{}"
-         $ rosservice call /mirte/get_intensity_left_digital "{}"
+         $ ros2 service call /io/intensity/left/get_analog mirte_msgs/srv/GetIntensity
+         $ ros2 service call /io/intensity/left/get_digital mirte_msgs/srv/GetIntensityDigital
 
    .. group-tab:: Python
 
@@ -369,6 +367,56 @@ IR sensor
    .. group-tab:: Blockly
 
       .. image:: ../_images/blockly_ir.png
+
+
+Color sensor
+============
+.. code-block:: yaml
+
+   color:
+     left:
+       name: left
+       device: mirte
+       pins:
+       pins:
+         scl: GP5
+         sda: GP4
+
+.. tabs::
+
+   .. group-tab:: ROS
+
+      As a topic (non-blocking):
+
+      .. code-block:: bash
+
+         $ ros2 topic echo /io/color/left/hsl
+         $ ros2 topic echo /io/color/left/rgb
+
+      As a service (blocking):
+
+      .. code-block:: bash
+
+         $ ros2 service call /io/intensity/left/get_analog mirte_msgs/srv/GetIntensity
+         $ ros2 service call /io/intensity/left/get_digital mirte_msgs/srv/GetIntensityDigital
+
+   .. group-tab:: Python
+
+      .. code-block:: python
+
+         from mirte_robot import robot
+         mirte = robot.createRobot()
+
+         mirte.getColor('left')['h']
+
+      .. autoclass:: robot::Robot
+         :members: getColorHSL
+         :undoc-members:
+         :noindex:
+
+   .. group-tab:: Blockly
+
+      .. image:: ../_images/blockly_color.png
 
 
 USB Camera

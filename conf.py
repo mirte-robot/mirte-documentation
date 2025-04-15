@@ -22,7 +22,7 @@ import subprocess
 
 project = u'Mirte Documentation'
 copyright = '&#169; Copyright ' + str(date.today().year) + ' Delft University of Technology, CC BY 4.0.'
-author = u'Martin Klomp'
+author = u'Martin Klomp & Arend-Jan van Hilten'
 html_show_sphinx = False
 
 # The short X.Y version
