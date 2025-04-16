@@ -90,9 +90,6 @@ Using onboard VS-code
 The MIRTE robot has VS-code installed, which can be accessed though http://mirte.local/code.
 
 
-Using VS-code
--------------
-
 
 ROS
 ===
@@ -128,9 +125,20 @@ When MIRTE boots a systemd service will launch the MIRTE bringup. This service c
 
 You can also run the launchfile yourself (only when you stopped the systemd service):
 
-.. code-block:: bash
+.. tabs::
 
-   mirte$ roslaunch mirte_bringup bringup.launch
+   .. group-tab:: MIRTE Pioneer
+
+      .. code-block:: bash
+
+         mirte$ ros2 launch mirte_bringup minimal.launch.py
+
+   .. group-tab:: MIRTE Master
+
+      .. code-block:: bash
+
+         mirte$ ros2 launch mirte_bringup minimal_master.launch.py
+
 
 
 Using onboard VS-code
@@ -157,25 +165,41 @@ message published on cmd_vel and then use the Python API to drive around.
    # Import and load the mirte API
    from mirte_robot import robot
    mirte = robot.createRobot()
-   
+
    # Import rospy
-   import rospy
+   import rclpy
+   from rclpy.node import Node
    from geometry_msgs.msg import Twist
 
-   # Move the robot based on the twist message
-   def callback(twist_msg):
+
+   class MinimalSubscriber(Node):
+
+     def __init__(self):
+       super().__init__('dummy_control')
+       self.create_subscription(Twist, "/mirte_base_controller/cmd_vel", callback, 10)
+       self.subscription
+
+     # Move the robot based on the twist message
+     def callback(self, twist_msg):
        speed = 0
        if (twist_msg.linear.x > 0.0):
-          speed = 80    
+         speed = 80
 
        mirte.setMotorSpeed('left', speed)
        mirte.setMotorSpeed('right', speed)
 
-   # Initialize the subscriber on the twist message
-   rospy.Subscriber("cmd_vel", Twist, callback)
+   def main(args=None):
+     rclpy.init(args=args)
 
-   # No need for rospy.init_node() or rospy.spin() since they
-   # are already called in robot.createRobot().
+     minimal_subscriber = MinimalSubscriber()
+     rclpy.spin(minimal_subscriber)
+     minimal_subscriber.destroy()
+     rclpy.shutdown()
+
+   if __name__ == '__main__':
+      main()
+
+
 
 Creating your own ROS packages/nodes
 ------------------------------------
@@ -187,12 +211,8 @@ achieve this by executing the following commands:
 .. code-block:: bash
 
    mirte$ cd ~/mirte_ws/src
-   mirte$ catkin_create_pkg my_own_package stdmsgs rospy
-   mirte$ cd my_own_package
-   mirte$ mkdir scripts && cd scripts
-   mirte$ touch my_node.py
-   mirte$ cd ../../
-   mirte$ catkin build
+
+And follow the `instructions to create new packages <https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html#create-a-package>`_.
 
 And of course one had to fill ~/mirte_ws/src/my_own_package/scripts/my_node.py with the
 logic you want to be executed.

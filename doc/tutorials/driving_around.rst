@@ -25,7 +25,7 @@ In ROS you can also drive around with your keyboard:
 
 .. code-block:: bash
 
-    mirte$ roslaunch mirte_teleop teleopkey.launch
+    mirte$ ros2 launch mirte_teleop teleop_key.launch.py
 
 
 Android
