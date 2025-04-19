@@ -1,22 +1,17 @@
 # Documentation MIRTE Robot
 
-To build the documentation:
+To build the documentation (requirement: Python3.10+):
 
 ```sh
-git clone --recurse-submodules https://github.com/mirte-robot/mirte-documentation
+git clone https://github.com/mirte-robot/mirte-documentation
 cd mirte-documentation
+git submodule update --init --recursive
 python3 -m venv docs-env
 source docs-env/bin/activate
 pip install -r requirements.txt
 cd _modules/mirte-python
 pip install .
-cd ../catkin_ws/src/mirte-ros-packages
-rm -rfv !("mirte_msgs")
 cd ../../
-catkin_make # or catkin build
-source devel/setup.bash
-cd ../../
-
 
 make html
 # OR
