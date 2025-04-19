@@ -17,12 +17,13 @@ import sys
 from datetime import date
 sys.path.insert(0, os.path.abspath('./_modules/mirte-python/mirte_robot/'))
 import sphinx_rtd_theme
-
+import subprocess
 # -- Project information -----------------------------------------------------
 
 project = u'Mirte Documentation'
-copyright = str(date.today().year) + ', Martin Klomp, TU Delft Robotics Institute'
-author = u'Martin Klomp'
+copyright = '&#169; Copyright ' + str(date.today().year) + ' Delft University of Technology, CC BY 4.0.'
+author = u'Martin Klomp & Arend-Jan van Hilten'
+html_show_sphinx = False
 
 # The short X.Y version
 version = u''
@@ -39,13 +40,16 @@ smv_latest_version = 'main'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx_rtd_theme', 'sphinx-prompt', 'sphinx_tabs.tabs', 'sphinx.ext.autosectionlabel', 'sphinxcontrib.spelling', 'sphinx.ext.autodoc', 'sphinx.ext.napoleon', 'sphinx_multiversion', "sphinxcontrib.jquery"]
+extensions = ['sphinx_rtd_theme', 'sphinx-prompt', 'sphinx_tabs.tabs', 'sphinx.ext.autosectionlabel', 'sphinxcontrib.spelling', 'sphinx.ext.autodoc', 'sphinx.ext.napoleon', 'sphinx_multiversion', 'sphinx_mdinclude', "sphinxcontrib.jquery"]
 suppress_warnings = ['autosectionlabel.*']
 sphinx_tabs_disable_tab_closing = True
 spelling_word_list_filename='spelling_wordlist.txt'
 napoleon_google_docstring = True
 napoleon_use_param = True
 napoleon_use_ivar = True
+
+# Ignore python warnings about missing ROS (msgs) libs
+autodoc_mock_imports = ["rclpy", "yaml", "rcl_interfaces", "mirte_msgs", "singleton"]
 
 
 # Add any paths that contain templates here, relative to this directory.
@@ -70,7 +74,7 @@ language = 'en'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store', '*env']
+exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store', '*env', 'README.md', '_modules']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
@@ -92,7 +96,7 @@ html_theme = 'sphinx_rtd_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-#html_static_path = ['_static']
+html_static_path = ['_static']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -107,8 +111,21 @@ html_sidebars = {
         'versioning.html',
     ],
 }
-smv_tag_whitelist = r'^.*$'
-smv_branch_whitelist = None
+smv_tag_whitelist = r'^.*$' # all
+smv_branch_whitelist = r'^$' # none
+
+
+# -- Skip certain autodoc functions
+def skip_member(app, what, name, obj, skip, options):
+    # Skip all functions named "internal_method"
+    if name in ["createRobot", "singleton"]:
+        return True
+    return skip
+
+def setup(app):
+    app.connect("autodoc-skip-member", skip_member)
+
+
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
@@ -122,7 +139,15 @@ html_context = {
   'github_repo': 'mirte-documentation',
   'github_version': 'main/',
 }
-
+# Try to update from git
+try:
+    output = subprocess.check_output(["git ls-remote --get-url origin"], shell=True).decode(sys.stdout.encoding)
+    parts = str(output).split(".com/")[1].split("/")
+    html_context["github_repo"] = parts[1].split(".git")[0]
+    html_context["github_user"] = parts[0]
+    html_context['github_version'] = str(subprocess.check_output(["git rev-parse --abbrev-ref HEAD"], shell=True).decode(sys.stdout.encoding)).strip() + "/"
+except Exception as e:
+    print("Could not get git information: " + str(e))
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -200,3 +225,4 @@ linkcheck_anchors_ignore_for_url = [ # does not work for the current version of 
    r'https://github.com.*',
    
 ]
+linkcheck_retries=3

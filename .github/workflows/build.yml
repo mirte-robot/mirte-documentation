@@ -14,12 +14,12 @@ jobs:
     
     runs-on: ubuntu-latest
     container:
-      image: althack/ros:noetic-dev
+      image: althack/ros2:humble-dev
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: 'recursive'
-          fetch-tags: true
+          # fetch-tags: true
           set-safe-directory: true
       - name: get tags
         run: |
@@ -31,7 +31,7 @@ jobs:
             git tag -d $release || true
             git tag $release
           done
-          git tag current # create a current tag for the current commit
+          git tag develop # create a develop tag for the current commit
           
       - name: Install dependencies
         run: |
@@ -81,6 +81,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: site.zip
+
   deploy:
     # Add a dependency to the build job
     needs: build
