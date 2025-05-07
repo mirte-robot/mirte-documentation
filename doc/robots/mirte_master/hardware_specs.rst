@@ -57,7 +57,7 @@ Pioneer, we tried to minimize the number of custom components.
      - `MPU9250 module <https://nl.aliexpress.com/item/1005007196461566.html>`_
    * - 1
      - 16 PWM servo module
-     - `PCA9685 servo module <https://nl.aliexpress.com/item/1005007039294615.html>`_
+     - `PCA9685 servo module <https://nl.aliexpress.com/item/1005007039294615.html>`_ [#f5]_
    * - 4 
      - Ultrasonic sensor
      - `HCSR-04 <https://nl.aliexpress.com/item/32283526790.html>`_
@@ -191,3 +191,6 @@ Pioneer, we tried to minimize the number of custom components.
 .. [#f3] Needs to be a dumb chager.
 
 .. [#f4] Flyback diodes for the motor driver.
+
+.. [#f5] Bridge A0 for address 0x41 as INA226 is on the same I2C bus.
+        
