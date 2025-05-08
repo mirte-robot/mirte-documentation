@@ -11,10 +11,8 @@ permissions:
 
 jobs:
   build:
-    
+
     runs-on: ubuntu-latest
-    container:
-      image: althack/ros2:humble-dev
     steps:
       - uses: actions/checkout@v4
         with:
@@ -32,7 +30,6 @@ jobs:
             git tag $release
           done
           git tag develop # create a develop tag for the current commit
-          
       - name: Install dependencies
         run: |
           git config --global --add safe.directory /__w/mirte-documentation/mirte-documentation
@@ -49,12 +46,12 @@ jobs:
       - name: Archive site
         run: |
           cd _build/html
-          zip -r ../../site.zip . 
+          zip -r ../../site.zip .
           cd ../../
       - name: install nodejs for archive script
         run: |
           curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-          sudo apt-get install -y nodejs        
+          sudo apt-get install -y nodejs
       # - name: Archive production artifacts
       #   uses: actions/upload-artifact@v4
       #   with:
@@ -74,7 +71,7 @@ jobs:
             site.zip
       - name: Upload as a github-pages artifact
         uses: actions/upload-pages-artifact@v3
-        with: 
+        with:
           path: _build/html_multi
       - name: Release
         uses: softprops/action-gh-release@v2

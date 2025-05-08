@@ -1,6 +1,5 @@
 #!/bin/bash
 git submodule update --init --recursive
-# TODO for ros2
 sudo apt update
 sudo apt install libenchant-2-dev -y python3-empy zip
 python3 -m pip install --upgrade pip
@@ -10,14 +9,6 @@ ls
 ls docs-env
 ls docs-env/bin
 . docs-env/bin/activate
+pip install _modules/mirte-python/
 pip install -r requirements.txt
-# cd _modules/mirte-python
-# pip install .
-# pip install empy==3.3.4
-# cd ../catkin_ws/src/mirte-ros-packages
-# ls | grep -xv "mirte_msgs" | xargs rm -rf
-# cd ../../
-# catkin_make # or catkin build
-# . devel/setup.sh
-# cd ../../
 make html
