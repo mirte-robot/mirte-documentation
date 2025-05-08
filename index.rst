@@ -26,6 +26,9 @@ MIRTE Documentation
    :maxdepth: 1
    :hidden:
 
+   doc/simulation/install_simulation.rst
+   doc/simulation/mirte_pioneer_gazebo.rst
+   doc/simulation/mirte_master_gazebo.rst
 
 .. toctree::
    :caption: APIs

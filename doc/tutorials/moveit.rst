@@ -5,8 +5,8 @@ MoveIt2 is already installed on the MIRTE Master. This tutorial includes
 remotely controlling the arm using RViz from a remote computer, and 
 basic control of the arm using the MoveIt2 Python API.
 
-RViz 
-====
+Installation 
+============
 
 The easiest way to move the arm and gripper is to use RViz. Since this is 
 a GUI we need to run this from a remote machine/laptop in the same
@@ -47,6 +47,9 @@ We can remove all the unwanted packages, and just keep the ones we need:
    $ cd ../..
    $ rosdep install --from-paths src --ignore-src -r
    $ colcon build
+
+Rviz
+====
 
 Now that we have installed the MIRTE MoveIt package, we can launch the setup:
 
