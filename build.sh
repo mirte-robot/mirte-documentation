@@ -3,7 +3,7 @@ git submodule update --init --recursive
 sudo apt update
 sudo apt install libenchant-2-dev -y python3-empy zip
 python3 -m pip install --upgrade pip
-apt install python3.10-venv -y
+sudo apt install python3.10-venv -y
 python3 -m venv docs-env
 ls
 ls docs-env
