@@ -90,7 +90,6 @@ Using onboard VS-code
 The MIRTE robot has VS-code installed, which can be accessed though http://mirte.local/code.
 
 
-
 ROS
 ===
 
@@ -145,10 +144,6 @@ Using onboard VS-code
 ---------------------
 
 The MIRTE robot has VS-code installed, which can be accessed though http://mirte.local/code.
-
-
-Using VS-code
--------------
 
 
 

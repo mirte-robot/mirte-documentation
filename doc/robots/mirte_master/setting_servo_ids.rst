@@ -94,9 +94,11 @@ Connector on underside of shoulder, must go to the front one:
 
 ### Setting the servos:
 - Unplug some cables to isolate each servo. You can only connect one servo at a time, otherwise it will write the same ID to multiple servos.
+
   - Unplug the cable from the gripper
   - Unplug the cable going to the wrist from the elbow(green servo)
   - Unplug both cables from the shoulder(orange servo)
+
 - Go to the ```parameters``` tab
 - For every servo:
   - Connect the buslinker board to a servo
