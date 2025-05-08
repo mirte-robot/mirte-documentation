@@ -49,7 +49,7 @@ napoleon_use_param = True
 napoleon_use_ivar = True
 
 # Ignore python warnings about missing ROS (msgs) libs
-autodoc_mock_imports = ["rclpy", "yaml", "rcl_interfaces", "mirte_msgs", "singleton"]
+autodoc_mock_imports = ["rclpy", "yaml", "rcl_interfaces", "mirte_msgs", "singleton", "controller_manager_msgs"]
 
 
 # Add any paths that contain templates here, relative to this directory.
