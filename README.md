@@ -1,6 +1,6 @@
 # Documentation MIRTE Robot
 
-To build the documentation (requirement: Python3.10+):
+To build the documentation (requirement: Python3.10):
 
 ```sh
 git clone https://github.com/mirte-robot/mirte-documentation
