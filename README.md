@@ -5,7 +5,8 @@ To build the documentation (requirement: Python3.10+):
 ```sh
 git clone https://github.com/mirte-robot/mirte-documentation
 cd mirte-documentation
-git submodule update --init --recursive
+mkdir -p _modules/mirte-python
+git clone https://github.com/mirte-robot/mirte-python _modules/mirte-python
 python3 -m venv docs-env
 source docs-env/bin/activate
 pip install -r requirements.txt

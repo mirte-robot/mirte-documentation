@@ -9,6 +9,6 @@ This documentation is automatically generated based on the `source file <https:/
    take this into account when developing (course material). 
 
 
-.. automodule:: robot
+.. autoclass:: robot.Robot
    :members:
    :undoc-members:
