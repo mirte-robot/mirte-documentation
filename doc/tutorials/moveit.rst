@@ -36,14 +36,19 @@ MoveIt package:
          $ cd mirte_ws/src
          $ git clone https://github.com/mirte-robot/mirte-ros-packages
 
-We can remove all the unwanted packages, and just keep the ones we need:
+Optionally, you can remove the unused ROS packages. This will make the
+install, and build go much faster. Only do this as long as you have no
+changes in these folders.
 
 .. code-block:: bash
 
    $ cd mirte-ros-packages
    $ rm -r mirte_bringup/ mirte_telemetrix_cpp/ mirte_teleop/ mirte_test/ mirte_zenoh_setup/
-   $ rm mirte_msgs/COLCON_IGNORE
    $ cd ../..
+
+.. code-block:: bash
+
+   $ rm mirte_msgs/COLCON_IGNORE
    $ rosdep install --from-paths src --ignore-src -r
    $ colcon build
 
