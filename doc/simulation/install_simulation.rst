@@ -15,8 +15,7 @@ running you need to install a couple of packages in your ROS2 workspace
    $ git clone https://github.com/mirte-robot/mirte-gazebo src
    $ vcs import src/ < src/mirte-gazebo/sources.repos
    $ cd src/mirte_ros_packages
-   $ shopt -s extglob
-   $ rm -rf !("mirte_msgs"|"mirte_control"|"mirte_description"|"mirte_moveit_config")
+   $ rm -r mirte_bringup/ mirte_telemetrix_cpp/ mirte_teleop/ mirte_test/ mirte_zenoh_setup/
    $ cd ../..
 
 And finally install the dependencies and build everyting:

@@ -41,8 +41,7 @@ We can remove all the unwanted packages, and just keep the ones we need:
 .. code-block:: bash
 
    $ cd mirte-ros-packages
-   $ shopt -s extglob
-   $ rm -rfv !("mirte_moveit_config"|"mirte_description"|"mirte_control"|"mirte_msgs")
+   $ rm -r mirte_bringup/ mirte_telemetrix_cpp/ mirte_teleop/ mirte_test/ mirte_zenoh_setup/
    $ rm mirte_msgs/COLCON_IGNORE
    $ cd ../..
    $ rosdep install --from-paths src --ignore-src -r
