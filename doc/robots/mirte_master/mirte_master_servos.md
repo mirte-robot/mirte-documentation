@@ -15,7 +15,7 @@ Connector on underside of shoulder, must go to the front one:
 ![shoulder connector](./_images/arm_servos/shoulder_wrong.jpg)
 
 ### Setup:
-- Download and install the Bus Servo Terminal application: [Bus Servo Terminal](https://drive.google.com/drive/folders/1wIIIccKKmrLX4EyswIkunIs-A_SKX1Nq)
+- Download and install the Bus Servo Terminal application: [Bus Servo Terminal](https://www.hiwonder.com.cn/store/learn/43.html)
 - Grab the BusLinker and the powerbank from the toolbox: 
 ![buslinker](./_images/arm_servos/buslinker.jpg)
 - Connect white usb connector to the powerbank and the black one to your computer

@@ -39,7 +39,7 @@ Pioneer, we tried to minimize the number of custom components.
      - `MIRTE Master base control PCB <https://github.com/mirte-robot/mirte-pcb/tree/main/mirte-master-bottom>`_
    * - 1
      - Depth camera switch PCB [#f1]_
-     - `MIRTE Master switcher PCB <http:/>`_
+     - `MIRTE Master switcher PCB <https://github.com/mirte-robot/mirte-pcb/tree/main/mirte-usb-switcher>`_
    * - 1
      - Depth Camera
      - `Orbbec Astra Pro Plus <https://store.orbbec.com/products/astra-pro-plus>`__
@@ -154,7 +154,7 @@ Pioneer, we tried to minimize the number of custom components.
    * - 40
      - M3 square nuts
    * - 3
-     - `HX-12H (12KG.CM) Servo <https://www.hiwonder.com/products/hx-12h>`_
+     - `HX-12H (12KG.CM) Servo <https://www.hiwonder.com/products/htd-45h?variant=39969169440855>`_
    * - 1
      - `HTD-35H () Servo <https://www.hiwonder.com/products/htd-35h>`_
    * - 1
