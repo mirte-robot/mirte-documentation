@@ -33,10 +33,10 @@ Pioneer, we tried to minimize the number of custom components.
      - `Raspberry Pi Pico H (RP2040) <https://www.raspberrypi.com/products/raspberry-pi-pico/>`_
    * - 1
      - Main control PCB
-     - `MIRTE Master main control PCB <https://>`_   
+     - `MIRTE Master main control PCB <https://github.com/mirte-robot/mirte-pcb/tree/main/mirte-master>`_   
    * - 1
      - Base control PCB
-     - `MIRTE Master base control PCB <https://>`_
+     - `MIRTE Master base control PCB <https://github.com/mirte-robot/mirte-pcb/tree/main/mirte-master-bottom>`_
    * - 1
      - Depth camera switch PCB [#f1]_
      - `MIRTE Master switcher PCB <http:/>`_
@@ -96,7 +96,7 @@ Pioneer, we tried to minimize the number of custom components.
      - 
    * - 1
      - Fuse and holder
-     - `Fuse and holder <https://www.conrad.nl/nl/p/tru-components-tc-9070404-zekeringhouder-geschikt-voor-platte-zekering-standaard-30-a-32-v-dc-1-stuk-s-2267>`_
+     - Fuse and holder
    * - 2
      - diodes
      - `DO201 <https://www.reichelt.com/nl/nl/shop/product/schottkydiode_5_a_40_v_do-201-216>`_ [#f4]_

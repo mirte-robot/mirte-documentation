@@ -46,7 +46,7 @@ Motors
         Only new speeds can be published to motors. The value is in range [-100, 100].
 
         - Topic:
-            - ``/HOSTNAME/io/motor/NAME/speed``: `std_msgs/msg/Int32 <https://docs.ros.org/en/humble/p/std_msgs/interfaces/msg/Int32.html>`_
+            - ``/HOSTNAME/io/motor/NAME/speed``: `std_msgs/msg/Int32 <https://docs.ros.org/en/humble/p/std_msgs/msg/Int32.html>`_
 
             .. code-block:: bash
                 

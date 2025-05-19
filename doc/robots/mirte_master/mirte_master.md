@@ -5,8 +5,8 @@
 
 The frame is built using 1mm aluminium and 3D printed parts. 
 Building instructions:
-- [Base](../_static/Assembly_BASE.pdf)
-- [Top and arm](../_static/Assembly_TOP_ARM.pdf)
+- [Base](./_static/Assembly_BASE.pdf)
+- [Top and arm](./_static/Assembly_TOP_ARM.pdf)
 
 
 ### Base
@@ -19,7 +19,7 @@ Change PID parameters of the base controller with:
 
 ### Arm
 
-The arm has 4 servos for movement and one for the gripper. The ranges are stored in the servo together with a deviation to keep the config the same, while the servos can be mounted differently. The user should never have to deal with the centidegrees ranges, only the range and angles in radians. The "Bus Servo Serminal" ranges are only when you have a new arm without ranges set. You can set the ranges and IDs with [Bus Servo Terminal](https://drive.google.com/drive/folders/1wIIIccKKmrLX4EyswIkunIs-A_SKX1Nq) and a [Buslinker](https://www.hiwonder.com/collections/servo-controller/products/hiwonder-ttl-usb-debugging-board).
+The arm has 4 servos for movement and one for the gripper. The ranges are stored in the servo together with a deviation to keep the config the same, while the servos can be mounted differently. The user should never have to deal with the centidegrees ranges, only the range and angles in radians. The "Bus Servo Serminal" ranges are only when you have a new arm without ranges set. You can set the ranges and IDs with [Bus Servo Terminal](https://www.hiwonder.com.cn/store/learn/43.html) and a [Buslinker](https://www.hiwonder.com/collections/servo-controller/products/hiwonder-ttl-usb-debugging-board).
 
 | Servo    | ID  | Range(centidegrees) | Range (Bus servo terminal) | Range (rad) | Home  |
 | -------- | --- | ------------ | ----------- | ----- | --- |
@@ -55,9 +55,9 @@ The MIRTE Master has 4 PCBs:
 
 Assembly instructions:
 
-[Instructions](../_static/Assembly_electro.pdf)
+[Instructions](./_static/Assembly_electro.pdf)
 
-[Rough overview schematic](../_static/mirteMasterSchema.pdf)
+[Rough overview schematic](./_static/mirteMasterSchema.pdf)
 
 ### MIRTE compute
 [mirte-pcb:mirte-master/mirte-master](https://github.com/ArendJan/mirte-pcb/tree/mirte-master/mirte-master)
@@ -106,10 +106,10 @@ Frame drawing: [solidworks zip](https://mirte.arend-jan.com/files/Solidworks%20c
 ### Build instructions
 WIP: need to add more instructions, also for the cabling.
 
-Frame build instructions: [Base instructions](../_static/Assembly_BASE.pdf)
+Frame build instructions: [Base instructions](./_static/Assembly_BASE.pdf)
 
-Frame top and arm instructions: [Top instructions](../_static/Assembly_TOP_ARM.pdf)
+Frame top and arm instructions: [Top instructions](./_static/Assembly_TOP_ARM.pdf)
 
-Electronics instructions: [Electronics instructions](../_static/Assembly_electro.pdf)
+Electronics instructions: [Electronics instructions](./_static/Assembly_electro.pdf)
 
 Electronics and frame assembly needs to be done in sync, otherwise it's too difficult to attach the cables once everything is mounted.

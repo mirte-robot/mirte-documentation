@@ -14,7 +14,7 @@ community contributing to the project.
 Building a custom SD image
 ==========================
 
-The latest image can be downloaded from `the download site <http://dl.mirte.org>`_. For university
+The latest image can be downloaded from `the download site <https://github.com/mirte-robot/mirte-sd-image-tools/releases/latest`_. For university
 or maker level this might not fully do what you want in your course. In that case you can modify
 the image yourself and add software or default settings. This can be done with the mirte-sd-image-tools.
 Note that this can onlu be done on Linux machines.
