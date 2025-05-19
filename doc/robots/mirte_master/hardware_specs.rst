@@ -154,11 +154,11 @@ Pioneer, we tried to minimize the number of custom components.
    * - 40
      - M3 square nuts
    * - 3
-     - `HX-12H (12KG.CM) Servo <https://www.hiwonder.com/products/htd-45h?variant=39969169440855>`_
+     - `HX-12H (12KG.CM) Servo <https://www.hiwonder.com/products/hx-12h>`_
    * - 1
      - `HTD-35H () Servo <https://www.hiwonder.com/products/htd-35h>`_
    * - 1
-     - `HTD-45H (45KG.CM) Servo <(https://www.hiwonder.com/products/htd-45h>`_ 
+     - `HTD-45H (45KG.CM) Servo <https://www.hiwonder.com/products/htd-45h>`_ 
    * - 3
      - `standoff 40mm M3 <https://nl.rs-online.com/web/p/standoffs/1768193>`_
    * - 3
