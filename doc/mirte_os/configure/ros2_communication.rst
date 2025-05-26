@@ -45,11 +45,11 @@ just reboot.
 
        .. group-tab:: Router
 
-         .. image:: ./_images/ros2_communication_router_localhostonly.svg
+         .. image:: ../_images/ros2_communication_router_localhostonly.svg
 
        .. group-tab:: AP (MIRTE default)
 
-         .. image:: ./_images/ros2_communication_ap_localhostonly.svg
+         .. image:: ../_images/ros2_communication_ap_localhostonly.svg
 
     On the MIRTE robot in ~/.mirte_settings.sh:
 
@@ -68,11 +68,11 @@ just reboot.
 
        .. group-tab:: Router
 
-         .. image:: ./_images/ros2_communication_router_zenoh.svg
+         .. image:: ../_images/ros2_communication_router_zenoh.svg
 
        .. group-tab:: AP (MIRTE default)
 
-         .. image:: ./_images/ros2_communication_ap_zenoh.svg
+         .. image:: ../_images/ros2_communication_ap_zenoh.svg
 
     On the MIRTE robot in ~/.mirte_settings.sh:
 
@@ -107,11 +107,11 @@ just reboot.
 
        .. group-tab:: Router
 
-         .. image:: ./_images/ros2_communication_router_fulldiscovery.svg
+         .. image:: ../_images/ros2_communication_router_fulldiscovery.svg
 
        .. group-tab:: AP (MIRTE default)
 
-         .. image:: ./_images/ros2_communication_ap_fulldiscovery.svg
+         .. image:: ../_images/ros2_communication_ap_fulldiscovery.svg
 
     On the MIRTE robot in ~/.mirte_settings.sh:
 

@@ -20,7 +20,6 @@ MIRTE Documentation
    doc/mirte_os/access_interface
    doc/mirte_os/configure_mirte
    doc/mirte_os/supported_hardware
-   doc/mirte_os/ros2_communication
 
 .. toctree::
    :caption: Simulation
