@@ -68,7 +68,11 @@ it take collisions into account. This is why it makes sense to use MoveIt! In a
 seperate terminal, you can start Rviz with the MoveIt! 
 
 You can follow the instructions in :ref:`MoveIt!<MoveIt!>`, ans skip the installation
-part.
+part. And make sure to start the launchfile with the `use_sim_time` argument:
+
+.. code-block:: bash
+
+   $ ros2 launch mirte_moveit_config mirte_moveit.launch.py use_sim_time:=True
 
 .. note::
 
