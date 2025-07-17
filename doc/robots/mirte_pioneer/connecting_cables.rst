@@ -9,7 +9,7 @@ Connecting the power
 
    .. group-tab:: MIRTE PCB
 
-      You should connect the powerbank to the connecter that is marked RED on the PCB.
+      You should connect the powerbank to the connector that is marked RED on the PCB.
 
       .. |powerbank1| image:: ../../_images/powerbank_pcb.png
          :width: 49%
