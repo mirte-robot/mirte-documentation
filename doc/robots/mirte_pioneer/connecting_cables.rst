@@ -9,12 +9,15 @@ Connecting the power
 
    .. group-tab:: MIRTE PCB
 
-      Currently the PCB is only used by ourselves. Instructions can therefore be found in the same (Dutch) `instruction manual <https://surfdrive.surf.nl/files/index.php/s/RULqnIFU7yhXLJZ/download?path=%2F&files=W2%20-%20in%20elkaar%20zetten.pdf>`_.
+      You should connect the powerbank to the connecter that is marked RED on the PCB.
 
-   .. group-tab:: Breadboard
+      .. |powerbank1| image:: ../../_images/powerbank_pcb.png
+         :width: 49%
 
+      .. |powerbank2| image:: ../../_images/powerbank.png
+         :width: 49%
 
-
+      |powerbank1| |powerbank2|
 
 
 Connecting the peripherals
@@ -29,6 +32,8 @@ configuration later on.
 .. tabs::
 
    .. group-tab:: MIRTE PCB
+
+      You should connect the hardware to the connecter that is marked RED on the PCB.
 
       .. tabs::
 
