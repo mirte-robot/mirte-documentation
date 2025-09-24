@@ -14,8 +14,8 @@ There are multiple ways to connect to your MIRTE robot. The availability depends
    You will therefore not have access to internet on your machine. 
 
 
-Wireless Acces Point
-====================
+Wireless Access Point
+=====================
 
 After booting up MIRTE for the first time the robot is in access point (AP) mode and a wifi network 
 will be available with ssid Mirte-XXXXXX (where each X is hex 1-F). You can connect to this network 
