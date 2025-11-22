@@ -57,6 +57,8 @@ autodoc_mock_imports = ["rclpy", "yaml", "rcl_interfaces", "mirte_msgs", "single
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
+html_js_files = ['matomo.js']
+
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
