@@ -84,7 +84,7 @@ Pioneer, we tried to minimize the number of custom components.
      - `SPDT rocker switch <https://nl.aliexpress.com/item/1005004694368770.html>`_
    * - 1
      - Battery with XT90
-     - `5000 mAh, 3S, min 5C <https://hobbyking.com/en_us/turnigy-5000mah-3s-20c-lipo-pack-xt-90.html>`_
+     - `5000 mAh, 3S, min 5C <https://hobbyking.com/en_us/turnigy-nano-tech-plus-5000mah-3s-70c-lipo-pack-w-xt90.html>`_
    * - 1
      - 12-5V step down
      - `12-5V step down <https://nl.aliexpress.com/item/1005006721587257.html>`_
@@ -99,7 +99,7 @@ Pioneer, we tried to minimize the number of custom components.
      - Fuse and holder
    * - 2
      - diodes
-     - `DO201 <https://www.reichelt.com/nl/nl/shop/product/schottkydiode_5_a_40_v_do-201-216>`_ [#f4]_
+     - `DO201 <https://www.reichelt.com/nl/nl/shop/product/schottkydiode_5_a_40_v_do-201-216766>`_ [#f4]_
    * - 36
      - wire ferrules
      - `red 1mm^2 <https://www.reichelt.com/nl/nl/shop/product/adereindhulzen_-_strips_1_mm_rood-164822>`_
