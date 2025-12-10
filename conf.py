@@ -136,7 +136,7 @@ def setup(app):
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'MirteDocumentationdoc'
 
-
+html_favicon = "_static/favicon.png"
 html_context = {
   'display_github': True,
   'github_user': 'mirte-robot',
