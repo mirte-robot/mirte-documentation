@@ -137,3 +137,52 @@ After installing your MIRTE OS v0.2 image you will have a robot running:
 +------------------+---------+--------+--------+--------+
 | Raspberry Pi 3/4 | 24.8.1  | 22.04  | 6.6.45 | Humble |
 +------------------+---------+--------+--------+--------+
+
+
+Updating Software
+=================
+
+Updating the software currently means reinstallign the software: downloading
+the newest software image, and installing it on an SD-card. Please note that
+you will loose your own work done on the MIRTE if you use the same SD-card as
+before. 
+
+After re-installation you might also need to update the software on the MCU.
+If your current version of the MIRTE Telemetrix on the MCU is relatively new,
+this step will be easy.
+
+.. tabs::
+
+  .. group-tab:: MIRTE Pioneer
+
+     These instructions assume you have the Raspberry Pi Pico connected to the OrangePi Zero2 via
+     the MIRTE PBC, and have installed MIRTE OS on the OrangePi Zero2. Login to a terminal on the 
+     OrangePi and:
+
+     .. code-block:: bash
+
+        mirte$ cd /usr/local/src/mirte/mirte-install-scripts
+        mirte$ ./run_arduino.sh upload_pico
+        mirte$ ./run_arduino.sh upload_pico # need to do this twice due (known issue)
+
+     If this does not work (even after the second try), you will probably have an older
+     version of the Telemetrix software installed which is not able to auto-update. Please
+     follow the instructions above to upload the new software.
+
+  .. group-tab:: MIRTE Master
+
+     These instructions assume you have the Raspberry Pi Pico connected to the OrangePi 3B via
+     USB, and have installed MIRTE OS on the OrangePi 3B. Login to a terminal on the OrangePi 3B
+     and:
+
+     .. code-block:: bash
+
+        mirte$ cd /usr/local/src/mirte/mirte-install-scripts
+        mirte$ ./run_arduino.sh upload_pico
+
+  .. tab:: Custom MCU
+
+     Currently this step is only needed for the Raspberry Pi Pico, which is
+     the default MCU for MIRTE. When using a Raspberry Pi Pico, you can follow
+     the instructions of the MIRTE Pioneer. Instructions on installing this for
+     other MCUs can be found :ref:`here <Using another MCU>`.
