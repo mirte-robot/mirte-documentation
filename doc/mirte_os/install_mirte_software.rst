@@ -4,6 +4,9 @@ Installation
 For the MIRTE Pioneer or MIRTE Master to work we need to install software on both the SD card and the microcontroller.
 It might be useful to do this before fully assembling the robot. But it can also be done at a later stage.
 
+
+.. _install_mirte_os:
+
 Install MIRTE OS image
 ======================
 
@@ -86,6 +89,7 @@ Install MIRTE OS image
         The MIRTE software will be installed on the eMMC. This will be read-only and serve as the lower overlayfs folder. It makes sense to have an
         SD card with an empty overlayfs partition to store all your work/changes. This is the overlay_image download.
 
+.. _install_mirte_mcu:
 
 Install MCU software
 ====================
@@ -118,3 +122,18 @@ One therefore also need to install this onto the MCU.
      the default MCU for MIRTE. When using a Raspberry Pi Pico, you can follow
      the instructions of the MIRTE Pioneer. Instructions on installing this for
      other MCUs can be found :ref:`here <Using another MCU>`.
+
+Installed Software
+==================
+
+After installing your MIRTE OS v0.2 image you will have a robot running:
+
++------------------+---------+--------+--------+--------+
+| SBC              | Armbian | Ubuntu | kernel | ROS    |
++==================+=========+========+========+========+
+| Orange Pi Zero 2 | 25.2.3  | 22.04  | 6.6.62 | Humble |
++------------------+---------+--------+--------+--------+
+| Orange Pi 3b     | 25.2.3  | 22.04  | 6.13.3 | Humble |
++------------------+---------+--------+--------+--------+
+| Raspberry Pi 3/4 | 24.8.1  | 22.04  | 6.6.45 | Humble |
++------------------+---------+--------+--------+--------+
