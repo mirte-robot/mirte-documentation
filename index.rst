@@ -48,6 +48,7 @@ MIRTE Documentation
    doc/tutorials/programming_mcu
    doc/tutorials/using_another_mcu
    doc/tutorials/moveit
+   doc/tutorials/custom_build
 
 .. toctree::
    :caption: Development

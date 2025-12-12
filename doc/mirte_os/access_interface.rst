@@ -1,3 +1,5 @@
+.. _access-interface:
+
 Accessing the interface
 #######################
 

@@ -89,6 +89,8 @@ configuration later on.
 
    .. group-tab:: Pi Pico
 
+     .. _pico-wiring:
+
      .. image:: ../../_images/full_pico_bb.png
         :width: 600
         :alt: Alternative text
