@@ -1,3 +1,5 @@
+.. _connect:
+
 Connect to MIRTE
 ################
 
