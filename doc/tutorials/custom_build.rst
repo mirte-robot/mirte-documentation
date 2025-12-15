@@ -205,8 +205,10 @@ These can be found here:
 
 `MIRTE Pioneer base (differentail) ros2_control hardware interface 
 <https://github.com/mirte-robot/mirte-ros-packages/tree/develop/mirte_control/mirte_pioneer_control/hardware>`_
+
 `MIRTE Master base (meccanum) ros2_control hardware interface 
 <https://github.com/mirte-robot/mirte-ros-packages/tree/develop/mirte_control/mirte_master_base_control/hardware>`_
+
 `MIRTE Master arm (4 DOF) ros2_control hardware intreface 
 <https://github.com/mirte-robot/mirte-ros-packages/tree/develop/mirte_control/mirte_master_arm_control/hardware>`_
 
