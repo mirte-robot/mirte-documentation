@@ -15,7 +15,7 @@ the MIRTE family, you have to go through 4 steps:
 Design and build the frame
 ==========================
 
-Designing a robot might be challanging. It is good to know the limitations 
+Designing a robot might be challenging. It is good to know the limitations 
 of the MIRTE software so you can take that into account in your design.
 
 Low level hardware
@@ -180,17 +180,17 @@ Configure the robot
 ===================
 
 Depending on the chosen hardware, you still need to configure the software in 
-a way that it relfects your hardware. To do this you can follow the regular
+a way that it reflects your hardware. To do this you can follow the regular
 instructions for :ref:`connecting to the robot <connect>`, and :ref:`accessing
 the interface <access-interface>`.
 
 To get the low level hardware to work, you need to update the settings for 
 the robot. This can be done in the :ref:`regular way as well <configure-hardware>`,
-and can be done via the web interface of by modifying the yaml file.
+and can be done via the web interface or by modifying the yaml file.
 
-This should get you a robot, which you can control though ROS (and for some
-peripherals also Python and Blockly). This only control the low level of the 
-robot though. So you should be able to control teh single motors, but you will
+This should get you a robot, which you can control through ROS (and for some
+peripherals also Python and Blockly). This only controls the lower levels of the 
+robot though. So you should be able to control the single motors, but you will
 probably not be able to send Twist commands (and use Nav2) or use MoveIt!
 
 In order for these to work, you need to create a URDF of your robot. Building

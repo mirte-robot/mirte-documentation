@@ -142,9 +142,9 @@ After installing your MIRTE OS v0.2 image you will have a robot running:
 Updating Software
 =================
 
-Updating the software currently means reinstallign the software: downloading
+Updating the software currently means reinstalling the software: downloading
 the newest software image, and installing it on an SD-card. Please note that
-you will loose your own work done on the MIRTE if you use the same SD-card as
+you will lose your own work done on the MIRTE if you use the same SD-card as
 before. 
 
 After re-installation you might also need to update the software on the MCU.
@@ -163,11 +163,11 @@ this step will be easy.
 
         mirte$ cd /usr/local/src/mirte/mirte-install-scripts
         mirte$ ./run_arduino.sh upload_pico
-        mirte$ ./run_arduino.sh upload_pico # need to do this twice due (known issue)
+        mirte$ ./run_arduino.sh upload_pico # need to do this twice (known issue)
 
      If this does not work (even after the second try), you will probably have an older
-     version of the Telemetrix software installed which is not able to auto-update. Please
-     follow the instructions above to upload the new software.
+     version of the Telemetrix software installed which is not able to update on the PCB.
+     Please follow the instructions above to upload the new software.
 
   .. group-tab:: MIRTE Master
 
