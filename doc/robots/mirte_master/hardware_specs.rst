@@ -42,7 +42,7 @@ Pioneer, we tried to minimize the number of custom components.
      - `MIRTE Master switcher PCB <https://github.com/mirte-robot/mirte-pcb/tree/main/mirte-usb-switcher>`_
    * - 1
      - Depth Camera
-     - `Orbbec Astra Pro Plus <https://store.orbbec.com/products/astra-pro-plus>`__
+     - `Orbbec Astra Pro Plus (discontinued) <https://www.orbbec.com/products/structured-light-camera/astra-series/>`__
    * - 1
      - 2D Lidar
      - `Slamtec rplidar C1 <https://www.seeedstudio.com/RPLiDAR-C1M1-R2-Portable-ToF-Laser-Scanner-Kit-12M-Range-p-5840.html>`_
