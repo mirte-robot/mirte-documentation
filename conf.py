@@ -30,7 +30,7 @@ html_show_sphinx = False
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'v0.1'
+release = u'v0.2.'
 smv_latest_version = 'main'
 
 # -- General configuration ---------------------------------------------------

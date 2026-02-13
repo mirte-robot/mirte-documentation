@@ -53,3 +53,9 @@ New setup:
     - download the site.zip from the release page
     - take the versions html code from the 'dummy' and replace it in the downloaded version
   - push to github pages
+
+
+How to create new version:
+- change conf.py to new tag
+- change _static/index.html to point to latest version.
+- add new main version to build.yml:6: the releases env variable.
