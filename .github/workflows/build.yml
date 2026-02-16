@@ -3,7 +3,7 @@ name: Build site
 on: [push, pull_request, workflow_dispatch]
 env:
   owner: mirte-robot
-  releases: '0.1.0' # releases to download from the github releases page as they probably don't compile anymore (ros1->ros2). space separated list
+  releases: '0.1.0 v0.2.0' # releases to download from the github releases page as they probably don't compile anymore (ros1->ros2). space separated list
 
 
 permissions:

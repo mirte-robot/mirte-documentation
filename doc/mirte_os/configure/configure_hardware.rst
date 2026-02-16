@@ -20,7 +20,7 @@ to match your robot hardware:
 From the Terminal
 -----------------
 
-The configuration to map the pins to sensortypes is done in `/usr/local/src/mirte/mirte-ros-packages/mirte_telemetrix/config/mirte_user_config.yaml <https://github.com/mirte-robot/mirte-ros-packages/blob/main/mirte_telemetrix/config/mirte_user_config.yaml>`_. 
+The configuration to map the pins to sensortypes is done in `/usr/local/src/mirte/mirte-ros-packages/mirte_bringup/telemetrix_config/mirte_user_config.yaml <https://github.com/mirte-robot/mirte-ros-packages/blob/main/mirte_bringup/telemetrix_config/mirte_user_config.yaml>`_. 
 This file consists of multiple sections needed for MIRTE to know which pins to control. 
 The default settings are the MIRTE PCB. Below we will got though all sections (of the 
 Raspberry Pi Pico on a breadboard).
