@@ -68,8 +68,8 @@ def main():
                         if "<!-- VERSIONS PLACEHOLDER -->" in line:
                             for version_line in version_depth_lines:
                                 f.write(version_line)
-                        else:
-                            f.write(line)
+                        # else:
+                        f.write(line)
 
     # remove the zip file
     print("removing zip file...")
