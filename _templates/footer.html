@@ -1,7 +1,9 @@
 {% extends "!footer.html" %}
 <!-- 
-This only gives <jinja2.runtime.BlockReference object at 0x736f3cbf11e0>
-{%- block contentinfo %} -->
+    This "block contentinfo" only gives <jinja2.runtime.BlockReference object at 0x736f3cbf11e0>
+    but commenting it out gives -- > in the output, so it is left as is for now.
+-->
+{%- block contentinfo %}
 {{ super }}
 By MIRTE team<br/>
 {{ copyright }}<br/>
