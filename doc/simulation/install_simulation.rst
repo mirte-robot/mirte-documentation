@@ -12,8 +12,9 @@ running you need to install a couple of packages in your ROS2 workspace
 
 .. code-block:: bash
 
-   $ git clone https://github.com/mirte-robot/mirte-gazebo src
-   $ vcs import src/ < src/mirte-gazebo/sources.repos
+   $ cd src/
+   $ git clone https://github.com/mirte-robot/mirte-gazebo
+   $ vcs import . < mirte-gazebo/sources.repos
 
 Optionally, you can remove the unused ROS packages. This will make the 
 install, and build go much faster. Only do this as long as you have no 
