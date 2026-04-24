@@ -12,8 +12,8 @@ running you need to install a couple of packages in your ROS2 workspace
 
 .. code-block:: bash
 
-   $ git clone https://github.com/mirte-robot/mirte-gazebo src
-   $ vcs import src/ < src/mirte-gazebo/sources.repos
+   $ git clone https://github.com/mirte-robot/mirte-gazebo src/mirte-gazebo
+   $ vcs import src/ < mirte-gazebo/sources.repos
 
 Optionally, you can remove the unused ROS packages. This will make the 
 install, and build go much faster. Only do this as long as you have no 
@@ -21,7 +21,7 @@ changes in these folders.
 
 .. code-block:: bash
 
-   $ cd src/mirte_ros_packages
+   $ cd src/mirte-ros-packages
    $ rm -r mirte_bringup/ mirte_telemetrix_cpp/ mirte_teleop/ mirte_test/ mirte_zenoh_setup/
    $ cd ../..
 
