@@ -44,8 +44,8 @@ jobs:
         run: |
           apt update && apt install -y wget unzip
           for release in $releases; do
-            wget https://github.com/$owner/mirte-documentation/releases/download/$release/site.zip
-            python3 build_scripts/fix_versions.py $release site.zip
+            wget https://github.com/$owner/mirte-documentation/releases/download/$release/site.zip || true
+            python3 build_scripts/fix_versions.py $release site.zip || true
           done
       - name: Archive site
         run: |
