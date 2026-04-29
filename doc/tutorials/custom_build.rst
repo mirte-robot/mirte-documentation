@@ -185,7 +185,7 @@ instructions for :ref:`connecting to the robot <connect>`, and :ref:`accessing
 the interface <access-interface>`.
 
 To get the low level hardware to work, you need to update the settings for 
-the robot. This can be done in the :ref:`regular way as well <configure-hardware>`,
+the robot. This can be done in the :ref:`regular way as well <Specify Hardware>`,
 and can be done via the web interface or by modifying the yaml file.
 
 This should get you a robot, which you can control through ROS (and for some
