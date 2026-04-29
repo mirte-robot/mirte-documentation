@@ -6,9 +6,13 @@ MIRTE Master
    :hidden:
 
    hardware_specs
-..   electronics
-..   setting_servo_ids
+   preparations
+   hardware_test
+   calibration
 ..   build_instructions
+..   hardware_test
+   
+
 
 Upgrade your MIRTE robot to a full mobile manipulator. The robot
 includes a depth camera and 2D lidar. You can control the robot

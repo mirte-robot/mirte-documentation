@@ -92,7 +92,7 @@ both. Please find below the components you need for these.
      - 3
      - 3
      - 12KG.CM Servo
-     - `HX-12H (12KG.CM) Servo <https://www.hiwonder.com/products/hx-12h>`_
+     - `HX-12H (12KG.CM) Servo <https://www.hiwonder.com/products/hx-12h>`_ [#f2]_
    * - 0
      - 1
      - 1
@@ -183,7 +183,7 @@ Cables
    * - 2
      - 1
      - 2
-     - micro USB cable (USB A - USB B micro) 15 cm [#f2]_
+     - micro USB cable (USB A - USB B micro) 15 cm [#f3]_
      - Pico & RPLidar 
    * - 1
      - 1
@@ -586,4 +586,6 @@ is roughly 1 kg.
 
 .. [#f1] Although branded as 6mm, you still need to drill the adapter hole to 6mm for the motor shafts.
 
-.. [#f2] Please check the actual USB type. Both the Raspberry Pi Pico and the RPLidar also have versions with USB-C.    
+.. [#f2] There is no need to order the HiWonder ttl-us debugging board. With the MIRTE PCB, you are able to set the servos.
+
+.. [#f3] Please check the actual USB type. Both the Raspberry Pi Pico and the RPLidar also have versions with USB-C.    
