@@ -55,7 +55,7 @@ Jupyter is disabled by default (due to high RAM usage on the Orange Pi Zero 2). 
 
 .. code-block:: bash
 
-   mirte$ sudo service mirte-jupyter start
+   mirte$ sudo systemctl start mirte-jupyter
 
 Jupyter will run on http://mirte.local:8888 (note: it might take some time for Jupyter to start) showing some 
 examples from Jupyter-ROS (which are located at /home/mirte/jupyter-ros). If you want Jupyter to start on boot you can run:
@@ -101,13 +101,13 @@ Jupyter is disabled by default (due to high RAM usage on the Orange Pi Zero 2). 
 
 .. code-block:: bash
 
-   mirte$ sudo service mirte-jupyter start
+   mirte$ sudo systemctl start mirte-jupyter
 
 Jupyter will run on http://mirte.local:8888 showing some examples from Jupyter-ROS (which are located at /home/mirte/jupyter-ros). If you want Jupyter to start on boot you can run:
 
 .. code-block:: bash
 
-   mirte$ sudo systemctrl enable mirte-jupyter
+   mirte$ sudo systemctl enable mirte-jupyter
 
 
 
@@ -119,8 +119,8 @@ When MIRTE boots a systemd service will launch the MIRTE bringup. This service c
 
 .. code-block:: bash
 
-   mirte$ sudo service mirte-ros stop
-   mirte$ sudo service mirte-ros start
+   mirte$ sudo systemctl stop mirte-ros
+   mirte$ sudo systemctl start mirte-ros
 
 You can also run the launchfile yourself (only when you stopped the systemd service):
 
