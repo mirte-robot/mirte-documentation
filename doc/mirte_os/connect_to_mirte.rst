@@ -57,7 +57,6 @@ you can still use the internet while controlling your robot.
 If you are not in control of your own router, you can also create one youself by putting your mobile 
 phone in hotspot mode, or put your computer (on Windows) in mobile hotspot mode.
 
-
 You can connect MIRTE to your local wifi network from either of the two interfaces (web or
 terminal). You therefore first need to connect to MIRTE in AP mode and following the instructions 
 from the :ref:`next section<Accessing the interface>`. 
@@ -67,8 +66,19 @@ from the :ref:`next section<Accessing the interface>`.
    the Wifi networks that were visible when the robot booted. It is therefore adviced to first 
    start a hostpot/router/AP and then (re)boot the MIRTE robot.
 
-.. warning::
+.. note::
    Currently the MIRTE robot is not able to connect to WPA3 networks.
+
+.. warning::
+   Before connecting to another Access Point, make sure you have set a new password on the
+   MIRTE robot. This can be done in any terminal (ssh or vscode):
+
+   .. code-block:: bash
+
+      mirte$ passwd
+
+   Otherwise you will not be able to login to any web interface (mirte web, or vscode), and
+   need to set the password via ssh.
 
 
 From terminal
