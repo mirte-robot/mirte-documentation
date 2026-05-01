@@ -36,6 +36,14 @@ MoveIt package:
          $ cd mirte_ws/src
          $ git clone https://github.com/mirte-robot/mirte-ros-packages
 
+And you need to make sure that your LC_NUMERIC is set to en_US.UTF-8:
+
+.. code-block:: bash
+
+   $ sudo update-locale LC_NUMERIC=en_US.UTF-8
+   $ export LC_NUMERIC=en_US.UTF-8
+
+
 Optionally, you can remove the unused ROS packages. This will make the
 install, and build go much faster. Only do this as long as you have no
 changes in these folders.
@@ -51,6 +59,7 @@ changes in these folders.
    $ rm mirte_msgs/COLCON_IGNORE
    $ rosdep install --from-paths src --ignore-src -r
    $ colcon build
+
 
 Rviz
 ====
