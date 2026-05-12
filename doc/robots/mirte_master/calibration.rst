@@ -9,11 +9,11 @@ Base PID
 
 Change PID parameters of the base controller with:
 
-``$ rosrun dynamic_reconfigure dynparam set /mobile_base_controller p 1``
+``$ ros2 param set /pid_wheels_controller gains.front_left_wheel_joint.p 1.0``
 
-``$ rosrun dynamic_reconfigure dynparam set /mobile_base_controller i 1``
+``$ ros2 param set /pid_wheels_controller gains.front_left_wheel_joint.i 1.0``
 
-``$ rosrun dynamic_reconfigure dynparam set /mobile_base_controller d 1``
+``$ ros2 param set /pid_wheels_controller gains.front_left_wheel_joint.d 1.0``
 
 
 Arm position
