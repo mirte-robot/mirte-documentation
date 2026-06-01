@@ -204,7 +204,6 @@ Electronic components
         * - 1
           - battery
           - `Parkside Performance 12V, 5Ah <https://www.lidl.nl/p/parkside-performance-accu-12-v-5-ah/p100396693>`_
-
         * - 1
           - Spring contact
           - `Spring contact <https://nl.rs-online.com/web/p/grounding-contacts/7884880>`_
@@ -325,7 +324,7 @@ Mounting
           - ,,
           - 4
           - Lidar to lidar mount
-        * - \-
+        * - 4
           - M2.5 x 12 screws
           -
           - Shoulder print to inner arm plate
@@ -336,7 +335,19 @@ Mounting
         * - 4
           - M2.5 washer (form a)
           -
+          - 
+        * - 
+          - ,,
+          - 4
           - Orange Pi 3B to bottom plate
+        * - 
+          - ,,
+          - \-
+          - Shoulder print to inner arm plate
+        * - \-
+          - M2.5 locknut
+          -
+          - Shoulder print to inner arm plate
         * - \-
           - M3 x 6 screws
           -
@@ -496,7 +507,7 @@ Mounting
           - `standoff 10mm M2.5 female-female <https://nl.rs-online.com/web/p/standoffs/1842689>`_
           -
           - Orange Pi 3B to bottom plate
-        * - 4*
+        * - 4
           - `standoff 25mm M4 female-female <https://nl.rs-online.com/web/p/standoffs/1058101>`_
           -
           - MIRTE PCB to bottom plate
@@ -504,7 +515,7 @@ Mounting
           - `standoff 20mm M4 female-female <https://nl.rs-online.com/web/p/standoffs/1058094>`_
           -
           - Middle to top plate
-        * - 3*
+        * - 3
           - `standoff 40mm M3 male-female <https://nl.rs-online.com/web/p/standoffs/0221184>`_
           -
           - Arm base to top plate
@@ -528,7 +539,7 @@ Mounting
           - ,,
           - 4
           - Lidar to lidar mount
-        * - 4*
+        * - 4
           - M2.5 x 12 screws
           -
           - Shoulder print to inner arm plate
@@ -536,10 +547,22 @@ Mounting
           - M2.5 spring washer
           -
           - Orange Pi 3B to bottom plate
-        * - 4
+        * - 8
           - M2.5 washer (form a)
           -
+          - 
+        * - 
+          - ,,
+          - 4
           - Orange Pi 3B to bottom plate
+        * - 
+          - ,,
+          - 4
+          - Shoulder print to inner arm plate
+        * - 4
+          - M2.5 locknut
+          -
+          - Shoulder print to inner arm plate
         * - 5
           - M3 x 6 screws
           -
@@ -552,7 +575,7 @@ Mounting
           - ,,
           - 4
           - USB camera to camera module
-        * - 14*
+        * - 14
           - M3 x 12 screws
           -
           - 
@@ -564,7 +587,7 @@ Mounting
           - ,,
           - 12
           - DC motor to motor module (3 per motor)
-        * - 2*
+        * - 2
           - M3 x 14 screws
           -
           - Gripper
@@ -580,7 +603,7 @@ Mounting
           - ,,
           - 4
           - Gripper
-        * - 6*
+        * - 6
           - M3 x 18 screws
           -
           - Arm plates to bearing
@@ -648,11 +671,11 @@ Mounting
           - ,,
           - 8
           - Middle to Top plate
-        * - 8*
+        * - 8
           - M4 x 16 screws 
           -
           - Motor module to bottom plate
-        * - 8*
+        * - 8
           - M4 locknut
           -
           - Motor module to bottom plate
