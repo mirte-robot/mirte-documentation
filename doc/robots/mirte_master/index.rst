@@ -5,7 +5,7 @@ MIRTE Master
    :maxdepth: 1
    :hidden:
 
-   hardware_specs
+   bom
    preparations
    hardware_test
    calibration

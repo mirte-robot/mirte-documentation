@@ -1,5 +1,5 @@
-Hardware specs
-##############
+Bill of Materials
+#################
 
 The MIRTE Master was designed to be the upgraded bigger brother of the MIRTE Pioneer. With
 this the students can focus more on robot applications rather than the inner workings of

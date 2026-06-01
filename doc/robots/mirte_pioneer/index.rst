@@ -5,7 +5,7 @@ MIRTE Pioneer
    :maxdepth: 1
    :hidden:
 
-   hardware_specs
+   bom
    build_instructions
    connecting_cables
 
