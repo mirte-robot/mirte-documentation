@@ -703,15 +703,15 @@ Lasercut parts
         * - 1
           - `Middle plate (3mm PMMA) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Middle_plate.DXF>`_
         * - 1
-          - `Top plate (3mm stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Top_plate.DXF>`_
+          - `Top plate (3mm aluminum) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Top_plate.DXF>`_
         * - \-
-          - `Arm Inner Bottom plate (1.5mm stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Inner_Bottom_Plate.DXF>`_
+          - `Arm Inner Bottom plate (1.5mm aluminum/stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Inner_Bottom_Plate.DXF>`_
         * - \-
-          - `Arm Inner Top plate (1.5mm stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Inner_Top_Plate.DXF>`_
+          - `Arm Inner Top plate (1.5mm aluminum/stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Inner_Top_Plate.DXF>`_
         * - \-
-          - `Arm Outer Bottom plate (1.5mm stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Outer_Bottom_Plate.DXF>`_
+          - `Arm Outer Bottom plate (1.5mm aluminum/stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Outer_Bottom_Plate.DXF>`_
         * - \-
-          - `Arm Outer Top plate (1.5mm stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Outer_Top_Plate.DXF>`_
+          - `Arm Outer Top plate (1.5mm aluminum/stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Outer_Top_Plate.DXF>`_
 
    .. group-tab:: Mobile manipulator
 
@@ -726,15 +726,15 @@ Lasercut parts
         * - 1
           - `Middle plate (3mm PMMA) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Middle_plate.DXF>`_
         * - 1
-          - `Top plate (3mm stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Top_plate.DXF>`_
+          - `Top plate (3mm aluminum/stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Top_plate.DXF>`_
         * - 1
-          - `Arm Inner Bottom plate (1.5mm stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Inner_Bottom_Plate.DXF>`_
+          - `Arm Inner Bottom plate (1.5mm aluminum/stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Inner_Bottom_Plate.DXF>`_
         * - 1
-          - `Arm Inner Top plate (1.5mm stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Inner_Top_Plate.DXF>`_
+          - `Arm Inner Top plate (1.5mm aluminum/stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Inner_Top_Plate.DXF>`_
         * - 1
-          - `Arm Outer Bottom plate (1.5mm stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Outer_Bottom_Plate.DXF>`_
+          - `Arm Outer Bottom plate (1.5mm aluminum/stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Outer_Bottom_Plate.DXF>`_
         * - 1
-          - `Arm Outer Top plate (1.5mm stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Outer_Top_Plate.DXF>`_
+          - `Arm Outer Top plate (1.5mm aluminum/stainless steel) <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Cut%20Files/Arm_Outer_Top_Plate.DXF>`_
 
 
 3D printed parts
