@@ -42,7 +42,17 @@ smv_latest_version = 'main'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx_rtd_theme', 'sphinx-prompt', 'sphinx_tabs.tabs', 'sphinx.ext.autosectionlabel', 'sphinxcontrib.spelling', 'sphinx.ext.autodoc', 'sphinx.ext.napoleon', 'sphinx_multiversion', 'sphinx_mdinclude', "sphinxcontrib.jquery"]
+extensions = ['sphinx_rtd_theme',
+              'sphinx-prompt',
+              'sphinx_tabs.tabs',
+              'sphinx.ext.autosectionlabel',
+              'sphinxcontrib.spelling',
+              'sphinx.ext.autodoc',
+              'sphinx.ext.napoleon',
+              'sphinx_multiversion',
+              'sphinx_mdinclude',
+              'sphinxcontrib.jquery',
+              'sphinx_carousel.carousel']
 suppress_warnings = ['autosectionlabel.*']
 sphinx_tabs_disable_tab_closing = True
 spelling_word_list_filename='spelling_wordlist.txt'
@@ -52,6 +62,9 @@ napoleon_use_ivar = True
 
 # Ignore python warnings about missing ROS (msgs) libs
 autodoc_mock_imports = ["rclpy", "yaml", "rcl_interfaces", "mirte_msgs", "singleton", "controller_manager_msgs"]
+
+
+carousel_bootstrap_add_css_js = True
 
 
 # Add any paths that contain templates here, relative to this directory.
