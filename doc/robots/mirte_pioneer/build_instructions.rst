@@ -10,8 +10,6 @@ steps below to build your robot.
 
       .. carousel::
          :show_controls:
-         :show_fade:
-         :show_dark:
          :show_buttons_on_top:
 
          .. image:: ../../_images/build_instructions/pcb/0_step0.png

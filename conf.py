@@ -63,10 +63,6 @@ napoleon_use_ivar = True
 # Ignore python warnings about missing ROS (msgs) libs
 autodoc_mock_imports = ["rclpy", "yaml", "rcl_interfaces", "mirte_msgs", "singleton", "controller_manager_msgs"]
 
-
-carousel_bootstrap_add_css_js = True
-
-
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -114,6 +110,11 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# fix for shpinx-carousel not including the bootstrap css and js 
+# in all pages
+html_css_files = ["bootstrap-carousel.min.css"]
+html_js_files = ["bootstrap-carousel.min.js"]
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
