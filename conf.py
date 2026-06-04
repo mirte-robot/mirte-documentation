@@ -237,7 +237,7 @@ epub_exclude_files = ['search.html']
 
 
 # hobbyking blocks link checking with a 403 error
-linkcheck_ignore = [r'^https://hobbyking.com/.*', r'^http://mirte.local.*', r'.*localhost.*', r'https://github.com/mirte-robot/mirte-ros-packages/blob/3cbfac4a66425defc56f39b94bafca7794dd227e/mirte_bringup/launch/minimal.launch#L44']
+linkcheck_ignore = [r'^https://hobbyking.com/.*',  r'^http://mirte.local.*', r'^https://nl.rs-online.com/.*', r'.*localhost.*', r'https://github.com/mirte-robot/mirte-ros-packages/blob/3cbfac4a66425defc56f39b94bafca7794dd227e/mirte_bringup/launch/minimal.launch#L44']
 linkcheck_anchors_ignore_for_url = [ # does not work for the current version of sphinx, that's why we use linkcheck_ignore for now
    # Requires JavaScript
    r'https://github.com.*',

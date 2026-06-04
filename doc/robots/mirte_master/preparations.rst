@@ -143,23 +143,23 @@ picture below.
    * - Rotation
      - HX-12H
      - 2
-     - `set_servo2.uf2 <https://github.com/ArendJan/mirte_set_serial_servos/releases/download/v1/set_servos2.uf2>`_
+     - `set_servo2.uf2 <https://github.com/ArendJan/mirte_set_serial_servos/releases/download/v2/set_servo_2.uf2>`_
    * - Shoulder
      - HTD-45H
      - 3
-     - `set_servo3.uf2 <https://github.com/ArendJan/mirte_set_serial_servos/releases/download/v1/set_servos3.uf2>`_
+     - `set_servo3.uf2 <https://github.com/ArendJan/mirte_set_serial_servos/releases/download/v2/set_servo_3.uf2>`_
    * - Elbow
      - HTD-35H
      - 4
-     - `set_servo4.uf2 <https://github.com/ArendJan/mirte_set_serial_servos/releases/download/v1/set_servos4.uf2>`_
+     - `set_servo4.uf2 <https://github.com/ArendJan/mirte_set_serial_servos/releases/download/v2/set_servo_4.uf2>`_
    * - Wrist
      - HX-12H
      - 5
-     - `set_servo5.uf2 <https://github.com/ArendJan/mirte_set_serial_servos/releases/download/v1/set_servos5.uf2>`_
+     - `set_servo5.uf2 <https://github.com/ArendJan/mirte_set_serial_servos/releases/download/v2/set_servo_5.uf2>`_
    * - Gripper
      - HX-12H
      - 6
-     - `set_servo6.uf2 <https://github.com/ArendJan/mirte_set_serial_servos/releases/download/v1/set_servos6.uf2>`_
+     - `set_servo6.uf2 <https://github.com/ArendJan/mirte_set_serial_servos/releases/download/v2/set_servo_6.uf2>`_
 
 The steps you need to take for each servo are:
 
