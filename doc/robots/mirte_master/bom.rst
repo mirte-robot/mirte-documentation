@@ -808,9 +808,6 @@ is roughly 1 kg.
         * - 1
           - `Lidar module <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Print%20Files/Step/Internal/LiDar-Module.STEP>`_
           -   
-        * - 1
-          - `Battery mount <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Print%20Files/Step/Frame/Battery-Module.STEP>`_
-          -   
         * - \-
           - `Cable tube <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Print%20Files/Step/Internal/Cable-Tube.STEP>`_
           -   
@@ -903,11 +900,8 @@ is roughly 1 kg.
           - `Battery module <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Print%20Files/Step/Frame/Battery-Module.STEP>`_
           -   
         * - 1
-          - `Lidar module <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Print%20Files/Step/Frame/LiDar-Module.STEP>`_
-          -   
-        * - 1
-          - `Battery mount <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Print%20Files/Step/Frame/Battery-Mount.STEP>`_
-          -   
+          - `Lidar module <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Print%20Files/Step/Internal/LiDar-Module.STEP>`_
+          - 
         * - 2
           - `Cable tube <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Print%20Files/Step/Internal/Cable-Tube.STEP>`_
           -   
