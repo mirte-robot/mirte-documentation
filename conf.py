@@ -236,6 +236,7 @@ epub_title = project
 epub_exclude_files = ['search.html']
 
 
+
 # hobbyking blocks link checking with a 403 error
 linkcheck_ignore = [r'^https://hobbyking.com/.*',  r'^http://mirte.local.*', r'^https://nl.rs-online.com/.*', r'.*localhost.*', r'https://github.com/mirte-robot/mirte-ros-packages/blob/3cbfac4a66425defc56f39b94bafca7794dd227e/mirte_bringup/launch/minimal.launch#L44']
 linkcheck_anchors_ignore_for_url = [ # does not work for the current version of sphinx, that's why we use linkcheck_ignore for now
@@ -244,3 +245,16 @@ linkcheck_anchors_ignore_for_url = [ # does not work for the current version of 
    
 ]
 linkcheck_retries=3
+linkcheck_workers=1
+
+
+def is_on_github_actions():
+    if "CI" not in os.environ or not os.environ["CI"] or "GITHUB_RUN_ID" not in os.environ:
+        return False
+    return True
+
+if is_on_github_actions():
+    # add surfdrive to linkcheck_ignore, because networking is somehow blocked and gives 101 errors
+    linkcheck_ignore.append(r'^https://surfdrive.surf.nl/.*')
+    # add tinytronics as they have cloudflare protection which blocks the linkcheck requests
+    linkcheck_ignore.append(r'^https://www.tinytronics.nl/.*')
