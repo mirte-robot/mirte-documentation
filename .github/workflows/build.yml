@@ -14,7 +14,7 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           submodules: 'recursive'
           # fetch-tags: true
@@ -31,7 +31,7 @@ jobs:
           done
           git tag develop # create a develop tag for the current commit
       - name: Set up Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v7
         with:
           python-version: '3.10'
       - name: Install dependencies
@@ -52,10 +52,10 @@ jobs:
           cd _build/html
           zip -r ../../site.zip .
           cd ../../
-      - name: install nodejs for archive script
-        run: |
-          curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-          sudo apt-get install -y nodejs
+      # - name: install nodejs for archive script
+      #   run: |
+      #     curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+      #     sudo apt-get install -y nodejs
       # - name: Archive production artifacts
       #   uses: actions/upload-artifact@v4
       #   with:
@@ -68,17 +68,17 @@ jobs:
       #     path: _build/html_multi
       #     name: html_multiversion
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: act_dist
           path: |
             site.zip
       - name: Upload as a github-pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _build/html_multi
       - name: Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: site.zip
@@ -101,6 +101,6 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         # with:
         #   artifact_name: dist
