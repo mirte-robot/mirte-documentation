@@ -44,7 +44,7 @@ both. Please find below the components you need for these.
           - `Raspberry Pi Pico H (RP2040) <https://www.raspberrypi.com/products/raspberry-pi-pico/>`_
         * - 1
           - MIRTE Master PCB
-          - `MIRTE Master main control PCB <https://github.com/ArendJan/mirte-pcb/tree/v3_mirte_master>`_   
+          - `MIRTE Master main control PCB <https://github.com/mirte-robot/mirte-pcb/tree/main/mirte-master-bottom>`_   
         * - 1
           - OLED Screen
           - `white SSD1306 128x64 I2C <https://nl.aliexpress.com/item/1005007755490093.html>`_
@@ -108,7 +108,7 @@ both. Please find below the components you need for these.
           - `Raspberry Pi Pico H (RP2040) <https://www.raspberrypi.com/products/raspberry-pi-pico/>`_
         * - 1
           - MIRTE Master PCB
-          - `MIRTE Master main control PCB <https://github.com/ArendJan/mirte-pcb/tree/v3_mirte_master>`_   
+          - `MIRTE Master main control PCB <https://github.com/mirte-robot/mirte-pcb/tree/main/mirte-master-bottom>`_   
         * - 1
           - OLED Screen
           - `white SSD1306 128x64 I2C <https://nl.aliexpress.com/item/1005007755490093.html>`_
