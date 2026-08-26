@@ -176,7 +176,7 @@ Electronic components
         * - 1
           - battery
           - `Parkside Performance 12V, 5Ah <https://www.lidl.nl/p/parkside-performance-accu-12-v-5-ah/p100396693>`_
-        * - 1
+        * - 2
           - Spring contact
           - `Spring contact <https://nl.rs-online.com/web/p/grounding-contacts/7884880>`_
         * - 1
@@ -204,7 +204,7 @@ Electronic components
         * - 1
           - battery
           - `Parkside Performance 12V, 5Ah <https://www.lidl.nl/p/parkside-performance-accu-12-v-5-ah/p100396693>`_
-        * - 1
+        * - 2
           - Spring contact
           - `Spring contact <https://nl.rs-online.com/web/p/grounding-contacts/7884880>`_
         * - 1
