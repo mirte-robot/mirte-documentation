@@ -808,6 +808,9 @@ is roughly 1 kg.
         * - 1
           - `Lidar module <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Print%20Files/Step/Internal/LiDar-Module.STEP>`_
           -   
+        * - 1
+          - `Battery mount <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Print%20Files/Step/Internal/Battery-Mount.STEP>`_
+          -  
         * - \-
           - `Cable tube <https://surfdrive.surf.nl/public.php/dav/files/Aj4w3wwbfrmnSmb/Print%20Files/Step/Internal/Cable-Tube.STEP>`_
           -   
