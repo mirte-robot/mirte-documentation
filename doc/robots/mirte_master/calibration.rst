@@ -23,7 +23,7 @@ Although you tried the best you could to assemble the arm in the home (i.e.
 upright) position, it is impossible to have this exactly right. We therefore
 still need to calibrate the servo's
 
-``$ ros2 run mirte_test mirte_master_calibrate.py``
+``$ ros2 run mirte_test mirte_master_calibrate``
 
 .. warning::
 
