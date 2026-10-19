@@ -16,7 +16,7 @@ Install MIRTE OS image
 
     The MIRTE Pioneer uses the Orange Pi Zero2. So we need to download the correct image:
 
-    1. Download the latest SD card image `here <https://github.com/mirte-robot/mirte-sd-image-tools/releases/latest>`_ (mirte_orangepizero2.img.xz).
+    1. Download the latest SD card image `here <https://buildmirte.me.tudelft.nl/latest/pioneer`_.
     2. Burn the image onto the SD card with for example `Balena Etcher <https://www.balena.io/etcher/>`_.
     3. Put the SD card in the Orange Pi Zero 2.
 
@@ -34,7 +34,7 @@ Install MIRTE OS image
 
       .. tab:: SD
 
-        1. Download the latest SD card image `here <https://github.com/mirte-robot/mirte-sd-image-tools/releases/latest>`_ (mirte_master_mirte_orangepi3b.img.xz).
+        1. Download the latest SD card image `here <https://buildmirte.me.tudelft.nl/latest/master>`_ (mirte_master_mirte_orangepi3b.img.xz).
         2. Burn the image onto the SD card with for example `Balena Etcher <https://www.balena.io/etcher/>`_.
         3. Put the SD card in the Orange Pi 3B.
 
@@ -46,7 +46,7 @@ Install MIRTE OS image
 
       .. tab:: eMMC
 
-        1. Download the latest SD card image `here <https://github.com/mirte-robot/mirte-sd-image-tools/releases/latest>`_ (mirte_master_installer_orangepi3b.img.xz).
+        1. Download the latest SD card image `here <https://buildmirte.me.tudelft.nl/latest/master_installer>`_ (mirte_master_installer_orangepi3b.img.xz).
         2. Burn the image onto the SD card with for example `Balena Etcher <https://www.balena.io/etcher/>`_.
         3. Put the SD card in the Orange Pi 3B.
         4. Boot the Orange Pi 3B, and wait approximately 20 min until the robot shuts off.
@@ -67,7 +67,7 @@ Install MIRTE OS image
 
       .. tab:: SD
 
-        1. Download the latest SD card image for your hardware `here <https://github.com/mirte-robot/mirte-sd-image-tools/releases/latest>`_.
+        1. Download the latest SD card image for your hardware `here <https://buildmirte.me.tudelft.nl/latest>`_.
         2. Burn the image onto the SD card with for example `Balena Etcher <https://www.balena.io/etcher/>`_.
         3. Put the SD card in your SBC.
 
@@ -78,7 +78,7 @@ Install MIRTE OS image
 
       .. tab:: eMMC
 
-        1. Download the latest SD card image for your hardware `here <https://github.com/mirte-robot/mirte-sd-image-tools/releases/latest>`_.
+        1. Download the latest SD card image for your hardware `here <https://buildmirte.me.tudelft.nl/latest>`_.
         2. Burn the image onto the SD card with for example `Balena Etcher <https://www.balena.io/etcher/>`_.
         3. Put the SD card in your SBC
         4. Boot the Orange Pi 3B, and wait until the robot shuts off (this can take some time. eg 20 mins on the MIRTE Master).
@@ -126,7 +126,7 @@ One therefore also need to install this onto the MCU.
 Installed Software
 ==================
 
-After installing your MIRTE OS v0.2 image you will have a robot running:
+After installing your MIRTE OS v0.2.x image you will have a robot running:
 
 +------------------+---------+--------+--------+--------+
 | SBC              | Armbian | Ubuntu | kernel | ROS    |
