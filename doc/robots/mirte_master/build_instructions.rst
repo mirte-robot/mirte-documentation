@@ -165,32 +165,107 @@ Build instructions
 
    .. figure:: _images/build_instructions/base_step_35.jpg
 
+   .. figure:: _images/build_instructions/base_step_36.jpg
+   .. figure:: _images/build_instructions/base_step_37.jpg
+   .. figure:: _images/build_instructions/base_step_38.jpg
+   .. figure:: _images/build_instructions/base_step_39.jpg
+   .. figure:: _images/build_instructions/base_step_40.jpg
+   .. figure:: _images/build_instructions/base_step_41.jpg
+   .. figure:: _images/build_instructions/base_step_42.jpg
+   .. figure:: _images/build_instructions/base_step_43.jpg
+   .. figure:: _images/build_instructions/base_step_44.jpg
+
+
+   .. figure:: _images/build_instructions/base_step_45.jpg
+
        ..
 
        Dismount the screws on the bottom of the battery.  
 
-   .. figure:: _images/build_instructions/base_step_36.jpg
-   .. figure:: _images/build_instructions/base_step_37.jpg
+   .. figure:: _images/build_instructions/base_step_46.jpg
         
        ..
 
        Use M3 x 16 screws to attach the battery module to the battery.  
 
-   .. figure:: _images/build_instructions/base_step_38.jpg
-   .. figure:: _images/build_instructions/base_step_39.jpg
+   .. figure:: _images/build_instructions/base_step_47.jpg
+   .. figure:: _images/build_instructions/base_step_48.jpg
 
        ..
 
-       Attach the M4 U-clip captive nut to the ultrasonic modules.  
+       Attach the M4 U-clip captive nut to the lidar module. 
 
-   .. figure:: _images/build_instructions/base_step_41.jpg
+   .. figure:: _images/build_instructions/base_step_49.jpg
 
        ..
 
-       Use 3 of the M2.5 x 6 screws to attacht the lidar.  
+       Use 3 of the M2.5 x 6 screws to attach the lidar.  
 
-   .. figure:: _images/build_instructions/base_step_42.jpg
+   .. figure:: _images/build_instructions/base_step_50.jpg
         
        ..
 
-       Use the last M2.5 x 6 screws to attacht uart-board to the lidar.  
+       Use the last M2.5 x 6 screws to attach the uart-board to the lidar.  
+
+   .. figure:: _images/build_instructions/base_step_51.jpg
+   .. figure:: _images/build_instructions/base_step_52.jpg
+   .. figure:: _images/build_instructions/base_step_53.jpg
+   .. figure:: _images/build_instructions/base_step_54.jpg
+   .. figure:: _images/build_instructions/base_step_55.jpg
+   .. figure:: _images/build_instructions/base_step_56.jpg
+   .. figure:: _images/build_instructions/base_step_57.jpg
+   .. figure:: _images/build_instructions/base_step_58.jpg
+   .. figure:: _images/build_instructions/base_step_59.jpg
+   .. figure:: _images/build_instructions/base_step_60.jpg
+   .. figure:: _images/build_instructions/base_step_61.jpg
+   .. figure:: _images/build_instructions/base_step_62.jpg
+   .. figure:: _images/build_instructions/base_step_63.jpg
+   .. figure:: _images/build_instructions/base_step_64.jpg
+   .. figure:: _images/build_instructions/base_step_65.jpg
+   .. figure:: _images/build_instructions/base_step_66.jpg
+   .. figure:: _images/build_instructions/base_step_67.jpg
+   .. figure:: _images/build_instructions/base_step_68.jpg
+   .. figure:: _images/build_instructions/base_step_69.jpg
+   .. figure:: _images/build_instructions/base_step_70.jpg
+
+   .. figure:: _images/build_instructions/grippper_step_1.jpg
+   .. figure:: _images/build_instructions/grippper_step_2.jpg
+   .. figure:: _images/build_instructions/grippper_step_3.jpg
+   .. figure:: _images/build_instructions/grippper_step_4.jpg
+   .. figure:: _images/build_instructions/grippper_step_5.jpg
+   .. figure:: _images/build_instructions/grippper_step_6.jpg
+   .. figure:: _images/build_instructions/grippper_step_7.jpg
+   .. figure:: _images/build_instructions/grippper_step_8.jpg
+   .. figure:: _images/build_instructions/grippper_step_9.jpg
+   .. figure:: _images/build_instructions/grippper_step_10.jpg
+   .. figure:: _images/build_instructions/grippper_step_11.jpg
+   .. figure:: _images/build_instructions/grippper_step_12.jpg
+   .. figure:: _images/build_instructions/grippper_step_13.jpg
+   .. figure:: _images/build_instructions/grippper_step_14.jpg
+   .. figure:: _images/build_instructions/grippper_step_15.jpg
+   .. figure:: _images/build_instructions/grippper_step_16.jpg
+   .. figure:: _images/build_instructions/grippper_step_17.jpg
+   .. figure:: _images/build_instructions/grippper_step_18.jpg
+
+   .. figure:: _images/build_instructions/arm_step_1.jpg
+   .. figure:: _images/build_instructions/arm_step_2.jpg
+   .. figure:: _images/build_instructions/arm_step_3.jpg
+   .. figure:: _images/build_instructions/arm_step_4.jpg
+   .. figure:: _images/build_instructions/arm_step_5.jpg
+   .. figure:: _images/build_instructions/arm_step_6.jpg
+   .. figure:: _images/build_instructions/arm_step_7.jpg
+   .. figure:: _images/build_instructions/arm_step_8.jpg
+   .. figure:: _images/build_instructions/arm_step_9.jpg
+   .. figure:: _images/build_instructions/arm_step_10.jpg
+   .. figure:: _images/build_instructions/arm_step_11.jpg
+   .. figure:: _images/build_instructions/arm_step_12.jpg
+   .. figure:: _images/build_instructions/arm_step_13.jpg
+   .. figure:: _images/build_instructions/arm_step_14.jpg
+   .. figure:: _images/build_instructions/arm_step_15.jpg
+   .. figure:: _images/build_instructions/arm_step_16.jpg
+   .. figure:: _images/build_instructions/arm_step_17.jpg
+
+   .. figure:: _images/build_instructions/final_step_1.jpg
+   .. figure:: _images/build_instructions/final_step_2.jpg
+   .. figure:: _images/build_instructions/final_step_3.jpg
+   .. figure:: _images/build_instructions/final_step_4.jpg
