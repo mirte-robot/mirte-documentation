@@ -355,78 +355,78 @@ Build instructions
 
        Mount servo with 7 small screws and connect one of the servo cables.
 
-   .. figure:: _images/build_instructions/grippper_step_1.jpg
+   .. figure:: _images/build_instructions/gripper_step_1.jpg
         
        ..
 
        Make sure HX-12H servo is configured with ID 6 and placed in home position. Mount plate with at least two small screws.
 
-   .. figure:: _images/build_instructions/grippper_step_2.jpg
+   .. figure:: _images/build_instructions/gripper_step_2.jpg
         
        ..
 
        Attach metal servo horn to finger actuating link with four accompanying screws
 
-   .. figure:: _images/build_instructions/grippper_step_3.jpg
+   .. figure:: _images/build_instructions/gripper_step_3.jpg
         
        ..
 
        Press M3 nut in finger actuated link.
 
-   .. figure:: _images/build_instructions/grippper_step_4.jpg
+   .. figure:: _images/build_instructions/gripper_step_4.jpg
         
        ..
 
        Assemble left and right fingers, using one M3 x 20 and one M3 x 16 screw, and two locknuts. Make sure all joints rotate smoothly.
 
-   .. figure:: _images/build_instructions/grippper_step_5.jpg
-   .. figure:: _images/build_instructions/grippper_step_6.jpg
-   .. figure:: _images/build_instructions/grippper_step_7.jpg
+   .. figure:: _images/build_instructions/gripper_step_5.jpg
+   .. figure:: _images/build_instructions/gripper_step_6.jpg
+   .. figure:: _images/build_instructions/gripper_step_7.jpg
         
        ..
 
        Attach the finger links with two M3 x 20 screws to the bottom gripper plate.
 
-   .. figure:: _images/build_instructions/grippper_step_8.jpg
+   .. figure:: _images/build_instructions/gripper_step_8.jpg
         
        ..
 
        Make sure the links have the shown orientation.
 
-   .. figure:: _images/build_instructions/grippper_step_9.jpg
+   .. figure:: _images/build_instructions/gripper_step_9.jpg
         
        ..
 
        Do not yet fully fasten the actuation link. 
 
-   .. figure:: _images/build_instructions/grippper_step_11.jpg
+   .. figure:: _images/build_instructions/gripper_step_11.jpg
         
        ..
 
        Place assembly on gripper servo, now fasten the actuation link screw. Make sure the joints can rotate freely with no or little friction.
 
-   .. figure:: _images/build_instructions/grippper_step_12.jpg
-   .. figure:: _images/build_instructions/grippper_step_13.jpg
+   .. figure:: _images/build_instructions/gripper_step_12.jpg
+   .. figure:: _images/build_instructions/gripper_step_13.jpg
         
        ..
 
        Mount two M3 x 30 screws and place pulleys.
 
-   .. figure:: _images/build_instructions/grippper_step_14.jpg
+   .. figure:: _images/build_instructions/gripper_step_14.jpg
         
        ..
 
        Connect fingers and fasten the two M3 x 30 screws with locknuts. Make sure all joints can rotate freely.
 
-   .. figure:: _images/build_instructions/grippper_step_15.jpg
-   .. figure:: _images/build_instructions/grippper_step_16.jpg
+   .. figure:: _images/build_instructions/gripper_step_15.jpg
+   .. figure:: _images/build_instructions/gripper_step_16.jpg
         
        ..
 
        Connect the actuation links with two M3 x 16 screws and locknuts. Make sure all joints can rotate freely.
 
-   .. figure:: _images/build_instructions/grippper_step_17.jpg
-   .. figure:: _images/build_instructions/grippper_step_18.jpg
+   .. figure:: _images/build_instructions/gripper_step_17.jpg
+   .. figure:: _images/build_instructions/gripper_step_18.jpg
         
        ..
 
